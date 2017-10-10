@@ -1,0 +1,45 @@
+
+<main class="page-body">
+  <div class="row">
+    <div class="col s12 page-title-div">
+      <h1 class="header">Listado de Negocios</h1>
+    </div>
+  </div>
+  <section class="section">
+    <div class="row ">
+      <div class="col s12">
+        <div class="card">
+          <div class="card-content">
+            <form [formGroup]="nuevoNegocioForm" (ngSubmit)="crearNegocio()">
+
+              <mz-input-container class="col s12">
+                <input mz-input [label]="'Nombre del Negocio'" [validate]="true" type="text" formControlName="nombre">
+              </mz-input-container>
+
+              <!-- <button class="btn waves-effect">Agregar</button> -->
+
+              <button mz-button>Crear Mi Negocio</button>
+
+            </form>
+            <!-- <form [formGroup]="actualizarNegocioForm" (ngSubmit)="actualizarNegocio()">
+              <div *ngFor="let negocio of negocios">
+
+                <mz-input-container class="col s12">
+                  <input mz-input [label]="'Nombre del Negocio'" [(ngModel)]="negocio.nombre" [validate]="true" type="text" formControlName="nombre">
+                </mz-input-container>
+                <mz-input-container class="col s12">
+                  <input mz-input [(ngModel)]="negocio.uid" type="hidden" [validate]="true" formControlName="key">
+                </mz-input-container>
+                <button mz-button>Actualizar</button>
+                <a mz-button (click)="eliminar(negocio.uid)">Eliminar</a>
+              </div>
+            </form> -->
+            <h1>Mis Negocios</h1>
+            <a mz-button *ngFor="let negocio of negocios" routerLink="/{{negocio.uid}}">{{negocio.nombre}}</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <app-footer></app-footer>
+</main>

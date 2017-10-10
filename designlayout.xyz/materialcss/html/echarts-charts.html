@@ -1,0 +1,2653 @@
+<!--Design by designlayout.xyz-->
+
+<!-- //////////////////////////////////////////////////////////////////////////// -->
+<!--Start HTML document-->
+<!DOCTYPE html>
+
+<!-- //////////////////////////////////////////////////////////////////////////// -->
+<!--HTML-->
+<html lang="en">
+
+<!-- //////////////////////////////////////////////////////////////////////////// -->
+<!--Head-->
+
+
+<!-- Mirrored from designlayout.xyz/materialcss/html/echarts-charts.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 03 Oct 2017 22:52:18 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!--viewport meta tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Favicon icon-->
+    <link href="http://designlayout.xyz/materialcss/asset/images/favicon.png" type="image/png" rel="icon">
+
+    <!--Browser navbar color for mobile-->
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#5165d6">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#5165d6">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#5165d6">
+    <!--Page title-->
+    <title>ECharts Charts - materialcss</title>
+    <!-- ================================================
+    CSS
+    ================================================ -->
+    
+    <!-- materialize stylesheet -->
+    <link href="http://designlayout.xyz/materialcss/asset/vendors/materialize/materialize.min.css" type="text/css" rel="stylesheet" />
+    <!-- google material design icons -->
+    <link href="http://designlayout.xyz/materialcss/asset/vendors/material-icons/material-icons.css" type="text/css" rel="stylesheet" />
+    <!-- prism syntax highlighter -->
+    <link href="http://designlayout.xyz/materialcss/asset/vendors/prism/prism.css" type="text/css" rel="stylesheet" />
+    <!-- materialcss app stylesheet -->
+    <link href="http://designlayout.xyz/materialcss/asset/css/app.css" type="text/css" rel="stylesheet" />
+    <!-- materialcss theme stylesheet -->
+    <link href="http://designlayout.xyz/materialcss/asset/css/theme-1.css" type="text/css" rel="stylesheet" />
+    <!-- Your custom  stylesheet -->
+    <link href="http://designlayout.xyz/materialcss/asset/css/style.css" type="text/css" rel="stylesheet" />
+
+
+</head>
+<!-- End head-->
+<!-- //////////////////////////////////////////////////////////////////////////// -->
+
+<!-- //////////////////////////////////////////////////////////////////////////// -->
+<!--body-->
+
+<body>
+    <!-- //////////////////////////////////////////////////////////////////////////// -->
+    <!--Page wrapper-->
+    <div class="page-wrapper">
+        <!-- //////////////////////////////////////////////////////////////////////////// -->
+        <!--Control page-->
+         <div id="control-body" class="fixed-sidebar medium-sidebar fixed-nav">
+            <!-- //////////////////////////////////////////////////////////////////////////// -->
+            <!--prepage loader-->
+            <div id="prepage-loader">
+                <div class="preloader-center">
+                    <div class="preloader-wrapper big active">
+                        <div class="spinner-layer spinner-indigo-only">
+                            <div class="circle-clipper left">
+                                <div class="circle"></div>
+                            </div>
+                            <div class="gap-patch">
+                                <div class="circle"></div>
+                            </div>
+                            <div class="circle-clipper right">
+                                <div class="circle"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End prepage loader-->
+            <!-- //////////////////////////////////////////////////////////////////////////// -->
+
+
+            <!-- //////////////////////////////////////////////////////////////////////////// -->
+            <!--Header-->
+            <nav class="page-header z-depth-3">
+                <div class="nav-wrapper">
+                    <a id="logo-container" href="#" class="brand-logo hide-on-med-and-down">materialcss</a>
+                    <ul class="left">
+                        <li class="hide-on-large-only"><a href="javascript:void(0)" id="toggle-left-sidebar" class="hrz-menu waves-effect waves-default"><i class="material-icons">menu</i></a></li>
+
+                        <!--notifications list-->
+                        <li><a href="javascript:void(0)" class="hrz-menu dropdown-button dropdown-belowOrigin waves-effect waves-default" data-activates='notification-list-dropdown'><i class="material-icons">notifications</i><span id="notification-cout">25</span></a></li>
+
+                        <!--app list-->
+                        <li><a href="javascript:void(0)" class="hrz-menu dropdown-button dropdown-belowOrigin waves-effect waves-default" data-activates='app-list-dropdown'><i class="material-icons">apps</i></a></li>
+
+                        <!--full width menu list-->
+                        <li class="hide-on-small-only"><a href="javascript:void(0)" class="hrz-menu dropdown-button dropdown-belowOrigin waves-effect waves-default" data-activates='full-menu-dropdown'>Full menu<i class="material-icons inline">arrow_drop_down</i></a></li>
+                    </ul>
+
+                    <!--notifications list dropdown-->
+                    <ul id='notification-list-dropdown' class='width-400 dropdown-content'>
+                        <li>
+                            <a href="#!">
+                                <i class="material-icons">email</i>
+                                <p class="noti-message">New mail from jhon<span>15 minutes ago</span></p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#!">
+                                <i class="material-icons">chat</i>
+                                <p class="noti-message">New member John joined<span>25 minutes ago</span></p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#!">
+                                <i class="material-icons">perm_identity</i>
+                                <p class="noti-message">New mail from jhon<span>30 minutes ago</span></p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#!">
+                                <i class="material-icons">chat</i>
+                                <p class="noti-message">New member John joined<span>1 hour ago</span></p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#!" class="view-all-noti">
+                        See All
+                    </a>
+                        </li>
+
+
+                    </ul>
+                    <!--notifications app list dropdown-->
+
+                    <!--app list dropdown-->
+                    <ul id='app-list-dropdown' class='dropdown-content'>
+                        <li class="app-list-wrapper m-t-15">
+                            <a href="#!"><i class="material-icons">polymer</i><span>Polymer</span></a>
+                            <a href="#!" class="right"><i class="material-icons">import_contacts</i><span>Contact</span></a>
+                        </li>
+
+                        <li class="app-list-wrapper">
+                            <a href="#!"><i class="material-icons">email</i><span>Email</span></a>
+                            <a href="#!" class="right"><i class="material-icons">ondemand_video</i><span>Video</span></a>
+                        </li>
+
+                        <li class="app-list-wrapper">
+                            <a href="#!"><i class="material-icons">bug_report</i><span>Bug Report</span></a>
+                            <a href="#!" class="right"><i class="material-icons">voicemail</i><span>Voicemail</span></a>
+                        </li>
+                        <li class="app-list-more">
+                            <a href="#!">More</a>
+                        </li>
+                    </ul>
+                    <!--end app list dropdown-->
+
+                    <!--full width menu list dropdown-->
+                    <div id="full-menu-dropdown" class='full-menu dropdown-content'>
+                        <div class="row p-a-15">
+                            <div class="col s6 m3 l2">
+                                <h5 class="full-menu-title">Material UI</h5>
+                                <a>Buttons</a>
+                                <a>Badges</a>
+                                <a>Breadcrumbs</a>
+                                <a>Collections</a>
+                                <a>Collapsibles</a>
+                            </div>
+
+                            <div class="col s6 m3 l2">
+                                <h5 class="full-menu-title">CSS</h5>
+                                <a>Typography</a>
+                                <a>Icons</a>
+                                <a>Animations</a>
+                                <a>Shadow</a>
+                                <a>Media</a>
+                            </div>
+
+                            <div class="col s6 m3 l2">
+                                <h5 class="full-menu-title">Advanced UI</h5>
+                                <a>Carousel</a>
+                                <a>Range Slider</a>
+                                <a>SweetAlert</a>
+                                <a>Highlight</a>
+                                <a>Cards</a>
+                            </div>
+
+                            <div class="col s6 m3 l2">
+                                <h5 class="full-menu-title">Forms</h5>
+                                <a>Form Layouts</a>
+                                <a>Form Validations</a>
+                                <a>Form Masks</a>
+                                <a>Text Editor</a>
+                                <a>Form Elements</a>
+                            </div>
+
+                            <div class="col s6 m3 l2">
+                                <h5 class="full-menu-title">Home</h5>
+                                <a>Landing Page</a>
+                                <a>Change Password</a>
+                                <a>Contactus</a>
+                                <a>Blank Page</a>
+                                <a>Signup</a>
+                            </div>
+
+                            <div class="col s6 m3 l2">
+                                <h5 class="full-menu-title">Elements</h5>
+                                <a>Grid</a>
+                                <a>Color</a>
+                                <a>widgets</a>
+                                <a>Helpers</a>
+                                <a>Search Page</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--full width menu list dropdown-->
+
+                    <ul class="right">
+                        <li><a href="javascript:void(0)" class="hrz-menu waves-effect waves-default hide-show-nav-search"><i class="material-icons">search</i></a></li>
+                        <!--user account-->
+                        <li id="user-account-box"><a href="javascript:void(0)" class="hrz-menu dropdown-button dropdown-belowOrigin dropdown-widthChange waves-effect waves-default" data-activates='user-account-dropdown'><i class="material-icons">account_circle</i></a></li>
+
+                        <li class="hide-on-small-only"><a href="javascript:void(0)" class="hrz-menu waves-effect waves-default" id="page-refresh"><i class="material-icons">refresh</i></a></li>
+                        <li class="hide-on-med-and-down"><a href="javascript:void(0)" class="hrz-menu waves-effect waves-default" id="page-fullscreen"><i class="material-icons">fullscreen</i></a></li>
+
+                        <li class="toggle-right-sidebar"><a href="javascript:void(0)" class="hrz-menu waves-effect waves-default"><i class="material-icons">format_indent_decrease</i></a></li>
+
+                    </ul>
+
+                    <!--user account dropdown-->
+                    <ul id='user-account-dropdown' class='dropdown-content'>
+                        <li><a href="#!"><i class="material-icons">perm_identity</i>My Profile</a></li>
+                        <li><a href="javascript:void(0)" class="toggle-right-sidebar"><i class="material-icons">settings</i>Page Customizer</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#!"><i class="material-icons">lock</i>Lock</a></li>
+                        <li><a href="#!"><i class="material-icons">power_settings_new</i>Logout</a></li>
+                    </ul>
+                    <!--end user account dropdown-->
+                </div>
+            </nav>
+            <!--End Header-->
+            <!-- //////////////////////////////////////////////////////////////////////////// -->
+
+
+            <!-- //////////////////////////////////////////////////////////////////////////// -->
+            <!--Left sidebar-->
+
+            <aside>
+                <!-- overlay -->
+                <div class="left-sidebar-overlay"></div>
+                <div class="left-sidebar z-depth-3">
+                    <!-- brand -->
+                    <div class="md-logo-container hide-on-large-only theme-bg">
+                        <a class="md-brand-logo white-text" href="#">materialcss</a>
+                    </div>
+                    <!--end brand -->
+                    <!--Left sidebar body-->
+                    <div class="left-sidebar-body">
+                        <!--current subscription user plan -->
+                        <div class="current-subscription">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td class="center">
+                                            <span class="current-plan">Business</span>
+                                            <span class="price">&#36;49/month</span>
+                                        </td>
+                                        <td class="center">
+                                            <a href="#" class="waves-effect waves-light btn-flat theme-text">UPGRADE</a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="divider"></div>
+                        <!--End current subscription user plan -->
+
+                        <!--sidebar menu-->
+                        <ul class="leftside-navigation">
+                            <li class="navigation">Menu</li>
+                            <li><a href="dashboard.html" class="menu waves-effect waves-default tooltipped" data-position="right" data-delay="50" data-tooltip="Dashboard"><i class="material-icons left-icon">dashboard</i>Dashboard</a></li>
+
+                            <li><a href="javascript:void(0)" class="collapsible-label1 waves-effect waves-default tooltipped" data-position="right" data-delay="50" data-tooltip="Material UI"><i class="material-icons left-icon">build</i><i class="material-icons right-icon">arrow_drop_down</i>Material UI</a>
+                                <ul class="collapsible-body">
+                                    <li><a href="buttons.html" class="waves-effect waves-default">Buttons</a></li>
+                                    <li><a href="breadcrumbs.html" class="waves-effect waves-default">Breadcrumbs</a></li>
+                                    <li><a href="collections.html" class="waves-effect waves-default">Collections</a></li>
+                                    <li><a href="collapsibles.html" class="waves-effect waves-default">Collapsibles</a></li>
+                                    <li><a href="dropdown.html" class="waves-effect waves-default">Dropdown</a></li>
+                                    <li><a href="tabs.html" class="waves-effect waves-default">Tabs</a></li>
+                                    <li><a href="pagination.html" class="waves-effect waves-default">Pagination</a></li>
+                                    <li><a href="preloader.html" class="waves-effect waves-default">Preloader</a></li>
+                                    <li><a href="toasts.html" class="waves-effect waves-default">Toasts</a></li>
+                                    <li><a href="tooltip.html" class="waves-effect waves-default">Tooltip</a></li>
+                                    <li><a href="waves.html" class="waves-effect waves-default">Waves</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="javascript:void(0)" class="collapsible-label1 waves-effect waves-default tooltipped" data-position="right" data-delay="50" data-tooltip="CSS"><i class="material-icons left-icon">library_books</i><i class="material-icons right-icon">arrow_drop_down</i>CSS</a>
+                                <ul class="collapsible-body">
+                                    <li><a href="typography.html" class="waves-effect waves-default">Typography</a></li>
+                                    <li><a href="icons.html" class="waves-effect waves-default">Icons</a></li>
+                                    <li><a href="animations.html" class="waves-effect waves-default">Animations</a></li>
+                                    <li><a href="shadow.html" class="waves-effect waves-default">Shadow</a></li>
+                                    <li><a href="media.html" class="waves-effect waves-default">Media</a></li>
+                                    <li><a href="pulse.html" class="waves-effect waves-default">Pulse</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="javascript:void(0)" class="collapsible-label1 waves-effect waves-default tooltipped" data-position="right" data-delay="50" data-tooltip="Advanced UI"><i class="material-icons left-icon">add_to_photos</i><i class="material-icons right-icon">arrow_drop_down</i>Advanced UI</a>
+                                <ul class="collapsible-body">
+                                    <li><a href="chips.html" class="waves-effect waves-default">Chips</a></li>
+                                    <li><a href="cards.html" class="waves-effect waves-default">Cards</a></li>
+                                    <li><a href="carousel.html" class="waves-effect waves-default">Carousel</a></li>
+                                    <li><a href="modals.html" class="waves-effect waves-default">Modals</a></li>
+                                    <li><a href="range-slider.html" class="waves-effect waves-default">Range Slider</a></li>
+                                    <li><a href="sweetAlert.html" class="waves-effect waves-default">SweetAlert</a></li>
+                                    <li><a href="highlight.html" class="waves-effect waves-default">Highlight</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="javascript:void(0)" class="collapsible-label1 waves-effect waves-default tooltipped" data-position="right" data-delay="50" data-tooltip="Charts"><i class="material-icons left-icon">insert_chart</i><i class="material-icons right-icon">arrow_drop_down</i>Charts</a>
+                                <ul class="collapsible-body">
+                                    <li><a href="echarts-charts.html" class="waves-effect waves-default">ECharts</a></li>
+                                    <li><a href="google-charts.html" class="waves-effect waves-default">Google Charts</a></li>
+                                    <li><a href="chartjs-charts.html" class="waves-effect waves-default">ChartJS</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="javascript:void(0)" class="collapsible-label1 waves-effect waves-default tooltipped" data-position="right" data-delay="50" data-tooltip="Forms"><i class="material-icons left-icon">message</i><i class="material-icons right-icon">arrow_drop_down</i>Forms</a>
+                                <ul class="collapsible-body">
+                                    <li><a href="form-elements.html" class="waves-effect waves-default">Form Elements</a></li>
+                                    <li><a href="form-layouts.html" class="waves-effect waves-default">Form Layouts</a></li>
+                                    <li><a href="form-validations.html" class="waves-effect waves-default">Form Validations</a></li>
+                                    <li><a href="form-masks.html" class="waves-effect waves-default">Form Masks</a></li>
+                                    <li><a href="text-editor.html" class="waves-effect waves-default">Text Editor</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="javascript:void(0)" class="collapsible-label1 waves-effect waves-default tooltipped" data-position="right" data-delay="50" data-tooltip="Tables"><i class="material-icons left-icon">border_all</i><i class="material-icons right-icon">arrow_drop_down</i>Tables</a>
+                                <ul class="collapsible-body">
+                                    <li><a href="basic-table.html" class="waves-effect waves-default">Basic Tables</a></li>
+                                    <li><a href="data-table.html" class="waves-effect waves-default">Data Tables</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="javascript:void(0)" class="collapsible-label1 waves-effect waves-default tooltipped" data-position="right" data-delay="50" data-tooltip="Pages"><i class="material-icons left-icon">terrain</i><i class="material-icons right-icon">arrow_drop_down</i>Pages</a>
+                                <ul class="collapsible-body">
+                                    <li><a href="login.html" class="waves-effect waves-default">Login</a></li>
+                                    <li><a href="signup.html" class="waves-effect waves-default">Signup</a></li>
+                                    <li><a href="reset.html" class="waves-effect waves-default">Reset</a></li>
+                                    <li><a href="lock.html" class="waves-effect waves-default">Lock</a></li>
+                                    <li><a href="change-password.html" class="waves-effect waves-default">Change Password</a></li>
+                                    <li><a href="contactus.html" class="waves-effect waves-default">Contactus</a></li>
+                                    <li><a href="blank.html" class="waves-effect waves-default">Blank Page</a></li>
+                                    <li><a href="404.html" class="waves-effect waves-default">404</a></li>
+                                    <li><a href="500.html" class="waves-effect waves-default">500</a></li>
+                                    <li><a href="404-admin.html" class="waves-effect waves-default">Dashboard 404</a></li>
+                                    <li><a href="500-admin.html" class="waves-effect waves-default">Dashboard 500</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="grid.html" class="waves-effect waves-default tooltipped" data-position="right" data-delay="50" data-tooltip="Grid"><i class="material-icons left-icon">grid_on</i>Grid</a></li>
+
+                            <li><a href="color.html" class="waves-effect waves-default tooltipped" data-position="right" data-delay="50" data-tooltip="Color"><i class="material-icons left-icon">format_color_fill</i>Color</a></li>
+
+                            <li><a href="helpers.html" class="waves-effect waves-default tooltipped" data-position="right" data-delay="50" data-tooltip="Helpers"><i class="material-icons left-icon">live_help</i>Helpers</a></li>
+
+                            <li><a href="docs.html" class="waves-effect waves-default tooltipped" data-position="right" data-delay="50" data-tooltip="Docs"><i class="material-icons left-icon">book</i>Docs</a></li>
+
+                            
+
+                            <li><a href="javascript:void(0)" class="collapsible-label1 waves-effect waves-default tooltipped" data-position="right" data-delay="50" data-tooltip="Label"><i class="material-icons left-icon">menu</i><i class="material-icons right-icon">arrow_drop_down</i>Label 1</a>
+                                <ul class="collapsible-body">
+                                    <li><a class="collapsible-label2 waves-effect waves-default"><i class="material-icons left-icon">arrow_drop_down</i>Label 2</a>
+                                        <ul class="collapsible-body">
+                                            <li><a href="#" class="waves-effect waves-default"> Lebel 2 title</a></li>
+                                            <li><a href="#" class="waves-effect waves-default"> Lebel 2 title</a></li>
+                                            <li><a href="#" class="waves-effect waves-default"> Lebel 2 title</a></li>
+                                            <li><a href="#" class="waves-effect waves-default"> Lebel 2 title</a></li>
+
+                                        </ul>
+                                    </li>
+                                    <li><a href="#" class="waves-effect waves-default">Label 2</a></li>
+                                    <li><a class="collapsible-label2 waves-effect waves-default"><i class="material-icons left-icon">arrow_drop_down</i>Label 2</a>
+                                        <ul class="collapsible-body">
+                                            <li><a href="#" class="waves-effect waves-default"> Lebel 2 title</a></li>
+                                            <li><a href="#" class="waves-effect waves-default"> Lebel 2 title</a></li>
+                                            <li><a href="#" class="waves-effect waves-default"> Lebel 2 title</a></li>
+                                            <li><a href="#" class="waves-effect waves-default"> Lebel 2 title</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#" class="waves-effect waves-default">Lebel 2</a></li>
+                                </ul>
+
+                            </li>
+
+
+                        </ul>
+                        <!--End sidebar menu-->
+                    </div>
+
+                    <!--End Left sidebar body-->
+
+                    <!--Left sidebar footer-->
+                    <div class="sidebar-footer">
+                        <a href="javascript:void(0)" id="collapsed-left-sidebar" class="toggle-icon-left-sidebar waves-effect waves-default"><i class="right material-icons">keyboard_arrow_left</i></a>
+                    </div>
+                    <!--End Left sidebar footer-->
+                </div>
+            </aside>
+            <!--End left sidebar-->
+            <!-- //////////////////////////////////////////////////////////////////////////// -->
+
+
+            <!--Search box-->
+            <!-- //////////////////////////////////////////////////////////////////////////// -->
+            <div class="search-overlay hide"></div>
+            <div id="search-body" class="z-depth-1">
+                <!--Search form-->
+                <form class="search-box">
+                    <div class="input-field z-depth-1">
+                        <!--Search input-->
+                        <input id="search" type="search" autocomplete="off" required>
+                        <!--End Search input-->
+                        <!--Search icon-->
+                        <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                        <!--End Search icon-->
+                        <!--close search box-->
+                        <i class="material-icons hide-show-nav-search">close</i>
+                        <!--End close search box-->
+                    </div>
+                </form>
+                <!--End Search form-->
+                <!--Search result-->
+                <div class="search-result">
+                    <div class="row">
+                        <div class="col s6 m8">
+                            <div class="search-result-title">Recent search</div>
+                            <ul class="search-result-body m-a-0">
+                                <li><a href="#" class="waves-effect waves-default">Form Validations</a></li>
+                                <li><a href="#">Range Slider</a></li>
+                                <li><a href="#">Animations</a></li>
+                                <li><a href="#">Change Password</a></li>
+                                <li><a href="#">Breadcrumbs</a></li>
+                                <li><a href="#">Collections</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col s6 m4">
+                            <div class="search-result-title">Most Visited Pages</div>
+                            <ul class="search-result-body m-a-0">
+                                <li><a href="#" class="waves-effect waves-default">Form Validations</a></li>
+                                <li><a href="#">Carousel</a></li>
+                                <li><a href="#">Animations</a></li>
+                                <li><a href="#">Change Password</a></li>
+                                <li><a href="#">Modals</a></li>
+                                <li><a href="#">Data Table</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+                <!--End search result-->
+            </div>
+            <!--Search box-->
+            <!-- //////////////////////////////////////////////////////////////////////////// -->
+
+
+            
+
+            <!--Right sidebar-->
+            <!-- //////////////////////////////////////////////////////////////////////////// -->
+            <aside>
+
+                <!-- rightsidebar overlay -->
+                <div class="right-sidebar-overlay hide"></div>
+                <!-- end rightsidebar overlay -->
+
+                <div class="right-sidebar z-depth-3">
+
+                    <!--right sidebar tab-->
+                    <ul class="tabs tabs-fixed-width tabs-right-sidebar">
+                        <li class="tab col s3"><a class="active" href="#settings">Settings</a></li>
+                        <li class="tab col s3"><a href="#notifications">Notifications</a></li>
+                    </ul>
+                    <!--End right sidebar tab-->
+
+                    <!--Right Sidebar body-->
+                    <div class="right-sidebar-body">
+                        <!--Notification body-->
+                        <div id="notifications">
+                            <ul class="content-list">
+                                <li>
+                                    <a href="#">
+                                        <span class="list-title white-text red">ORDER</span>
+                                        <span class="list-date">9 hours ago</span>
+                                        <h4 class="list-content-title">facilisis</h4>
+                                        <p class="list-content">
+                                            Etiam auctor porta augue sit amet facilisis. Sed libero nisi, scelerisque.
+                                        </p>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        <span class="list-title white-text blue">COMMENT</span>
+                                        <span class="list-date">10 hours ago</span>
+                                        <h4 class="list-content-title">porta augue</h4>
+                                        <p class="list-content">
+                                            Etiam auctor porta augue sit amet facilisis. Sed libero nisi, scelerisque.
+                                        </p>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        <span class="list-title white-text green">MEETING</span>
+                                        <span class="list-date">11 hours ago</span>
+                                        <h4 class="list-content-title">Sed libero</h4>
+                                        <p class="list-content">
+                                            Etiam auctor porta augue sit amet facilisis. Sed libero nisi, scelerisque.
+                                        </p>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        <span class="list-title white-text teal">EVENT</span>
+                                        <span class="list-date">12 hours ago</span>
+                                        <h4 class="list-content-title">sit amet</h4>
+                                        <p class="list-content">
+                                            Etiam auctor porta augue sit amet facilisis. Sed libero nisi, scelerisque.
+                                        </p>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        <span class="list-title white-text red">ORDER</span>
+                                        <span class="list-date">13 hours ago</span>
+                                        <h4 class="list-content-title">augue</h4>
+                                        <p class="list-content">
+                                            Etiam auctor porta augue sit amet facilisis. Sed libero nisi, scelerisque.
+                                        </p>
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <!--End Notification body-->
+
+                        <!--Settings body-->
+                        <div id="settings" class="settings-content">
+                            <h4 class="settings-content-title">Full Layout Options</h4>
+                            <p>
+                                <input class="with-gap" name="layout" type="radio" id="default-layout" checked/>
+                                <label for="default-layout">Fixed Header and Sidebar(Default)</label>
+                            </p>
+
+                            <p>
+                                <input class="with-gap" name="layout" type="radio" id="fixed-header-unfixed-sidebar" />
+                                <label for="fixed-header-unfixed-sidebar">Fixed Header Unfixed Sidebar</label>
+                            </p>
+
+                            <p>
+                                <input class="with-gap" name="layout" type="radio" id="unfixed-header-sidebar" />
+                                <label for="unfixed-header-sidebar">Unfixed Header and Sidebar</label>
+                            </p>
+
+                            <h4 class="settings-content-title">Boxed Layout Options</h4>
+                            <p>
+                                <input class="with-gap" name="layout" type="radio" id="default-boxed-layout" />
+                                <label for="default-boxed-layout">Fixed Header and Sidebar</label>
+                            </p>
+
+                            <p>
+                                <input class="with-gap" name="layout" type="radio" id="boxed-fixed-header-unfixed-sidebar" />
+                                <label for="boxed-fixed-header-unfixed-sidebar">Fixed Header Unfixed Sidebar</label>
+                            </p>
+
+                            <p>
+                                <input class="with-gap" name="layout" type="radio" id="boxed-unfixed-sidebar-header" />
+                                <label for="boxed-unfixed-sidebar-header">Unfixed Header and Sidebar</label>
+                            </p>
+                        </div>
+                        <!--End Settings body-->
+                    </div>
+                </div>
+                <!--End Right Sidebar body-->
+            </aside>
+            <!--End right sidebar-->
+            <!-- //////////////////////////////////////////////////////////////////////////// -->
+
+            <!-- //////////////////////////////////////////////////////////////////////////// -->
+            <!--Page Body-->
+            <main class="page-body">
+                <!--page title box-->
+                <div class="row">
+                    <div class="col s12 page-title-div">
+                        <!--Page Title-->
+                        <h1 class="header">ECharts Charts</h1>
+                        <p class="header-desc"><a href="https://ecomfe.github.io/echarts-doc/public/en/index.html" target="_blank">ECharts</a> written in pure JavaScript and based on <a href="http://ecomfe.github.io/zrender/" target="_blank">ZRender</a>, is a comprehensive
+                            charting library offering an easy way of adding intuitive, interactive, and highly customizable charts to your commercial products.</p>
+                        <!--Page breadcrumbs-->
+                        <ol class="breadcrumbs left">
+                            <li><a href="dashboard.html">Dashboard</a></li>
+                            <li>Charts</li>
+                            <li class="active">ECharts Charts</li>
+                        </ol>
+                        <!--End page breadcrumbs-->
+
+                        <!--Page help-->
+                        <a class='dropdown-button dropdown-hover waves-effect waves-light page-help right' href='javascript:void(0)' data-activates='dropdown-help'>
+                            <i class="material-icons">help</i>
+                        </a>
+                        <ul id='dropdown-help' class='dropdown-content'>
+                            <li><a href="https://ecomfe.github.io/echarts-doc/public/en/index.html" target="_blank">API</a></li>
+                            <li><a href="https://ecomfe.github.io/echarts-doc/public/en/index.html" target="_blank">Blog</a></li>
+                            <li><a href="https://ecomfe.github.io/echarts-doc/public/en/index.html" target="_blank">Docs</a></li>
+                        </ul>
+                        <!--end page help-->
+
+                    </div>
+                </div>
+                <!--end page title box-->
+                <!--start section-->
+                <section class="section">
+                    <!--start row-->
+                    <div class="row ">
+                        <!--start column-->
+                        <div class="col s12">
+                            <!-- Start Area Chart Card-->
+                            <div class="card">
+                                <!--card content-->
+                                <div class="card-content">
+
+                                    <!-- //////////////////////////////////////// -->
+                                    <!-- Area Chart -->
+
+                                    <!--card title-->
+                                    <h2 class="card-title header">Area Chart</h2>
+                                    <!--area chart content-->
+                                    <div id="echarts-area-chart" style="height:400px"></div>
+
+                                    <!--Area Chart sample code-->
+                                    <div class="row">
+                                        <div class="col s12">
+                                            <ul class="tabs ">
+                                                <li class="tab"><a class="active" href="#cja-sample-code-html">HTML</a></li>
+                                                <li class="tab"><a href="#cja-sample-code-js">JS</a></li>
+                                            </ul>
+
+                                            <div id="cja-sample-code-html">
+                                                <pre>
+                                                    <code class="language-html">
+&lt;div id=&quot;echarts-area-chart&quot; style=&quot;height:400px&quot;&gt;&lt;/div&gt;
+                                                    </code>
+                                                </pre>
+
+                                            </div>
+
+                                            <div id="cja-sample-code-js">
+                                                <pre>
+                                                    <code class=" language-javascript">
+var areaDom = document.getElementById("echarts-area-chart");
+var areaChart = echarts.init(areaDom);
+areaOption = {
+        tooltip: {
+            trigger: 'axis'
+        },
+        toolbox: {
+            show: true,
+            feature: {
+                saveAsImage: {
+                    show: true,
+                    title: 'Save'
+                }
+            }
+        },
+        legend: {
+            data: ['Dataset 1', 'Dataset 2', 'Dataset 3']
+        },
+        xAxis: {
+            type: 'category',
+            boundaryGap: false,
+            data: [2010, 2011, 2012, 2013, 2014, 2015, 2016]
+        },
+        yAxis: {
+            type: 'value'
+        },
+        series: [{
+            name: 'Dataset 1',
+            type: 'line',
+            smooth: true,
+            itemStyle: {
+                normal: {
+                    areaStyle: {
+                        type: 'default'
+                    }
+                }
+            },
+            data: [10, 12, 21, 54, 260, 830, 710]
+        }, {
+            name: 'Dataset 2',
+            type: 'line',
+            smooth: true,
+            itemStyle: {
+                normal: {
+                    areaStyle: {
+                        type: 'default'
+                    }
+                }
+            },
+            data: [30, 182, 434, 791, 390, 30, 10]
+        }, {
+            name: 'Dataset 3',
+            type: 'line',
+            smooth: true,
+            itemStyle: {
+                normal: {
+                    areaStyle: {
+                        type: 'default'
+                    }
+                }
+            },
+            data: [1320, 1132, 601, 234, 120, 90, 20]
+        }]
+    };
+    areaChart.setOption(areaOption, true);
+                                                    </code>
+                                                </pre>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--end Area Chart sample code-->
+
+                                    <!-- End Area Chart -->
+                                    <!-- //////////////////////////////////////// -->
+
+                                </div>
+                                <!--end card content-->
+                            </div>
+                            <!--end  Area Chart card-->
+
+
+                            <!-- Start Bar Chart Card-->
+                            <div class="card">
+                                <!--card content-->
+                                <div class="card-content">
+
+                                    <!-- //////////////////////////////////////// -->
+                                    <!-- Bar Chart -->
+
+                                    <!--card title-->
+                                    <h2 class="card-title header">Bar Chart</h2>
+                                    <!--Bar chart content-->
+                                    <div id="echarts-bar-chart" style="height:400px"></div>
+
+                                    <!--Bar Chart sample code-->
+                                    <div class="row">
+                                        <div class="col s12">
+                                            <ul class="tabs ">
+                                                <li class="tab"><a class="active" href="#gb-sample-code-html">HTML</a></li>
+                                                <li class="tab"><a href="#gb-sample-code-js">JS</a></li>
+                                            </ul>
+
+                                            <div id="gb-sample-code-html">
+                                                <pre>
+                                                    <code class="language-html">
+&lt;div id=&quot;echarts-bar-chart&quot; style=&quot;height:400px&quot;&gt;&lt;/div&gt;
+                                                    </code>
+                                                </pre>
+
+                                            </div>
+
+                                            <div id="gb-sample-code-js">
+                                                <pre>
+                                                    <code class=" language-javascript">
+var barDom = document.getElementById("echarts-bar-chart");
+var barChart = echarts.init(barDom);
+barOption = {
+    tooltip: {
+        trigger: 'axis'
+    },
+    legend: {
+        data: ['Dataset 1', 'Dataset 2']
+    },
+    toolbox: {
+        show: true,
+        feature: {
+            saveAsImage: {
+                show: true,
+                title: 'Save'
+            }
+        }
+    },
+    calculable: true,
+    xAxis: [{
+        type: 'category',
+        data: [2010, 2011, 2012, 2013, 2014, 2015, 2016]
+    }],
+    yAxis: [{
+        type: 'value'
+    }],
+    series: [{
+            name: 'Dataset 1',
+            type: 'bar',
+            data: [2.0, 4.9, 47.0, 23.2, 25.6, 76.7, 53.3]
+        },
+        {
+            name: 'Dataset 2',
+            type: 'bar',
+            data: [2.6, 117.9, 59.0, 26.4, 28.7, 86.0, 42.3]
+        }
+    ]
+};
+
+barChart.setOption(barOption, true);
+                                                    </code>
+                                                </pre>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--end Bar Chart sample code-->
+
+                                    <!-- End Bar Chart -->
+                                    <!-- //////////////////////////////////////// -->
+
+                                </div>
+                                <!--end card content-->
+                            </div>
+                            <!--end  Bar Chart card-->
+
+                            <!-- Start line Chart Card-->
+                            <div class="card">
+                                <!--card content-->
+                                <div class="card-content">
+
+                                    <!-- //////////////////////////////////////// -->
+                                    <!-- line Chart -->
+
+                                    <!--card title-->
+                                    <h2 class="card-title header">Line Chart</h2>
+                                    <!--line chart content-->
+                                    <div id="echarts-line-chart" style="height:400px"></div>
+
+                                    <!--line Chart sample code-->
+                                    <div class="row">
+                                        <div class="col s12">
+                                            <ul class="tabs ">
+                                                <li class="tab"><a class="active" href="#gl-sample-code-html">HTML</a></li>
+                                                <li class="tab"><a href="#gl-sample-code-js">JS</a></li>
+                                            </ul>
+
+                                            <div id="gl-sample-code-html">
+                                                <pre>
+                                                    <code class="language-html">
+&lt;div id=&quot;echarts-line-chart&quot; style=&quot;height:400px&quot;&gt;&lt;/div&gt;
+                                                    </code>
+                                                </pre>
+
+                                            </div>
+
+                                            <div id="gl-sample-code-js">
+                                                <pre>
+                                                    <code class=" language-javascript">
+var lineDom = document.getElementById("echarts-line-chart");
+var lineChart = echarts.init(lineDom);
+lineOption = {
+    tooltip: {
+        trigger: 'axis'
+    },
+    toolbox: {
+        show: true,
+        feature: {
+            saveAsImage: {
+                show: true,
+                title: 'Save'
+            }
+        }
+    },
+    legend: {
+        data: ['Dataset 1', 'Dataset 2', 'Dataset 3']
+    },
+    xAxis: {
+        type: 'category',
+        boundaryGap: false,
+        data: [2010, 2011, 2012, 2013, 2014, 2015, 2016]
+    },
+    yAxis: {
+        type: 'value'
+    },
+    series: [{
+        name: 'Dataset 1',
+        type: 'line',
+        smooth: true,
+        data: [10, 12, 21, 54, 260, 830, 710]
+    }, {
+        name: 'Dataset 2',
+        type: 'line',
+        smooth: true,
+        data: [30, 182, 434, 791, 390, 30, 10]
+    }, {
+        name: 'Dataset 3',
+        type: 'line',
+        smooth: true,
+        data: [1320, 1132, 601, 234, 120, 90, 20]
+    }]
+};
+lineChart.setOption(lineOption, true);
+                                                    </code>
+                                                </pre>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--end line Chart sample code-->
+
+                                    <!-- End line Chart -->
+                                    <!-- //////////////////////////////////////// -->
+
+                                </div>
+                                <!--end card content-->
+                            </div>
+                            <!--end  line Chart card-->
+
+                            <!-- Start Pie Chart Card-->
+                            <div class="card">
+                                <!--card content-->
+                                <div class="card-content">
+
+                                    <!-- //////////////////////////////////////// -->
+                                    <!-- Pie Chart -->
+
+                                    <!--card title-->
+                                    <h2 class="card-title header">Pie Chart</h2>
+                                    <!--Pie chart content-->
+                                    <div id="echarts-pie-chart" style="height:400px"></div>
+
+                                    <!--Pie Chart sample code-->
+                                    <div class="row">
+                                        <div class="col s12">
+                                            <ul class="tabs ">
+                                                <li class="tab"><a class="active" href="#gp-sample-code-html">HTML</a></li>
+                                                <li class="tab"><a href="#gp-sample-code-js">JS</a></li>
+                                            </ul>
+
+                                            <div id="gp-sample-code-html">
+                                                <pre>
+                                                    <code class="language-html">
+&lt;div id=&quot;echarts-pie-chart&quot; style=&quot;height:400px&quot;&gt;&lt;/div&gt;
+                                                    </code>
+                                                </pre>
+
+                                            </div>
+
+                                            <div id="gp-sample-code-js">
+                                                <pre>
+                                                    <code class=" language-javascript">
+var pieDom = document.getElementById("echarts-pie-chart");
+var pieChart = echarts.init(pieDom);
+pieOption = {
+    title: {
+        text: 'Pie Chart',
+        subtext: 'Dataset',
+        x: 'center'
+    },
+    tooltip: {
+        trigger: 'item',
+        formatter: "{a} <br/>{b} : {c} ({d}%)"
+    },
+    legend: {
+        orient: 'vertical',
+        x: 'left',
+        data: ['dataset 1', 'dataset 2', 'dataset 3', 'dataset 4', 'dataset 5']
+    },
+    toolbox: {
+        show: true,
+        feature: {
+            saveAsImage: {
+                show: true,
+                title: 'Save'
+            }
+        }
+    },
+    calculable: true,
+    series: [{
+        name: 'Dataset',
+        type: 'pie',
+        radius: '55%',
+        center: ['50%', '60%'],
+        data: [
+            { value: 335, name: 'dataset 1' },
+            { value: 310, name: 'dataset 2' },
+            { value: 234, name: 'dataset 3' },
+            { value: 135, name: 'dataset 4' },
+            { value: 1548, name: 'dataset 5' }
+        ]
+    }]
+};
+pieChart.setOption(pieOption, true);
+
+                                                    </code>
+                                                </pre>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--end Pie Chart sample code-->
+
+                                    <!-- End Pie Chart -->
+                                    <!-- //////////////////////////////////////// -->
+
+                                </div>
+                                <!--end card content-->
+                            </div>
+                            <!--end  Pie Chart card-->
+
+                            <!-- Start Donut Chart Card-->
+                            <div class="card">
+                                <!--card content-->
+                                <div class="card-content">
+
+                                    <!-- //////////////////////////////////////// -->
+                                    <!-- Donut Chart -->
+
+                                    <!--card title-->
+                                    <h2 class="card-title header">Donut Chart</h2>
+                                    <!--Donut chart content-->
+                                    <div id="echarts-doughnut-chart" style="height:400px"></div>
+
+                                    <!--Donut Chart sample code-->
+                                    <div class="row">
+                                        <div class="col s12">
+                                            <ul class="tabs ">
+                                                <li class="tab"><a class="active" href="#gd-sample-code-html">HTML</a></li>
+                                                <li class="tab"><a href="#gd-sample-code-js">JS</a></li>
+                                            </ul>
+
+                                            <div id="gd-sample-code-html">
+                                                <pre>
+                                                    <code class="language-html">
+&lt;div id=&quot;echarts-doughnut-chart&quot; style=&quot;height:400px&quot;&gt;&lt;/div&gt;
+                                                    </code>
+                                                </pre>
+
+                                            </div>
+
+                                            <div id="gd-sample-code-js">
+                                                <pre>
+                                                    <code class=" language-javascript">
+var doughnutDom = document.getElementById("echarts-doughnut-chart");
+var doughnutChart = echarts.init(doughnutDom);
+doughnutOption = {
+    title: {
+        text: 'Doughnut Chart',
+        subtext: 'Dataset',
+        x: 'center'
+    },
+    tooltip: {
+        trigger: 'item',
+        formatter: "{a} <br/>{b} : {c} ({d}%)"
+    },
+    legend: {
+        orient: 'vertical',
+        x: 'left',
+        data: ['dataset 1', 'dataset 2', 'dataset 3', 'dataset 4', 'dataset 5']
+    },
+    toolbox: {
+        show: true,
+        feature: {
+            saveAsImage: {
+                show: true,
+                title: 'Save'
+            }
+        }
+    },
+    series: [{
+        name: 'Dataset',
+        type: 'pie',
+        radius: ['50%', '70%'],
+        itemStyle: {
+            normal: {
+                label: {
+                    show: false
+                },
+                labelLine: {
+                    show: false
+                }
+            },
+            emphasis: {
+                label: {
+                    show: true,
+                    position: 'center',
+                    textStyle: {
+                        fontSize: '30',
+                        fontWeight: 'bold'
+                    }
+                }
+            }
+        },
+        data: [
+            { value: 335, name: 'dataset 1' },
+            { value: 310, name: 'dataset 2' },
+            { value: 234, name: 'dataset 3' },
+            { value: 135, name: 'dataset 4' },
+            { value: 1548, name: 'dataset 5' }
+        ]
+    }]
+};
+doughnutChart.setOption(doughnutOption, true);
+                                                    </code>
+                                                </pre>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--end Donut Chart sample code-->
+
+                                    <!-- End Donut Chart -->
+                                    <!-- //////////////////////////////////////// -->
+
+                                </div>
+                                <!--end card content-->
+                            </div>
+                            <!--end  Combo Chart card-->
+
+                            <!-- Start Combo Chart Card-->
+                            <div class="card">
+                                <!--card content-->
+                                <div class="card-content">
+
+                                    <!-- //////////////////////////////////////// -->
+                                    <!-- Combo Chart -->
+
+                                    <!--card title-->
+                                    <h2 class="card-title header">Combo Chart</h2>
+                                    <!--Combo chart content-->
+                                    <div id="echarts-combo-chart" style="height:400px"></div>
+
+                                    <!--Combo Chart sample code-->
+                                    <div class="row">
+                                        <div class="col s12">
+                                            <ul class="tabs ">
+                                                <li class="tab"><a class="active" href="#gco-sample-code-html">HTML</a></li>
+                                                <li class="tab"><a href="#gco-sample-code-js">JS</a></li>
+                                            </ul>
+
+                                            <div id="gco-sample-code-html">
+                                                <pre>
+                                                    <code class="language-html">
+&lt;div id=&quot;echarts-combo-chart&quot; style=&quot;height:400px&quot;&gt;&lt;/div&gt;
+                                                    </code>
+                                                </pre>
+
+                                            </div>
+
+                                            <div id="gco-sample-code-js">
+                                                <pre>
+                                                    <code class=" language-javascript">
+var comboDom = document.getElementById("echarts-combo-chart");
+var comboChart = echarts.init(comboDom);
+comboOption = {
+    tooltip: {
+        trigger: 'axis'
+    },
+    legend: {
+        data: ['Dataset 1', 'Dataset 2', 'Dataset 3']
+    },
+    toolbox: {
+        show: true,
+        feature: {
+            saveAsImage: {
+                show: true,
+                title: 'Save'
+            }
+        }
+    },
+    calculable: true,
+    xAxis: [{
+        type: 'category',
+        data: [2010, 2011, 2012, 2013, 2014, 2015, 2016]
+    }],
+    yAxis: [{
+        type: 'value'
+    }],
+    series: [{
+            name: 'Dataset 1',
+            type: 'bar',
+            data: [2.0, 4.9, 47.0, 23.2, 25.6, 76.7, 53.3]
+        },
+        {
+            name: 'Dataset 2',
+            type: 'bar',
+            data: [2.6, 117.9, 59.0, 26.4, 28.7, 86.0, 42.3]
+        },
+        {
+            name: 'Dataset 3',
+            type: 'line',
+            smooth: true,
+            data: [10, 9, 19, 67, 89, 100, 120]
+        }
+    ]
+};
+
+comboChart.setOption(comboOption, true);
+                                                    </code>
+                                                </pre>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--end Combo Chart sample code-->
+
+                                    <!-- End Combo Chart -->
+                                    <!-- //////////////////////////////////////// -->
+
+                                </div>
+                                <!--end card content-->
+                            </div>
+                            <!--end  Combo Chart card-->
+
+                            <!-- Start Radar Chart Card-->
+                            <div class="card">
+                                <!--card content-->
+                                <div class="card-content">
+
+                                    <!-- //////////////////////////////////////// -->
+                                    <!-- Radar Chart -->
+
+                                    <!--card title-->
+                                    <h2 class="card-title header">Radar Chart</h2>
+                                    <!--Radar chart content-->
+                                    <div id="echarts-radar-chart" style="height:400px"></div>
+
+                                    <!--Radar Chart sample code-->
+                                    <div class="row">
+                                        <div class="col s12">
+                                            <ul class="tabs ">
+                                                <li class="tab"><a class="active" href="#gbu-sample-code-html">HTML</a></li>
+                                                <li class="tab"><a href="#gbu-sample-code-js">JS</a></li>
+                                            </ul>
+
+                                            <div id="gbu-sample-code-html">
+                                                <pre>
+                                                    <code class="language-html">
+&lt;div id=&quot;echarts-radar-chart&quot; style=&quot;height:400px&quot;&gt;&lt;/div&gt;
+                                                    </code>
+                                                </pre>
+
+                                            </div>
+
+                                            <div id="gbu-sample-code-js">
+                                                <pre>
+                                                    <code class=" language-javascript">
+var radarDom = document.getElementById("echarts-radar-chart");
+var radarChart = echarts.init(radarDom);
+radarOption = {
+    title: {
+        text: 'Budget vs spending'
+    },
+    tooltip: {},
+    legend: {
+        data: ['Allocated Budget', 'Actual Spending']
+    },
+    toolbox: {
+        show: true,
+        feature: {
+            saveAsImage: {
+                show: true,
+                title: 'Save'
+            }
+        }
+    },
+    radar: {
+        shape: 'circle',
+        indicator: [
+            { name: 'sales', max: 6500 },
+            { name: 'Administration', max: 16000 },
+            { name: 'Information Techology', max: 30000 },
+            { name: 'Customer Support', max: 38000 },
+            { name: 'Development', max: 52000 },
+            { name: 'Marketing', max: 25000 }
+        ]
+    },
+    series: [{
+        name: 'Budget vs spending',
+        type: 'radar',
+        data: [{
+                value: [4300, 10000, 28000, 35000, 50000, 19000],
+                name: 'Allocated Budget'
+            },
+            {
+                value: [5000, 14000, 28000, 31000, 42000, 21000],
+                name: 'Actual Spending'
+            }
+        ]
+    }]
+};
+radarChart.setOption(radarOption, true);
+
+                                                    </code>
+                                                </pre>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--end Radar Chart sample code-->
+
+                                    <!-- End Radar Chart -->
+                                    <!-- //////////////////////////////////////// -->
+
+                                </div>
+                                <!--end card content-->
+                            </div>
+                            <!--end  Radar Chart card-->
+
+                            <!-- Start Geo Chart Card-->
+                            <div class="card">
+                                <!--card content-->
+                                <div class="card-content">
+
+                                    <!-- //////////////////////////////////////// -->
+                                    <!-- Geo Chart -->
+
+                                    <!--card title-->
+                                    <h2 class="card-title header">Geo Chart</h2>
+                                    <!--Geo chart content-->
+                                    <div id="echarts-geo-chart" style="height:600px"></div>
+
+                                    <!--Geo Chart sample code-->
+                                    <div class="row">
+                                        <div class="col s12">
+                                            <ul class="tabs ">
+                                                <li class="tab"><a class="active" href="#gge-sample-code-html">HTML</a></li>
+                                                <li class="tab"><a href="#gge-sample-code-js">JS</a></li>
+                                            </ul>
+
+                                            <div id="gge-sample-code-html">
+                                                <pre>
+                                                    <code class="language-html">
+&lt;div id=&quot;echarts-geo-chart&quot; style=&quot;height:600px&quot;&gt;&lt;/div&gt;
+                                                    </code>
+                                                </pre>
+
+                                            </div>
+
+                                            <div id="gge-sample-code-js">
+                                                <pre>
+                                                    <code class=" language-javascript">
+var geoDom = document.getElementById("echarts-geo-chart");
+var geoChart = echarts.init(geoDom);
+geoOption = {
+    title: {
+        text: 'World Population (2010)',
+        subtext: 'from United Nations, Total population, both sexes combined, as of 1 July (thousands)',
+        sublink: 'http://esa.un.org/wpp/Excel-Data/population.htm',
+        x: 'center',
+        y: 'top'
+    },
+    tooltip: {
+        trigger: 'item',
+        formatter: function(params) {
+            var value = (params.value + '').split('.');
+            value = value[0].replace(/(\d{1,3})(?=(?:\d{3})+(?!\d))/g, '$1,') +
+                '.' + value[1];
+            return params.seriesName + '<br/>' + params.name + ' : ' + value;
+        }
+    },
+    toolbox: {
+        show: true,
+        orient: 'vertical',
+        x: 'right',
+        y: 'center',
+        feature: {
+            saveAsImage: {
+                show: true,
+                title: 'Save'
+            }
+        }
+    },
+    dataRange: {
+        min: 0,
+        max: 1000000,
+        text: ['High', 'Low'],
+        realtime: false,
+        calculable: true,
+        color: ['orangered', 'yellow', 'lightskyblue']
+    },
+    series: [{
+        name: 'World Population (2010)',
+        type: 'map',
+        mapType: 'world',
+        roam: true,
+        mapLocation: {
+            y: 60
+        },
+        itemStyle: {
+            emphasis: { label: { show: true } }
+        },
+        data: [
+            { name: 'Afghanistan', value: 28397.812 },
+            { name: 'Angola', value: 19549.124 },
+            { name: 'Albania', value: 3150.143 },
+            { name: 'United Arab Emirates', value: 8441.537 },
+            { name: 'Argentina', value: 40374.224 },
+            { name: 'Armenia', value: 2963.496 },
+            { name: 'French Southern and Antarctic Lands', value: 268.065 },
+            { name: 'Australia', value: 22404.488 },
+            { name: 'Austria', value: 8401.924 },
+            { name: 'Azerbaijan', value: 9094.718 },
+            { name: 'Burundi', value: 9232.753 },
+            { name: 'Belgium', value: 10941.288 },
+            { name: 'Benin', value: 9509.798 },
+            { name: 'Burkina Faso', value: 15540.284 },
+            { name: 'Bangladesh', value: 151125.475 },
+            { name: 'Bulgaria', value: 7389.175 },
+            { name: 'The Bahamas', value: 66402.316 },
+            { name: 'Bosnia and Herzegovina', value: 3845.929 },
+            { name: 'Belarus', value: 9491.07 },
+            { name: 'Belize', value: 308.595 },
+            { name: 'Bermuda', value: 64.951 },
+            { name: 'Bolivia', value: 716.939 },
+            { name: 'Brazil', value: 195210.154 },
+            { name: 'Brunei', value: 27.223 },
+            { name: 'Bhutan', value: 716.939 },
+            { name: 'Botswana', value: 1969.341 },
+            { name: 'Central African Republic', value: 4349.921 },
+            { name: 'Canada', value: 34126.24 },
+            { name: 'Switzerland', value: 7830.534 },
+            { name: 'Chile', value: 17150.76 },
+            { name: 'China', value: 1359821.465 },
+            { name: 'Ivory Coast', value: 60508.978 },
+            { name: 'Cameroon', value: 20624.343 },
+            { name: 'Democratic Republic of the Congo', value: 62191.161 },
+            { name: 'Republic of the Congo', value: 3573.024 },
+            { name: 'Colombia', value: 46444.798 },
+            { name: 'Costa Rica', value: 4669.685 },
+            { name: 'Cuba', value: 11281.768 },
+            { name: 'Northern Cyprus', value: 1.468 },
+            { name: 'Cyprus', value: 1103.685 },
+            { name: 'Czech Republic', value: 10553.701 },
+            { name: 'Germany', value: 83017.404 },
+            { name: 'Djibouti', value: 834.036 },
+            { name: 'Denmark', value: 5550.959 },
+            { name: 'Dominican Republic', value: 10016.797 },
+            { name: 'Algeria', value: 37062.82 },
+            { name: 'Ecuador', value: 15001.072 },
+            { name: 'Egypt', value: 78075.705 },
+            { name: 'Eritrea', value: 5741.159 },
+            { name: 'Spain', value: 46182.038 },
+            { name: 'Estonia', value: 1298.533 },
+            { name: 'Ethiopia', value: 87095.281 },
+            { name: 'Finland', value: 5367.693 },
+            { name: 'Fiji', value: 860.559 },
+            { name: 'Falkland Islands', value: 49.581 },
+            { name: 'France', value: 63230.866 },
+            { name: 'Gabon', value: 1556.222 },
+            { name: 'United Kingdom', value: 62066.35 },
+            { name: 'Georgia', value: 4388.674 },
+            { name: 'Ghana', value: 24262.901 },
+            { name: 'Guinea', value: 10876.033 },
+            { name: 'Gambia', value: 1680.64 },
+            { name: 'Guinea Bissau', value: 10876.033 },
+            { name: 'Equatorial Guinea', value: 696.167 },
+            { name: 'Greece', value: 11109.999 },
+            { name: 'Greenland', value: 56.546 },
+            { name: 'Guatemala', value: 14341.576 },
+            { name: 'French Guiana', value: 231.169 },
+            { name: 'Guyana', value: 786.126 },
+            { name: 'Honduras', value: 7621.204 },
+            { name: 'Croatia', value: 4338.027 },
+            { name: 'Haiti', value: 9896.4 },
+            { name: 'Hungary', value: 10014.633 },
+            { name: 'Indonesia', value: 240676.485 },
+            { name: 'India', value: 1205624.648 },
+            { name: 'Ireland', value: 4467.561 },
+            { name: 'Iran', value: 240676.485 },
+            { name: 'Iraq', value: 30962.38 },
+            { name: 'Iceland', value: 318.042 },
+            { name: 'Israel', value: 7420.368 },
+            { name: 'Italy', value: 60508.978 },
+            { name: 'Jamaica', value: 2741.485 },
+            { name: 'Jordan', value: 6454.554 },
+            { name: 'Japan', value: 127352.833 },
+            { name: 'Kazakhstan', value: 15921.127 },
+            { name: 'Kenya', value: 40909.194 },
+            { name: 'Kyrgyzstan', value: 5334.223 },
+            { name: 'Cambodia', value: 14364.931 },
+            { name: 'South Korea', value: 51452.352 },
+            { name: 'Kosovo', value: 97.743 },
+            { name: 'Kuwait', value: 2991.58 },
+            { name: 'Laos', value: 6395.713 },
+            { name: 'Lebanon', value: 4341.092 },
+            { name: 'Liberia', value: 3957.99 },
+            { name: 'Libya', value: 6040.612 },
+            { name: 'Sri Lanka', value: 20758.779 },
+            { name: 'Lesotho', value: 2008.921 },
+            { name: 'Lithuania', value: 3068.457 },
+            { name: 'Luxembourg', value: 507.885 },
+            { name: 'Latvia', value: 2090.519 },
+            { name: 'Morocco', value: 31642.36 },
+            { name: 'Moldova', value: 103.619 },
+            { name: 'Madagascar', value: 21079.532 },
+            { name: 'Mexico', value: 117886.404 },
+            { name: 'Macedonia', value: 507.885 },
+            { name: 'Mali', value: 13985.961 },
+            { name: 'Myanmar', value: 51931.231 },
+            { name: 'Montenegro', value: 620.078 },
+            { name: 'Mongolia', value: 2712.738 },
+            { name: 'Mozambique', value: 23967.265 },
+            { name: 'Mauritania', value: 3609.42 },
+            { name: 'Malawi', value: 15013.694 },
+            { name: 'Malaysia', value: 28275.835 },
+            { name: 'Namibia', value: 2178.967 },
+            { name: 'New Caledonia', value: 246.379 },
+            { name: 'Niger', value: 15893.746 },
+            { name: 'Nigeria', value: 159707.78 },
+            { name: 'Nicaragua', value: 5822.209 },
+            { name: 'Netherlands', value: 16615.243 },
+            { name: 'Norway', value: 4891.251 },
+            { name: 'Nepal', value: 26846.016 },
+            { name: 'New Zealand', value: 4368.136 },
+            { name: 'Oman', value: 2802.768 },
+            { name: 'Pakistan', value: 173149.306 },
+            { name: 'Panama', value: 3678.128 },
+            { name: 'Peru', value: 29262.83 },
+            { name: 'Philippines', value: 93444.322 },
+            { name: 'Papua New Guinea', value: 6858.945 },
+            { name: 'Poland', value: 38198.754 },
+            { name: 'Puerto Rico', value: 3709.671 },
+            { name: 'North Korea', value: 1.468 },
+            { name: 'Portugal', value: 10589.792 },
+            { name: 'Paraguay', value: 6459.721 },
+            { name: 'Qatar', value: 1749.713 },
+            { name: 'Romania', value: 21861.476 },
+            { name: 'Russia', value: 21861.476 },
+            { name: 'Rwanda', value: 10836.732 },
+            { name: 'Western Sahara', value: 514.648 },
+            { name: 'Saudi Arabia', value: 27258.387 },
+            { name: 'Sudan', value: 35652.002 },
+            { name: 'South Sudan', value: 9940.929 },
+            { name: 'Senegal', value: 12950.564 },
+            { name: 'Solomon Islands', value: 526.447 },
+            { name: 'Sierra Leone', value: 5751.976 },
+            { name: 'El Salvador', value: 6218.195 },
+            { name: 'Somaliland', value: 9636.173 },
+            { name: 'Somalia', value: 9636.173 },
+            { name: 'Republic of Serbia', value: 3573.024 },
+            { name: 'Suriname', value: 524.96 },
+            { name: 'Slovakia', value: 5433.437 },
+            { name: 'Slovenia', value: 2054.232 },
+            { name: 'Sweden', value: 9382.297 },
+            { name: 'Swaziland', value: 1193.148 },
+            { name: 'Syria', value: 7830.534 },
+            { name: 'Chad', value: 11720.781 },
+            { name: 'Togo', value: 6306.014 },
+            { name: 'Thailand', value: 66402.316 },
+            { name: 'Tajikistan', value: 7627.326 },
+            { name: 'Turkmenistan', value: 5041.995 },
+            { name: 'East Timor', value: 10016.797 },
+            { name: 'Trinidad and Tobago', value: 1328.095 },
+            { name: 'Tunisia', value: 10631.83 },
+            { name: 'Turkey', value: 72137.546 },
+            { name: 'United Republic of Tanzania', value: 44973.33 },
+            { name: 'Uganda', value: 33987.213 },
+            { name: 'Ukraine', value: 46050.22 },
+            { name: 'Uruguay', value: 3371.982 },
+            { name: 'United States of America', value: 312247.116 },
+            { name: 'Uzbekistan', value: 27769.27 },
+            { name: 'Venezuela', value: 236.299 },
+            { name: 'Vietnam', value: 89047.397 },
+            { name: 'Vanuatu', value: 236.299 },
+            { name: 'West Bank', value: 13.565 },
+            { name: 'Yemen', value: 22763.008 },
+            { name: 'South Africa', value: 51452.352 },
+            { name: 'Zambia', value: 13216.985 },
+            { name: 'Zimbabwe', value: 13076.978 }
+        ]
+    }]
+};
+
+geoChart.setOption(geoOption, true);
+                                                    </code>
+                                                </pre>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--end Geo Chart sample code-->
+
+                                    <!-- End Geo Chart -->
+                                    <!-- //////////////////////////////////////// -->
+
+                                </div>
+                                <!--end card content-->
+                            </div>
+                            <!--end  Geo Chart card-->
+
+
+                        </div>
+                        <!--end column-->
+                    </div>
+                    <!--end row-->
+                </section>
+                <!--end section-->
+
+            </main>
+            <!--End page body-->
+            <!-- //////////////////////////////////////////////////////////////////////////// -->
+
+            <!-- //////////////////////////////////////////////////////////////////////////// -->
+            <!--Footer-->
+            <footer class="page-footer">
+
+                <div class="footer-copyright">
+                    <div class="left">&copy; materialcss</div>
+                    <div class="right"><a href="javascript:void(0)" id="scroll-top-dash" class="tooltipped" data-position="top" data-delay="50" data-tooltip="Go top"><i class="material-icons">arrow_upward</i></a></div>
+                </div>
+            </footer>
+            <!--End footer-->
+            <!-- //////////////////////////////////////////////////////////////////////////// -->
+        </div>
+        <!--End page control-->
+        <!-- //////////////////////////////////////////////////////////////////////////// -->
+
+    </div>
+    <!--End page wrapper-->
+    <!-- //////////////////////////////////////////////////////////////////////////// -->
+
+    <!-- //////////////////////////////////////////////////////////////////////////// -->
+    <!--  Scripts-->
+
+    <!-- Jquery -->
+    <script src="http://designlayout.xyz/materialcss/asset/vendors/jquery/jquery.min.js" type="text/javascript"></script>
+    <!-- Materialize js -->
+    <script src="http://designlayout.xyz/materialcss/asset/vendors/materialize/materialize.min.js" type="text/javascript"></script>
+    <!-- prism syntax highlighter -->
+    <script src="http://designlayout.xyz/materialcss/asset/vendors/prism/prism.js" type="text/javascript"></script>
+    <!-- echarts chart -->
+    <script src="http://designlayout.xyz/materialcss/asset/vendors/echarts/echarts.min.js" type="text/javascript"></script>
+    <!-- echarts map extension -->
+    <script src="http://designlayout.xyz/materialcss/asset/vendors/echarts/map-world.js" type="text/javascript"></script>
+    <!-- materialcss theme script -->
+    <script src="http://designlayout.xyz/materialcss/asset/js/app.js" type="text/javascript"></script>
+    <!-- Your custom script -->
+    <script src="http://designlayout.xyz/materialcss/asset/js/script.js" type="text/javascript"></script>
+    <!-- ECharts Charts Demo -->
+    <script>
+        // Area chart
+        var areaDom = document.getElementById("echarts-area-chart");
+        var areaChart = echarts.init(areaDom);
+        areaOption = {
+            tooltip: {
+                trigger: 'axis'
+            },
+            toolbox: {
+                show: true,
+                feature: {
+                    saveAsImage: {
+                        show: true,
+                        title: 'Save'
+                    }
+                }
+            },
+            legend: {
+                data: ['Dataset 1', 'Dataset 2', 'Dataset 3']
+            },
+            xAxis: {
+                type: 'category',
+                boundaryGap: false,
+                data: [2010, 2011, 2012, 2013, 2014, 2015, 2016]
+            },
+            yAxis: {
+                type: 'value'
+            },
+            series: [{
+                name: 'Dataset 1',
+                type: 'line',
+                smooth: true,
+                itemStyle: {
+                    normal: {
+                        areaStyle: {
+                            type: 'default'
+                        }
+                    }
+                },
+                data: [10, 12, 21, 54, 260, 830, 710]
+            }, {
+                name: 'Dataset 2',
+                type: 'line',
+                smooth: true,
+                itemStyle: {
+                    normal: {
+                        areaStyle: {
+                            type: 'default'
+                        }
+                    }
+                },
+                data: [30, 182, 434, 791, 390, 30, 10]
+            }, {
+                name: 'Dataset 3',
+                type: 'line',
+                smooth: true,
+                itemStyle: {
+                    normal: {
+                        areaStyle: {
+                            type: 'default'
+                        }
+                    }
+                },
+                data: [1320, 1132, 601, 234, 120, 90, 20]
+            }]
+        };
+        areaChart.setOption(areaOption, true);
+
+        // Bar chart
+
+        var barDom = document.getElementById("echarts-bar-chart");
+        var barChart = echarts.init(barDom);
+        barOption = {
+            tooltip: {
+                trigger: 'axis'
+            },
+            legend: {
+                data: ['Dataset 1', 'Dataset 2']
+            },
+            toolbox: {
+                show: true,
+                feature: {
+                    saveAsImage: {
+                        show: true,
+                        title: 'Save'
+                    }
+                }
+            },
+            calculable: true,
+            xAxis: [{
+                type: 'category',
+                data: [2010, 2011, 2012, 2013, 2014, 2015, 2016]
+            }],
+            yAxis: [{
+                type: 'value'
+            }],
+            series: [{
+                name: 'Dataset 1',
+                type: 'bar',
+                data: [2.0, 4.9, 47.0, 23.2, 25.6, 76.7, 53.3]
+            }, {
+                name: 'Dataset 2',
+                type: 'bar',
+                data: [2.6, 117.9, 59.0, 26.4, 28.7, 86.0, 42.3]
+            }]
+        };
+
+        barChart.setOption(barOption, true);
+
+        // line chart
+
+        var lineDom = document.getElementById("echarts-line-chart");
+        var lineChart = echarts.init(lineDom);
+        lineOption = {
+            tooltip: {
+                trigger: 'axis'
+            },
+            toolbox: {
+                show: true,
+                feature: {
+                    saveAsImage: {
+                        show: true,
+                        title: 'Save'
+                    }
+                }
+            },
+            legend: {
+                data: ['Dataset 1', 'Dataset 2', 'Dataset 3']
+            },
+            xAxis: {
+                type: 'category',
+                boundaryGap: false,
+                data: [2010, 2011, 2012, 2013, 2014, 2015, 2016]
+            },
+            yAxis: {
+                type: 'value'
+            },
+            series: [{
+                name: 'Dataset 1',
+                type: 'line',
+                smooth: true,
+                data: [10, 12, 21, 54, 260, 830, 710]
+            }, {
+                name: 'Dataset 2',
+                type: 'line',
+                smooth: true,
+                data: [30, 182, 434, 791, 390, 30, 10]
+            }, {
+                name: 'Dataset 3',
+                type: 'line',
+                smooth: true,
+                data: [1320, 1132, 601, 234, 120, 90, 20]
+            }]
+        };
+        lineChart.setOption(lineOption, true);
+
+        // pie chart
+
+        var pieDom = document.getElementById("echarts-pie-chart");
+        var pieChart = echarts.init(pieDom);
+        pieOption = {
+            title: {
+                text: 'Pie Chart',
+                subtext: 'Dataset',
+                x: 'center'
+            },
+            tooltip: {
+                trigger: 'item',
+                formatter: "{a} <br/>{b} : {c} ({d}%)"
+            },
+            legend: {
+                orient: 'vertical',
+                x: 'left',
+                data: ['dataset 1', 'dataset 2', 'dataset 3', 'dataset 4', 'dataset 5']
+            },
+            toolbox: {
+                show: true,
+                feature: {
+                    saveAsImage: {
+                        show: true,
+                        title: 'Save'
+                    }
+                }
+            },
+            calculable: true,
+            series: [{
+                name: 'Dataset',
+                type: 'pie',
+                radius: '55%',
+                center: ['50%', '60%'],
+                data: [{
+                    value: 335,
+                    name: 'dataset 1'
+                }, {
+                    value: 310,
+                    name: 'dataset 2'
+                }, {
+                    value: 234,
+                    name: 'dataset 3'
+                }, {
+                    value: 135,
+                    name: 'dataset 4'
+                }, {
+                    value: 1548,
+                    name: 'dataset 5'
+                }]
+            }]
+        };
+        pieChart.setOption(pieOption, true);
+
+        // doughnut chart
+
+        var doughnutDom = document.getElementById("echarts-doughnut-chart");
+        var doughnutChart = echarts.init(doughnutDom);
+        doughnutOption = {
+            title: {
+                text: 'Doughnut Chart',
+                subtext: 'Dataset',
+                x: 'center'
+            },
+            tooltip: {
+                trigger: 'item',
+                formatter: "{a} <br/>{b} : {c} ({d}%)"
+            },
+            legend: {
+                orient: 'vertical',
+                x: 'left',
+                data: ['dataset 1', 'dataset 2', 'dataset 3', 'dataset 4', 'dataset 5']
+            },
+            toolbox: {
+                show: true,
+                feature: {
+                    saveAsImage: {
+                        show: true,
+                        title: 'Save'
+                    }
+                }
+            },
+            series: [{
+                name: 'Dataset',
+                type: 'pie',
+                radius: ['50%', '70%'],
+                itemStyle: {
+                    normal: {
+                        label: {
+                            show: false
+                        },
+                        labelLine: {
+                            show: false
+                        }
+                    },
+                    emphasis: {
+                        label: {
+                            show: true,
+                            position: 'center',
+                            textStyle: {
+                                fontSize: '30',
+                                fontWeight: 'bold'
+                            }
+                        }
+                    }
+                },
+                data: [{
+                    value: 335,
+                    name: 'dataset 1'
+                }, {
+                    value: 310,
+                    name: 'dataset 2'
+                }, {
+                    value: 234,
+                    name: 'dataset 3'
+                }, {
+                    value: 135,
+                    name: 'dataset 4'
+                }, {
+                    value: 1548,
+                    name: 'dataset 5'
+                }]
+            }]
+        };
+        doughnutChart.setOption(doughnutOption, true);
+
+        // Combo chart
+
+        var comboDom = document.getElementById("echarts-combo-chart");
+        var comboChart = echarts.init(comboDom);
+        comboOption = {
+            tooltip: {
+                trigger: 'axis'
+            },
+            legend: {
+                data: ['Dataset 1', 'Dataset 2', 'Dataset 3']
+            },
+            toolbox: {
+                show: true,
+                feature: {
+                    saveAsImage: {
+                        show: true,
+                        title: 'Save'
+                    }
+                }
+            },
+            calculable: true,
+            xAxis: [{
+                type: 'category',
+                data: [2010, 2011, 2012, 2013, 2014, 2015, 2016]
+            }],
+            yAxis: [{
+                type: 'value'
+            }],
+            series: [{
+                name: 'Dataset 1',
+                type: 'bar',
+                data: [2.0, 4.9, 47.0, 23.2, 25.6, 76.7, 53.3]
+            }, {
+                name: 'Dataset 2',
+                type: 'bar',
+                data: [2.6, 117.9, 59.0, 26.4, 28.7, 86.0, 42.3]
+            }, {
+                name: 'Dataset 3',
+                type: 'line',
+                smooth: true,
+                data: [10, 9, 19, 67, 89, 100, 120]
+            }]
+        };
+
+        comboChart.setOption(comboOption, true);
+
+        // Radar chart
+
+        var radarDom = document.getElementById("echarts-radar-chart");
+        var radarChart = echarts.init(radarDom);
+        radarOption = {
+            title: {
+                text: 'Budget vs spending'
+            },
+            tooltip: {
+                trigger: 'axis'
+            },
+            legend: {
+                data: ['Allocated Budget', 'Actual Spending']
+            },
+            toolbox: {
+                show: true,
+                feature: {
+                    saveAsImage: {
+                        show: true,
+                        title: 'Save'
+                    }
+                }
+            },
+            radar: {
+                shape: 'circle',
+                indicator: [{
+                    name: 'sales',
+                    max: 6500
+                }, {
+                    name: 'Administration',
+                    max: 16000
+                }, {
+                    name: 'Information Techology',
+                    max: 30000
+                }, {
+                    name: 'Customer Support',
+                    max: 38000
+                }, {
+                    name: 'Development',
+                    max: 52000
+                }, {
+                    name: 'Marketing',
+                    max: 25000
+                }]
+            },
+            series: [{
+                name: 'Budget vs spending',
+                type: 'radar',
+                data: [{
+                    value: [4300, 10000, 28000, 35000, 50000, 19000],
+                    name: 'Allocated Budget'
+                }, {
+                    value: [5000, 14000, 28000, 31000, 42000, 21000],
+                    name: 'Actual Spending'
+                }]
+            }]
+        };
+        radarChart.setOption(radarOption, true);
+
+        // Geo chart
+
+        var geoDom = document.getElementById("echarts-geo-chart");
+        var geoChart = echarts.init(geoDom);
+        geoOption = {
+            title: {
+                text: 'World Population (2010)',
+                subtext: 'from United Nations, Total population, both sexes combined, as of 1 July (thousands)',
+                sublink: 'http://esa.un.org/wpp/Excel-Data/population.htm',
+                x: 'center',
+                y: 'top'
+            },
+            tooltip: {
+                trigger: 'item',
+                formatter: function(params) {
+                    var value = (params.value + '').split('.');
+                    value = value[0].replace(/(\d{1,3})(?=(?:\d{3})+(?!\d))/g, '$1,') +
+                        '.' + value[1];
+                    return params.seriesName + '<br/>' + params.name + ' : ' + value;
+                }
+            },
+            toolbox: {
+                show: true,
+                orient: 'vertical',
+                x: 'right',
+                y: 'center',
+                feature: {
+                    saveAsImage: {
+                        show: true,
+                        title: 'Save'
+                    }
+                }
+            },
+            dataRange: {
+                min: 0,
+                max: 1000000,
+                text: ['High', 'Low'],
+                realtime: false,
+                calculable: true,
+                color: ['orangered', 'yellow', 'lightskyblue']
+            },
+            series: [{
+                name: 'World Population (2010)',
+                type: 'map',
+                mapType: 'world',
+                roam: true,
+                mapLocation: {
+                    y: 60
+                },
+                itemStyle: {
+                    emphasis: {
+                        label: {
+                            show: true
+                        }
+                    }
+                },
+                data: [{
+                    name: 'Afghanistan',
+                    value: 28397.812
+                }, {
+                    name: 'Angola',
+                    value: 19549.124
+                }, {
+                    name: 'Albania',
+                    value: 3150.143
+                }, {
+                    name: 'United Arab Emirates',
+                    value: 8441.537
+                }, {
+                    name: 'Argentina',
+                    value: 40374.224
+                }, {
+                    name: 'Armenia',
+                    value: 2963.496
+                }, {
+                    name: 'French Southern and Antarctic Lands',
+                    value: 268.065
+                }, {
+                    name: 'Australia',
+                    value: 22404.488
+                }, {
+                    name: 'Austria',
+                    value: 8401.924
+                }, {
+                    name: 'Azerbaijan',
+                    value: 9094.718
+                }, {
+                    name: 'Burundi',
+                    value: 9232.753
+                }, {
+                    name: 'Belgium',
+                    value: 10941.288
+                }, {
+                    name: 'Benin',
+                    value: 9509.798
+                }, {
+                    name: 'Burkina Faso',
+                    value: 15540.284
+                }, {
+                    name: 'Bangladesh',
+                    value: 151125.475
+                }, {
+                    name: 'Bulgaria',
+                    value: 7389.175
+                }, {
+                    name: 'The Bahamas',
+                    value: 66402.316
+                }, {
+                    name: 'Bosnia and Herzegovina',
+                    value: 3845.929
+                }, {
+                    name: 'Belarus',
+                    value: 9491.07
+                }, {
+                    name: 'Belize',
+                    value: 308.595
+                }, {
+                    name: 'Bermuda',
+                    value: 64.951
+                }, {
+                    name: 'Bolivia',
+                    value: 716.939
+                }, {
+                    name: 'Brazil',
+                    value: 195210.154
+                }, {
+                    name: 'Brunei',
+                    value: 27.223
+                }, {
+                    name: 'Bhutan',
+                    value: 716.939
+                }, {
+                    name: 'Botswana',
+                    value: 1969.341
+                }, {
+                    name: 'Central African Republic',
+                    value: 4349.921
+                }, {
+                    name: 'Canada',
+                    value: 34126.24
+                }, {
+                    name: 'Switzerland',
+                    value: 7830.534
+                }, {
+                    name: 'Chile',
+                    value: 17150.76
+                }, {
+                    name: 'China',
+                    value: 1359821.465
+                }, {
+                    name: 'Ivory Coast',
+                    value: 60508.978
+                }, {
+                    name: 'Cameroon',
+                    value: 20624.343
+                }, {
+                    name: 'Democratic Republic of the Congo',
+                    value: 62191.161
+                }, {
+                    name: 'Republic of the Congo',
+                    value: 3573.024
+                }, {
+                    name: 'Colombia',
+                    value: 46444.798
+                }, {
+                    name: 'Costa Rica',
+                    value: 4669.685
+                }, {
+                    name: 'Cuba',
+                    value: 11281.768
+                }, {
+                    name: 'Northern Cyprus',
+                    value: 1.468
+                }, {
+                    name: 'Cyprus',
+                    value: 1103.685
+                }, {
+                    name: 'Czech Republic',
+                    value: 10553.701
+                }, {
+                    name: 'Germany',
+                    value: 83017.404
+                }, {
+                    name: 'Djibouti',
+                    value: 834.036
+                }, {
+                    name: 'Denmark',
+                    value: 5550.959
+                }, {
+                    name: 'Dominican Republic',
+                    value: 10016.797
+                }, {
+                    name: 'Algeria',
+                    value: 37062.82
+                }, {
+                    name: 'Ecuador',
+                    value: 15001.072
+                }, {
+                    name: 'Egypt',
+                    value: 78075.705
+                }, {
+                    name: 'Eritrea',
+                    value: 5741.159
+                }, {
+                    name: 'Spain',
+                    value: 46182.038
+                }, {
+                    name: 'Estonia',
+                    value: 1298.533
+                }, {
+                    name: 'Ethiopia',
+                    value: 87095.281
+                }, {
+                    name: 'Finland',
+                    value: 5367.693
+                }, {
+                    name: 'Fiji',
+                    value: 860.559
+                }, {
+                    name: 'Falkland Islands',
+                    value: 49.581
+                }, {
+                    name: 'France',
+                    value: 63230.866
+                }, {
+                    name: 'Gabon',
+                    value: 1556.222
+                }, {
+                    name: 'United Kingdom',
+                    value: 62066.35
+                }, {
+                    name: 'Georgia',
+                    value: 4388.674
+                }, {
+                    name: 'Ghana',
+                    value: 24262.901
+                }, {
+                    name: 'Guinea',
+                    value: 10876.033
+                }, {
+                    name: 'Gambia',
+                    value: 1680.64
+                }, {
+                    name: 'Guinea Bissau',
+                    value: 10876.033
+                }, {
+                    name: 'Equatorial Guinea',
+                    value: 696.167
+                }, {
+                    name: 'Greece',
+                    value: 11109.999
+                }, {
+                    name: 'Greenland',
+                    value: 56.546
+                }, {
+                    name: 'Guatemala',
+                    value: 14341.576
+                }, {
+                    name: 'French Guiana',
+                    value: 231.169
+                }, {
+                    name: 'Guyana',
+                    value: 786.126
+                }, {
+                    name: 'Honduras',
+                    value: 7621.204
+                }, {
+                    name: 'Croatia',
+                    value: 4338.027
+                }, {
+                    name: 'Haiti',
+                    value: 9896.4
+                }, {
+                    name: 'Hungary',
+                    value: 10014.633
+                }, {
+                    name: 'Indonesia',
+                    value: 240676.485
+                }, {
+                    name: 'India',
+                    value: 1205624.648
+                }, {
+                    name: 'Ireland',
+                    value: 4467.561
+                }, {
+                    name: 'Iran',
+                    value: 240676.485
+                }, {
+                    name: 'Iraq',
+                    value: 30962.38
+                }, {
+                    name: 'Iceland',
+                    value: 318.042
+                }, {
+                    name: 'Israel',
+                    value: 7420.368
+                }, {
+                    name: 'Italy',
+                    value: 60508.978
+                }, {
+                    name: 'Jamaica',
+                    value: 2741.485
+                }, {
+                    name: 'Jordan',
+                    value: 6454.554
+                }, {
+                    name: 'Japan',
+                    value: 127352.833
+                }, {
+                    name: 'Kazakhstan',
+                    value: 15921.127
+                }, {
+                    name: 'Kenya',
+                    value: 40909.194
+                }, {
+                    name: 'Kyrgyzstan',
+                    value: 5334.223
+                }, {
+                    name: 'Cambodia',
+                    value: 14364.931
+                }, {
+                    name: 'South Korea',
+                    value: 51452.352
+                }, {
+                    name: 'Kosovo',
+                    value: 97.743
+                }, {
+                    name: 'Kuwait',
+                    value: 2991.58
+                }, {
+                    name: 'Laos',
+                    value: 6395.713
+                }, {
+                    name: 'Lebanon',
+                    value: 4341.092
+                }, {
+                    name: 'Liberia',
+                    value: 3957.99
+                }, {
+                    name: 'Libya',
+                    value: 6040.612
+                }, {
+                    name: 'Sri Lanka',
+                    value: 20758.779
+                }, {
+                    name: 'Lesotho',
+                    value: 2008.921
+                }, {
+                    name: 'Lithuania',
+                    value: 3068.457
+                }, {
+                    name: 'Luxembourg',
+                    value: 507.885
+                }, {
+                    name: 'Latvia',
+                    value: 2090.519
+                }, {
+                    name: 'Morocco',
+                    value: 31642.36
+                }, {
+                    name: 'Moldova',
+                    value: 103.619
+                }, {
+                    name: 'Madagascar',
+                    value: 21079.532
+                }, {
+                    name: 'Mexico',
+                    value: 117886.404
+                }, {
+                    name: 'Macedonia',
+                    value: 507.885
+                }, {
+                    name: 'Mali',
+                    value: 13985.961
+                }, {
+                    name: 'Myanmar',
+                    value: 51931.231
+                }, {
+                    name: 'Montenegro',
+                    value: 620.078
+                }, {
+                    name: 'Mongolia',
+                    value: 2712.738
+                }, {
+                    name: 'Mozambique',
+                    value: 23967.265
+                }, {
+                    name: 'Mauritania',
+                    value: 3609.42
+                }, {
+                    name: 'Malawi',
+                    value: 15013.694
+                }, {
+                    name: 'Malaysia',
+                    value: 28275.835
+                }, {
+                    name: 'Namibia',
+                    value: 2178.967
+                }, {
+                    name: 'New Caledonia',
+                    value: 246.379
+                }, {
+                    name: 'Niger',
+                    value: 15893.746
+                }, {
+                    name: 'Nigeria',
+                    value: 159707.78
+                }, {
+                    name: 'Nicaragua',
+                    value: 5822.209
+                }, {
+                    name: 'Netherlands',
+                    value: 16615.243
+                }, {
+                    name: 'Norway',
+                    value: 4891.251
+                }, {
+                    name: 'Nepal',
+                    value: 26846.016
+                }, {
+                    name: 'New Zealand',
+                    value: 4368.136
+                }, {
+                    name: 'Oman',
+                    value: 2802.768
+                }, {
+                    name: 'Pakistan',
+                    value: 173149.306
+                }, {
+                    name: 'Panama',
+                    value: 3678.128
+                }, {
+                    name: 'Peru',
+                    value: 29262.83
+                }, {
+                    name: 'Philippines',
+                    value: 93444.322
+                }, {
+                    name: 'Papua New Guinea',
+                    value: 6858.945
+                }, {
+                    name: 'Poland',
+                    value: 38198.754
+                }, {
+                    name: 'Puerto Rico',
+                    value: 3709.671
+                }, {
+                    name: 'North Korea',
+                    value: 1.468
+                }, {
+                    name: 'Portugal',
+                    value: 10589.792
+                }, {
+                    name: 'Paraguay',
+                    value: 6459.721
+                }, {
+                    name: 'Qatar',
+                    value: 1749.713
+                }, {
+                    name: 'Romania',
+                    value: 21861.476
+                }, {
+                    name: 'Russia',
+                    value: 21861.476
+                }, {
+                    name: 'Rwanda',
+                    value: 10836.732
+                }, {
+                    name: 'Western Sahara',
+                    value: 514.648
+                }, {
+                    name: 'Saudi Arabia',
+                    value: 27258.387
+                }, {
+                    name: 'Sudan',
+                    value: 35652.002
+                }, {
+                    name: 'South Sudan',
+                    value: 9940.929
+                }, {
+                    name: 'Senegal',
+                    value: 12950.564
+                }, {
+                    name: 'Solomon Islands',
+                    value: 526.447
+                }, {
+                    name: 'Sierra Leone',
+                    value: 5751.976
+                }, {
+                    name: 'El Salvador',
+                    value: 6218.195
+                }, {
+                    name: 'Somaliland',
+                    value: 9636.173
+                }, {
+                    name: 'Somalia',
+                    value: 9636.173
+                }, {
+                    name: 'Republic of Serbia',
+                    value: 3573.024
+                }, {
+                    name: 'Suriname',
+                    value: 524.96
+                }, {
+                    name: 'Slovakia',
+                    value: 5433.437
+                }, {
+                    name: 'Slovenia',
+                    value: 2054.232
+                }, {
+                    name: 'Sweden',
+                    value: 9382.297
+                }, {
+                    name: 'Swaziland',
+                    value: 1193.148
+                }, {
+                    name: 'Syria',
+                    value: 7830.534
+                }, {
+                    name: 'Chad',
+                    value: 11720.781
+                }, {
+                    name: 'Togo',
+                    value: 6306.014
+                }, {
+                    name: 'Thailand',
+                    value: 66402.316
+                }, {
+                    name: 'Tajikistan',
+                    value: 7627.326
+                }, {
+                    name: 'Turkmenistan',
+                    value: 5041.995
+                }, {
+                    name: 'East Timor',
+                    value: 10016.797
+                }, {
+                    name: 'Trinidad and Tobago',
+                    value: 1328.095
+                }, {
+                    name: 'Tunisia',
+                    value: 10631.83
+                }, {
+                    name: 'Turkey',
+                    value: 72137.546
+                }, {
+                    name: 'United Republic of Tanzania',
+                    value: 44973.33
+                }, {
+                    name: 'Uganda',
+                    value: 33987.213
+                }, {
+                    name: 'Ukraine',
+                    value: 46050.22
+                }, {
+                    name: 'Uruguay',
+                    value: 3371.982
+                }, {
+                    name: 'United States of America',
+                    value: 312247.116
+                }, {
+                    name: 'Uzbekistan',
+                    value: 27769.27
+                }, {
+                    name: 'Venezuela',
+                    value: 236.299
+                }, {
+                    name: 'Vietnam',
+                    value: 89047.397
+                }, {
+                    name: 'Vanuatu',
+                    value: 236.299
+                }, {
+                    name: 'West Bank',
+                    value: 13.565
+                }, {
+                    name: 'Yemen',
+                    value: 22763.008
+                }, {
+                    name: 'South Africa',
+                    value: 51452.352
+                }, {
+                    name: 'Zambia',
+                    value: 13216.985
+                }, {
+                    name: 'Zimbabwe',
+                    value: 13076.978
+                }]
+            }]
+        };
+
+        geoChart.setOption(geoOption, true);
+    </script>
+
+    <!--End scripts-->
+    <!-- //////////////////////////////////////////////////////////////////////////// -->
+</body>
+<!--End body-->
+<!-- //////////////////////////////////////////////////////////////////////////// -->
+
+
+<!-- Mirrored from designlayout.xyz/materialcss/html/echarts-charts.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 03 Oct 2017 22:52:18 GMT -->
+</html>
+<!--End HTML-->
+<!-- //////////////////////////////////////////////////////////////////////////// -->

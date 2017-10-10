@@ -1,0 +1,1343 @@
+<!--Design by designlayout.xyz-->
+
+<!-- //////////////////////////////////////////////////////////////////////////// -->
+<!--Start HTML document-->
+<!DOCTYPE html>
+
+<!-- //////////////////////////////////////////////////////////////////////////// -->
+<!--HTML-->
+<html lang="en">
+
+<!-- //////////////////////////////////////////////////////////////////////////// -->
+<!--Head-->
+
+
+<!-- Mirrored from designlayout.xyz/materialcss/html/docs.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 03 Oct 2017 22:52:19 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!--viewport meta tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Favicon icon-->
+    <link href="http://designlayout.xyz/materialcss/asset/images/favicon.png" type="image/png" rel="icon">
+
+    <!--Browser navbar color for mobile-->
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#5165d6">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#5165d6">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#5165d6">
+    <!--Page title-->
+    <title>Documentation - materialcss</title>
+    <!-- ================================================
+    CSS
+    ================================================ -->
+
+    <!-- materialize stylesheet -->
+    <link href="http://designlayout.xyz/materialcss/asset/vendors/materialize/materialize.min.css" type="text/css" rel="stylesheet" />
+    <!-- google material design icons -->
+    <link href="http://designlayout.xyz/materialcss/asset/vendors/material-icons/material-icons.css" type="text/css" rel="stylesheet" />
+    <!-- prism syntax highlighter -->
+    <link href="http://designlayout.xyz/materialcss/asset/vendors/prism/prism.css" type="text/css" rel="stylesheet" />
+    <!-- materialcss app stylesheet -->
+    <link href="http://designlayout.xyz/materialcss/asset/css/app.css" type="text/css" rel="stylesheet" />
+    <!-- materialcss theme stylesheet -->
+    <link href="http://designlayout.xyz/materialcss/asset/css/theme-1.css" type="text/css" rel="stylesheet" />
+    <!-- Your custom  stylesheet -->
+    <link href="http://designlayout.xyz/materialcss/asset/css/style.css" type="text/css" rel="stylesheet" />
+
+
+</head>
+<!-- End head-->
+<!-- //////////////////////////////////////////////////////////////////////////// -->
+
+<!-- //////////////////////////////////////////////////////////////////////////// -->
+<!--body-->
+
+<body>
+    <!-- //////////////////////////////////////////////////////////////////////////// -->
+    <!--Page wrapper-->
+    <div class="page-wrapper">
+        <!-- //////////////////////////////////////////////////////////////////////////// -->
+        <!--Control page-->
+        <div id="control-body" class="fixed-sidebar medium-sidebar fixed-nav">
+            <!-- //////////////////////////////////////////////////////////////////////////// -->
+            <!--prepage loader-->
+            <div id="prepage-loader">
+                <div class="preloader-center">
+                    <div class="preloader-wrapper big active">
+                        <div class="spinner-layer spinner-indigo-only">
+                            <div class="circle-clipper left">
+                                <div class="circle"></div>
+                            </div>
+                            <div class="gap-patch">
+                                <div class="circle"></div>
+                            </div>
+                            <div class="circle-clipper right">
+                                <div class="circle"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End prepage loader-->
+            <!-- //////////////////////////////////////////////////////////////////////////// -->
+
+
+            <!-- //////////////////////////////////////////////////////////////////////////// -->
+            <!--Header-->
+            <nav class="page-header z-depth-3">
+                <div class="nav-wrapper">
+                    <a id="logo-container" href="#" class="brand-logo hide-on-med-and-down">materialcss</a>
+                    <ul class="left">
+                        <li class="hide-on-large-only"><a href="javascript:void(0)" id="toggle-left-sidebar" class="hrz-menu waves-effect waves-default"><i class="material-icons">menu</i></a></li>
+
+                        <!--notifications list-->
+                        <li><a href="javascript:void(0)" class="hrz-menu dropdown-button dropdown-belowOrigin waves-effect waves-default" data-activates='notification-list-dropdown'><i class="material-icons">notifications</i><span id="notification-cout">25</span></a></li>
+
+                        <!--app list-->
+                        <li><a href="javascript:void(0)" class="hrz-menu dropdown-button dropdown-belowOrigin waves-effect waves-default" data-activates='app-list-dropdown'><i class="material-icons">apps</i></a></li>
+
+                        <!--full width menu list-->
+                        <li class="hide-on-small-only"><a href="javascript:void(0)" class="hrz-menu dropdown-button dropdown-belowOrigin waves-effect waves-default" data-activates='full-menu-dropdown'>Full menu<i class="material-icons inline">arrow_drop_down</i></a></li>
+                    </ul>
+
+                    <!--notifications list dropdown-->
+                    <ul id='notification-list-dropdown' class='width-400 dropdown-content'>
+                        <li>
+                            <a href="#!">
+                                <i class="material-icons">email</i>
+                                <p class="noti-message">New mail from jhon<span>15 minutes ago</span></p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#!">
+                                <i class="material-icons">chat</i>
+                                <p class="noti-message">New member John joined<span>25 minutes ago</span></p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#!">
+                                <i class="material-icons">perm_identity</i>
+                                <p class="noti-message">New mail from jhon<span>30 minutes ago</span></p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#!">
+                                <i class="material-icons">chat</i>
+                                <p class="noti-message">New member John joined<span>1 hour ago</span></p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#!" class="view-all-noti">
+                        See All
+                    </a>
+                        </li>
+
+
+                    </ul>
+                    <!--notifications app list dropdown-->
+
+                    <!--app list dropdown-->
+                    <ul id='app-list-dropdown' class='dropdown-content'>
+                        <li class="app-list-wrapper m-t-15">
+                            <a href="#!"><i class="material-icons">polymer</i><span>Polymer</span></a>
+                            <a href="#!" class="right"><i class="material-icons">import_contacts</i><span>Contact</span></a>
+                        </li>
+
+                        <li class="app-list-wrapper">
+                            <a href="#!"><i class="material-icons">email</i><span>Email</span></a>
+                            <a href="#!" class="right"><i class="material-icons">ondemand_video</i><span>Video</span></a>
+                        </li>
+
+                        <li class="app-list-wrapper">
+                            <a href="#!"><i class="material-icons">bug_report</i><span>Bug Report</span></a>
+                            <a href="#!" class="right"><i class="material-icons">voicemail</i><span>Voicemail</span></a>
+                        </li>
+                        <li class="app-list-more">
+                            <a href="#!">More</a>
+                        </li>
+                    </ul>
+                    <!--end app list dropdown-->
+
+                    <!--full width menu list dropdown-->
+                    <div id="full-menu-dropdown" class='full-menu dropdown-content'>
+                        <div class="row p-a-15">
+                            <div class="col s6 m3 l2">
+                                <h5 class="full-menu-title">Material UI</h5>
+                                <a>Buttons</a>
+                                <a>Badges</a>
+                                <a>Breadcrumbs</a>
+                                <a>Collections</a>
+                                <a>Collapsibles</a>
+                            </div>
+
+                            <div class="col s6 m3 l2">
+                                <h5 class="full-menu-title">CSS</h5>
+                                <a>Typography</a>
+                                <a>Icons</a>
+                                <a>Animations</a>
+                                <a>Shadow</a>
+                                <a>Media</a>
+                            </div>
+
+                            <div class="col s6 m3 l2">
+                                <h5 class="full-menu-title">Advanced UI</h5>
+                                <a>Carousel</a>
+                                <a>Range Slider</a>
+                                <a>SweetAlert</a>
+                                <a>Highlight</a>
+                                <a>Cards</a>
+                            </div>
+
+                            <div class="col s6 m3 l2">
+                                <h5 class="full-menu-title">Forms</h5>
+                                <a>Form Layouts</a>
+                                <a>Form Validations</a>
+                                <a>Form Masks</a>
+                                <a>Text Editor</a>
+                                <a>Form Elements</a>
+                            </div>
+
+                            <div class="col s6 m3 l2">
+                                <h5 class="full-menu-title">Home</h5>
+                                <a>Landing Page</a>
+                                <a>Change Password</a>
+                                <a>Contactus</a>
+                                <a>Blank Page</a>
+                                <a>Signup</a>
+                            </div>
+
+                            <div class="col s6 m3 l2">
+                                <h5 class="full-menu-title">Elements</h5>
+                                <a>Grid</a>
+                                <a>Color</a>
+                                <a>widgets</a>
+                                <a>Helpers</a>
+                                <a>Search Page</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--full width menu list dropdown-->
+
+                    <ul class="right">
+                        <li><a href="javascript:void(0)" class="hrz-menu waves-effect waves-default hide-show-nav-search"><i class="material-icons">search</i></a></li>
+                        <!--user account-->
+                        <li id="user-account-box"><a href="javascript:void(0)" class="hrz-menu dropdown-button dropdown-belowOrigin dropdown-widthChange waves-effect waves-default" data-activates='user-account-dropdown'><i class="material-icons">account_circle</i></a></li>
+
+                        <li class="hide-on-small-only"><a href="javascript:void(0)" class="hrz-menu waves-effect waves-default" id="page-refresh"><i class="material-icons">refresh</i></a></li>
+                        <li class="hide-on-med-and-down"><a href="javascript:void(0)" class="hrz-menu waves-effect waves-default" id="page-fullscreen"><i class="material-icons">fullscreen</i></a></li>
+
+                        <li class="toggle-right-sidebar"><a href="javascript:void(0)" class="hrz-menu waves-effect waves-default"><i class="material-icons">format_indent_decrease</i></a></li>
+
+                    </ul>
+
+                    <!--user account dropdown-->
+                    <ul id='user-account-dropdown' class='dropdown-content'>
+                        <li><a href="#!"><i class="material-icons">perm_identity</i>My Profile</a></li>
+                        <li><a href="javascript:void(0)" class="toggle-right-sidebar"><i class="material-icons">settings</i>Page Customizer</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#!"><i class="material-icons">lock</i>Lock</a></li>
+                        <li><a href="#!"><i class="material-icons">power_settings_new</i>Logout</a></li>
+                    </ul>
+                    <!--end user account dropdown-->
+                </div>
+            </nav>
+            <!--End Header-->
+            <!-- //////////////////////////////////////////////////////////////////////////// -->
+
+
+            <!-- //////////////////////////////////////////////////////////////////////////// -->
+            <!--Left sidebar-->
+
+            <aside>
+                <!-- overlay -->
+                <div class="left-sidebar-overlay"></div>
+                <div class="left-sidebar z-depth-3">
+                    <!-- brand -->
+                    <div class="md-logo-container hide-on-large-only theme-bg">
+                        <a class="md-brand-logo white-text" href="#">materialcss</a>
+                    </div>
+                    <!--end brand -->
+                    <!--Left sidebar body-->
+                    <div class="left-sidebar-body">
+                        <!--current subscription user plan -->
+                        <div class="current-subscription">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td class="center">
+                                            <span class="current-plan">Business</span>
+                                            <span class="price">&#36;49/month</span>
+                                        </td>
+                                        <td class="center">
+                                            <a href="#" class="waves-effect waves-light btn-flat theme-text">UPGRADE</a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="divider"></div>
+                        <!--End current subscription user plan -->
+
+                        <!--sidebar menu-->
+                        <ul class="leftside-navigation">
+                            <li class="navigation">Menu</li>
+                            <li><a href="dashboard.html" class="menu waves-effect waves-default tooltipped" data-position="right" data-delay="50" data-tooltip="Dashboard"><i class="material-icons left-icon">dashboard</i>Dashboard</a></li>
+
+                            <li><a href="javascript:void(0)" class="collapsible-label1 waves-effect waves-default tooltipped" data-position="right" data-delay="50" data-tooltip="Material UI"><i class="material-icons left-icon">build</i><i class="material-icons right-icon">arrow_drop_down</i>Material UI</a>
+                                <ul class="collapsible-body">
+                                    <li><a href="buttons.html" class="waves-effect waves-default">Buttons</a></li>
+                                    <li><a href="breadcrumbs.html" class="waves-effect waves-default">Breadcrumbs</a></li>
+                                    <li><a href="collections.html" class="waves-effect waves-default">Collections</a></li>
+                                    <li><a href="collapsibles.html" class="waves-effect waves-default">Collapsibles</a></li>
+                                    <li><a href="dropdown.html" class="waves-effect waves-default">Dropdown</a></li>
+                                    <li><a href="tabs.html" class="waves-effect waves-default">Tabs</a></li>
+                                    <li><a href="pagination.html" class="waves-effect waves-default">Pagination</a></li>
+                                    <li><a href="preloader.html" class="waves-effect waves-default">Preloader</a></li>
+                                    <li><a href="toasts.html" class="waves-effect waves-default">Toasts</a></li>
+                                    <li><a href="tooltip.html" class="waves-effect waves-default">Tooltip</a></li>
+                                    <li><a href="waves.html" class="waves-effect waves-default">Waves</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="javascript:void(0)" class="collapsible-label1 waves-effect waves-default tooltipped" data-position="right" data-delay="50" data-tooltip="CSS"><i class="material-icons left-icon">library_books</i><i class="material-icons right-icon">arrow_drop_down</i>CSS</a>
+                                <ul class="collapsible-body">
+                                    <li><a href="typography.html" class="waves-effect waves-default">Typography</a></li>
+                                    <li><a href="icons.html" class="waves-effect waves-default">Icons</a></li>
+                                    <li><a href="animations.html" class="waves-effect waves-default">Animations</a></li>
+                                    <li><a href="shadow.html" class="waves-effect waves-default">Shadow</a></li>
+                                    <li><a href="media.html" class="waves-effect waves-default">Media</a></li>
+                                    <li><a href="pulse.html" class="waves-effect waves-default">Pulse</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="javascript:void(0)" class="collapsible-label1 waves-effect waves-default tooltipped" data-position="right" data-delay="50" data-tooltip="Advanced UI"><i class="material-icons left-icon">add_to_photos</i><i class="material-icons right-icon">arrow_drop_down</i>Advanced UI</a>
+                                <ul class="collapsible-body">
+                                    <li><a href="chips.html" class="waves-effect waves-default">Chips</a></li>
+                                    <li><a href="cards.html" class="waves-effect waves-default">Cards</a></li>
+                                    <li><a href="carousel.html" class="waves-effect waves-default">Carousel</a></li>
+                                    <li><a href="modals.html" class="waves-effect waves-default">Modals</a></li>
+                                    <li><a href="range-slider.html" class="waves-effect waves-default">Range Slider</a></li>
+                                    <li><a href="sweetAlert.html" class="waves-effect waves-default">SweetAlert</a></li>
+                                    <li><a href="highlight.html" class="waves-effect waves-default">Highlight</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="javascript:void(0)" class="collapsible-label1 waves-effect waves-default tooltipped" data-position="right" data-delay="50" data-tooltip="Charts"><i class="material-icons left-icon">insert_chart</i><i class="material-icons right-icon">arrow_drop_down</i>Charts</a>
+                                <ul class="collapsible-body">
+                                    <li><a href="echarts-charts.html" class="waves-effect waves-default">ECharts</a></li>
+                                    <li><a href="google-charts.html" class="waves-effect waves-default">Google Charts</a></li>
+                                    <li><a href="chartjs-charts.html" class="waves-effect waves-default">ChartJS</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="javascript:void(0)" class="collapsible-label1 waves-effect waves-default tooltipped" data-position="right" data-delay="50" data-tooltip="Forms"><i class="material-icons left-icon">message</i><i class="material-icons right-icon">arrow_drop_down</i>Forms</a>
+                                <ul class="collapsible-body">
+                                    <li><a href="form-elements.html" class="waves-effect waves-default">Form Elements</a></li>
+                                    <li><a href="form-layouts.html" class="waves-effect waves-default">Form Layouts</a></li>
+                                    <li><a href="form-validations.html" class="waves-effect waves-default">Form Validations</a></li>
+                                    <li><a href="form-masks.html" class="waves-effect waves-default">Form Masks</a></li>
+                                    <li><a href="text-editor.html" class="waves-effect waves-default">Text Editor</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="javascript:void(0)" class="collapsible-label1 waves-effect waves-default tooltipped" data-position="right" data-delay="50" data-tooltip="Tables"><i class="material-icons left-icon">border_all</i><i class="material-icons right-icon">arrow_drop_down</i>Tables</a>
+                                <ul class="collapsible-body">
+                                    <li><a href="basic-table.html" class="waves-effect waves-default">Basic Tables</a></li>
+                                    <li><a href="data-table.html" class="waves-effect waves-default">Data Tables</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="javascript:void(0)" class="collapsible-label1 waves-effect waves-default tooltipped" data-position="right" data-delay="50" data-tooltip="Pages"><i class="material-icons left-icon">terrain</i><i class="material-icons right-icon">arrow_drop_down</i>Pages</a>
+                                <ul class="collapsible-body">
+                                    <li><a href="login.html" class="waves-effect waves-default">Login</a></li>
+                                    <li><a href="signup.html" class="waves-effect waves-default">Signup</a></li>
+                                    <li><a href="reset.html" class="waves-effect waves-default">Reset</a></li>
+                                    <li><a href="lock.html" class="waves-effect waves-default">Lock</a></li>
+                                    <li><a href="change-password.html" class="waves-effect waves-default">Change Password</a></li>
+                                    <li><a href="contactus.html" class="waves-effect waves-default">Contactus</a></li>
+                                    <li><a href="blank.html" class="waves-effect waves-default">Blank Page</a></li>
+                                    <li><a href="404.html" class="waves-effect waves-default">404</a></li>
+                                    <li><a href="500.html" class="waves-effect waves-default">500</a></li>
+                                    <li><a href="404-admin.html" class="waves-effect waves-default">Dashboard 404</a></li>
+                                    <li><a href="500-admin.html" class="waves-effect waves-default">Dashboard 500</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="grid.html" class="waves-effect waves-default tooltipped" data-position="right" data-delay="50" data-tooltip="Grid"><i class="material-icons left-icon">grid_on</i>Grid</a></li>
+
+                            <li><a href="color.html" class="waves-effect waves-default tooltipped" data-position="right" data-delay="50" data-tooltip="Color"><i class="material-icons left-icon">format_color_fill</i>Color</a></li>
+
+                            <li><a href="helpers.html" class="waves-effect waves-default tooltipped" data-position="right" data-delay="50" data-tooltip="Helpers"><i class="material-icons left-icon">live_help</i>Helpers</a></li>
+
+                            <li><a href="docs.html" class="waves-effect waves-default tooltipped" data-position="right" data-delay="50" data-tooltip="Docs"><i class="material-icons left-icon">book</i>Docs</a></li>
+
+
+
+                            <li><a href="javascript:void(0)" class="collapsible-label1 waves-effect waves-default tooltipped" data-position="right" data-delay="50" data-tooltip="Label"><i class="material-icons left-icon">menu</i><i class="material-icons right-icon">arrow_drop_down</i>Label 1</a>
+                                <ul class="collapsible-body">
+                                    <li><a class="collapsible-label2 waves-effect waves-default"><i class="material-icons left-icon">arrow_drop_down</i>Label 2</a>
+                                        <ul class="collapsible-body">
+                                            <li><a href="#" class="waves-effect waves-default"> Lebel 2 title</a></li>
+                                            <li><a href="#" class="waves-effect waves-default"> Lebel 2 title</a></li>
+                                            <li><a href="#" class="waves-effect waves-default"> Lebel 2 title</a></li>
+                                            <li><a href="#" class="waves-effect waves-default"> Lebel 2 title</a></li>
+
+                                        </ul>
+                                    </li>
+                                    <li><a href="#" class="waves-effect waves-default">Label 2</a></li>
+                                    <li><a class="collapsible-label2 waves-effect waves-default"><i class="material-icons left-icon">arrow_drop_down</i>Label 2</a>
+                                        <ul class="collapsible-body">
+                                            <li><a href="#" class="waves-effect waves-default"> Lebel 2 title</a></li>
+                                            <li><a href="#" class="waves-effect waves-default"> Lebel 2 title</a></li>
+                                            <li><a href="#" class="waves-effect waves-default"> Lebel 2 title</a></li>
+                                            <li><a href="#" class="waves-effect waves-default"> Lebel 2 title</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#" class="waves-effect waves-default">Lebel 2</a></li>
+                                </ul>
+
+                            </li>
+
+
+                        </ul>
+                        <!--End sidebar menu-->
+                    </div>
+
+                    <!--End Left sidebar body-->
+
+                    <!--Left sidebar footer-->
+                    <div class="sidebar-footer">
+                        <a href="javascript:void(0)" id="collapsed-left-sidebar" class="toggle-icon-left-sidebar waves-effect waves-default"><i class="right material-icons">keyboard_arrow_left</i></a>
+                    </div>
+                    <!--End Left sidebar footer-->
+                </div>
+            </aside>
+            <!--End left sidebar-->
+            <!-- //////////////////////////////////////////////////////////////////////////// -->
+
+
+            <!--Search box-->
+            <!-- //////////////////////////////////////////////////////////////////////////// -->
+            <div class="search-overlay hide"></div>
+            <div id="search-body" class="z-depth-1">
+                <!--Search form-->
+                <form class="search-box">
+                    <div class="input-field z-depth-1">
+                        <!--Search input-->
+                        <input id="search" type="search" autocomplete="off" required>
+                        <!--End Search input-->
+                        <!--Search icon-->
+                        <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                        <!--End Search icon-->
+                        <!--close search box-->
+                        <i class="material-icons hide-show-nav-search">close</i>
+                        <!--End close search box-->
+                    </div>
+                </form>
+                <!--End Search form-->
+                <!--Search result-->
+                <div class="search-result">
+                    <div class="row">
+                        <div class="col s6 m8">
+                            <div class="search-result-title">Recent search</div>
+                            <ul class="search-result-body m-a-0">
+                                <li><a href="#" class="waves-effect waves-default">Form Validations</a></li>
+                                <li><a href="#">Range Slider</a></li>
+                                <li><a href="#">Animations</a></li>
+                                <li><a href="#">Change Password</a></li>
+                                <li><a href="#">Breadcrumbs</a></li>
+                                <li><a href="#">Collections</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col s6 m4">
+                            <div class="search-result-title">Most Visited Pages</div>
+                            <ul class="search-result-body m-a-0">
+                                <li><a href="#" class="waves-effect waves-default">Form Validations</a></li>
+                                <li><a href="#">Carousel</a></li>
+                                <li><a href="#">Animations</a></li>
+                                <li><a href="#">Change Password</a></li>
+                                <li><a href="#">Modals</a></li>
+                                <li><a href="#">Data Table</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+                <!--End search result-->
+            </div>
+            <!--Search box-->
+            <!-- //////////////////////////////////////////////////////////////////////////// -->
+
+
+
+
+            <!--Right sidebar-->
+            <!-- //////////////////////////////////////////////////////////////////////////// -->
+            <aside>
+
+                <!-- rightsidebar overlay -->
+                <div class="right-sidebar-overlay hide"></div>
+                <!-- end rightsidebar overlay -->
+
+                <div class="right-sidebar z-depth-3">
+
+                    <!--right sidebar tab-->
+                    <ul class="tabs tabs-fixed-width tabs-right-sidebar">
+                        <li class="tab col s3"><a class="active" href="#settings">Settings</a></li>
+                        <li class="tab col s3"><a href="#notifications">Notifications</a></li>
+                    </ul>
+                    <!--End right sidebar tab-->
+
+                    <!--Right Sidebar body-->
+                    <div class="right-sidebar-body">
+                        <!--Notification body-->
+                        <div id="notifications">
+                            <ul class="content-list">
+                                <li>
+                                    <a href="#">
+                                        <span class="list-title white-text red">ORDER</span>
+                                        <span class="list-date">9 hours ago</span>
+                                        <h4 class="list-content-title">facilisis</h4>
+                                        <p class="list-content">
+                                            Etiam auctor porta augue sit amet facilisis. Sed libero nisi, scelerisque.
+                                        </p>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        <span class="list-title white-text blue">COMMENT</span>
+                                        <span class="list-date">10 hours ago</span>
+                                        <h4 class="list-content-title">porta augue</h4>
+                                        <p class="list-content">
+                                            Etiam auctor porta augue sit amet facilisis. Sed libero nisi, scelerisque.
+                                        </p>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        <span class="list-title white-text green">MEETING</span>
+                                        <span class="list-date">11 hours ago</span>
+                                        <h4 class="list-content-title">Sed libero</h4>
+                                        <p class="list-content">
+                                            Etiam auctor porta augue sit amet facilisis. Sed libero nisi, scelerisque.
+                                        </p>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        <span class="list-title white-text teal">EVENT</span>
+                                        <span class="list-date">12 hours ago</span>
+                                        <h4 class="list-content-title">sit amet</h4>
+                                        <p class="list-content">
+                                            Etiam auctor porta augue sit amet facilisis. Sed libero nisi, scelerisque.
+                                        </p>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        <span class="list-title white-text red">ORDER</span>
+                                        <span class="list-date">13 hours ago</span>
+                                        <h4 class="list-content-title">augue</h4>
+                                        <p class="list-content">
+                                            Etiam auctor porta augue sit amet facilisis. Sed libero nisi, scelerisque.
+                                        </p>
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <!--End Notification body-->
+
+                        <!--Settings body-->
+                        <div id="settings" class="settings-content">
+                            <h4 class="settings-content-title">Full Layout Options</h4>
+                            <p>
+                                <input class="with-gap" name="layout" type="radio" id="default-layout" checked/>
+                                <label for="default-layout">Fixed Header and Sidebar(Default)</label>
+                            </p>
+
+                            <p>
+                                <input class="with-gap" name="layout" type="radio" id="fixed-header-unfixed-sidebar" />
+                                <label for="fixed-header-unfixed-sidebar">Fixed Header Unfixed Sidebar</label>
+                            </p>
+
+                            <p>
+                                <input class="with-gap" name="layout" type="radio" id="unfixed-header-sidebar" />
+                                <label for="unfixed-header-sidebar">Unfixed Header and Sidebar</label>
+                            </p>
+
+                            <h4 class="settings-content-title">Boxed Layout Options</h4>
+                            <p>
+                                <input class="with-gap" name="layout" type="radio" id="default-boxed-layout" />
+                                <label for="default-boxed-layout">Fixed Header and Sidebar</label>
+                            </p>
+
+                            <p>
+                                <input class="with-gap" name="layout" type="radio" id="boxed-fixed-header-unfixed-sidebar" />
+                                <label for="boxed-fixed-header-unfixed-sidebar">Fixed Header Unfixed Sidebar</label>
+                            </p>
+
+                            <p>
+                                <input class="with-gap" name="layout" type="radio" id="boxed-unfixed-sidebar-header" />
+                                <label for="boxed-unfixed-sidebar-header">Unfixed Header and Sidebar</label>
+                            </p>
+                        </div>
+                        <!--End Settings body-->
+                    </div>
+                </div>
+                <!--End Right Sidebar body-->
+            </aside>
+            <!--End right sidebar-->
+            <!-- //////////////////////////////////////////////////////////////////////////// -->
+
+            <!-- //////////////////////////////////////////////////////////////////////////// -->
+            <!--Page Body-->
+            <main class="page-body">
+                <!--page title box-->
+                <div class="row">
+                    <div class="col s12 page-title-div">
+                        <!--Page Title-->
+                        <h1 class="header">Materialcss Documentation</h1>
+                        <p class="header-desc">Materialcss is a admin template based on materializecss. Builded with CSS and jQuery.</p>
+                        <!--Page breadcrumbs-->
+                        <ol class="breadcrumbs left">
+                            <li><a href="dashboard.html">Dashboard</a></li>
+                            <li class="active">Documentation</li>
+                        </ol>
+                        <!--End page breadcrumbs-->
+                    </div>
+                </div>
+                <!--end page title box-->
+                <!--start section-->
+                <section class="section">
+                    <!--start row-->
+                    <div class="row ">
+                        <!--start column-->
+                        <div class="col s12">
+
+                            <!--start card-->
+                            <div class="card">
+                                <!--card content-->
+                                <div class="card-content">
+
+                                    <!-- //////////////////////////////////////// -->
+                                    <!-- Introduction -->
+
+                                    <!-- title-->
+                                    <h2 class="card-title header">Introduction</h2>
+
+                                    <!-- content -->
+                                    <p><strong>Materialcss</strong> is a multipurpose admin template designed based on the google material and jQuery frameworks.</p>
+
+                                    <p><strong>Materialcss</strong> has a huge collection of material design animation & widgets, UI Elements, jQuery plugins and works seamlessly on all major web browsers, tablets and phones with multiple layout. User friendly
+                                        and intuitive to use.</p>
+                                    <!-- end content -->
+
+                                    <!-- End Introduction -->
+                                    <!-- //////////////////////////////////////// -->
+
+
+                                    <!-- //////////////////////////////////////// -->
+                                    <!-- Installation -->
+
+                                    <!-- title-->
+                                    <h2 class="card-title header">Installation</h2>
+
+                                    <!-- content -->
+                                    <p>This is the simple static HTML template so no need any headech to install it. </p>
+                                    <div>
+
+                                        <ul>
+                                            <li>1. Unzip Downloaded File. </li>
+                                            <li>2. Open Page in your favorite browser and Enjoy your demo.</li>
+
+                                        </ul>
+                                    </div>
+
+                                    <blockquote>
+                                        Note: we recomonded you to please add css in style.css and js in script.js file that already included in materialcss pages.
+                                    </blockquote>
+                                    <!-- end content -->
+
+                                    <!-- End Installation -->
+                                    <!-- //////////////////////////////////////// -->
+
+                                    <!-- //////////////////////////////////////// -->
+                                    <!--Layout options-->
+
+                                    <!--card title-->
+                                    <h2 class="card-title header">Layout options</h2>
+                                    <p>Below class help for customize page, Add these class in id <code class="  language-markup">control-body</code> according to your need.
+                                    </p>
+
+                                    <div>
+                                        example: -<br/> 1. For Boxed layout, fixed sidebar and fixed header
+                                        <code class="  language-markup"> class="layout-boxed fixed-sidebar medium-sidebar fixed-nav"</code>
+
+                                        <br/> 2. For Default layout, unfixed sidebar and fixed header
+                                        <code class="  language-markup"> class="unfixed-sidebar medium-sidebar fixed-nav"</code>
+                                        <br/>etc ..
+
+                                    </div>
+
+                                    <!-- //////////////////////////////////////// -->
+                                    <!-- Body Helper Class table -->
+
+                                    <table class="striped table-responsive">
+                                        <thead>
+                                            <tr>
+                                                <th>Class</th>
+                                                <th>Description</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+
+                                            <tr>
+                                                <td><code class=" language-markup">.layout-boxed</code></td>
+                                                <td>Its define box body</td>
+                                            </tr>
+                                            <tr>
+                                                <td><code class=" language-markup">.fixed-sidebar</code></td>
+                                                <td>Its define position fixed left sidebar</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td><code class=" language-markup">.unfixed-sidebar</code></td>
+                                                <td>Its define position unfixed left sidebar</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td><code class=" language-markup">.fixed-nav</code></td>
+                                                <td>Its define position fixed header or navbar</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td><code class=" language-markup">.unfixed-nav</code></td>
+                                                <td>Its define position unfixed header or navbar</td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                    <!-- End Body Helper Class table -->
+                                    <!-- //////////////////////////////////////// -->
+
+                                    <!--end Layout options-->
+                                    <!-- //////////////////////////////////////// -->
+
+                                    <!-- //////////////////////////////////////// -->
+                                    <!-- Color -->
+
+                                    <!-- title-->
+                                    <h2 class="card-title header">How to change theme color</h2>
+
+                                    <!-- content -->
+                                    <p>Replace default color <code class="  language-markup">#3949ab</code> to which color you want in theme-1.css file</p>
+                                    <!-- end content -->
+
+                                    <!-- End color -->
+                                    <!-- //////////////////////////////////////// -->
+
+                                    <!-- //////////////////////////////////////// -->
+                                    <!-- Template Structure -->
+
+                                    <!-- title-->
+                                    <h2 class="card-title header">Template Structure</h2>
+
+                                    <!-- content -->
+                                    <p>All template files have fixed structure consisting of <code class="language-markup">header,prepage loader, left sidebar, right sidebar, content and footer</code>.</p>
+                                    <!-- end content -->
+
+                                    <!-- End Template Structure -->
+                                    <!-- //////////////////////////////////////// -->
+
+                                    <!-- End color -->
+                                    <!-- //////////////////////////////////////// -->
+
+                                    <!-- //////////////////////////////////////// -->
+                                    <!--  Font Family -->
+
+                                    <!-- title-->
+                                    <h2 class="card-title header">Font Family</h2>
+
+                                    <!-- content -->
+                                    <p>The standard font Material Design uses is Roboto. We have included the font files with our framework.</p>
+                                    <p>We bundle our framework with the latest iteration of Roboto Google has released. It comes with 5 different font weights you can use: 100, 300, 400, 500, 600.</p>
+                                    <pre><code class=" language-css">
+html{font-family: "Roboto", sans-serif;}
+                                    </code></pre>
+                                    <!-- end content -->
+
+                                    <!-- End  Font Family -->
+                                    <!-- //////////////////////////////////////// -->
+
+                                    <!-- //////////////////////////////////////// -->
+                                    <!--  Folder Structure -->
+
+                                    <!-- title-->
+                                    <h2 class="card-title header">Folder Structure</h2>
+
+                                    <!-- content -->
+                                    <p>we follow simple structure for the template</p>
+                                    <ul>
+                                        <li>materialcss
+
+                                            <ul class="m-l-30">
+                                                <li>assets
+                                                    <ul class="m-l-30">
+                                                        <li>css - All css files </li>
+                                                        <li>data - Demo data use in datatable</li>
+                                                        <li>fonts - Fonts</li>
+                                                        <li>images - All demo images</li>
+                                                        <li>js - All js file</li>
+                                                        <li>vendors - All external jquery and css library</li>
+                                                        <li>video - Video use for demo</li>
+                                                    </ul>
+                                                </li>
+                                                <li>html - HTML pages</li>
+                                                <li>html-options - More layout HTML pages </li>
+                                                <li>Index.html - Materialcss lunch page</li>
+                                                <li>Readme.md - Materialcss redme </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <!-- end content -->
+
+                                    <!-- End  Folder Structure -->
+                                    <!-- //////////////////////////////////////// -->
+
+
+                                    <!-- //////////////////////////////////////// -->
+                                    <!-- Theme Files box -->
+
+                                    <!-- title-->
+                                    <h2 class="card-title header">Theme Files</h2>
+
+                                    <!-- content -->
+                                    <div class="row themediv">
+                                        <!-- html files box -->
+                                        <div class="col m12 l4">
+                                            <h3 class="header">HTML Files</h3>
+                                            <ul>
+                                                <li><b>index.html:</b> Index page</li>
+                                                <li><b>dashboard.html:</b> Admin Dashboard page</li>
+                                                <li><b>buttons.html:</b> Buttons page</li>
+                                                <li><b>breadcrumbs.html:</b> Breadcrumbs page</li>
+                                                <li><b>collections.html:</b> Collections page</li>
+                                                <li><b>collapsibles.html:</b> Collapsibles page</li>
+                                                <li><b>dropdown.html:</b> dropdown page</li>
+                                                <li><b>tabs.html:</b> Tabs page</li>
+                                                <li><b>pagination.html:</b> Pagination page</li>
+                                                <li><b>preloader.html:</b> Preloader page</li>
+                                                <li><b>toasts.html:</b> Toasts page</li>
+                                                <li><b>tooltip.html:</b> Tooltip page</li>
+                                                <li><b>waves.html:</b> Waves page</li>
+                                                <li><b>typography.html:</b> Typography page</li>
+                                                <li><b>icons.html:</b> Google material icons page</li>
+                                                <li><b>animations.html:</b> Animations css page</li>
+                                                <li><b>shadow.html:</b> Box shadow page</li>
+                                                <li><b>media.html:</b> CSS media page</li>
+                                                <li><b>pulse.html:</b> CSS button pulse page</li>
+                                                <li><b>chips.html:</b> Chips page</li>
+                                                <li><b>cards.html:</b> Cards page</li>
+                                                <li><b>carousel.html:</b> Owl carousel page</li>
+                                                <li><b>modals.html:</b> Modals page</li>
+                                                <li><b>range-slider.html:</b> Range Slider page</li>
+                                                <li><b>sweetAlert.html:</b> SweetAlert page</li>
+                                                <li><b>highlight.html:</b> Prism syntax highlight page</li>
+                                                <li><b>chartjs-charts.html.html:</b> Chart JS chartspage</li>
+                                                <li><b>echarts-charts.html:</b> echarts charts page</li>
+                                                <li><b>google-charts.html:</b> google chart Charts page</li>
+                                                <li><b>form-elements.html:</b> Form Elements page</li>
+                                                <li><b>form-layouts.html:</b> Form Layouts page</li>
+                                                <li><b>form-validations.html:</b> Form Validations page</li>
+                                                <li><b>form-masks.html:</b> Form Masks page</li>
+                                                <li><b>text-editor.html:</b> Text Editor page</li>
+                                                <li><b>basic-table.html:</b> Basic Tables page</li>
+                                                <li><b>data-table.html:</b> Data Tables page</li>
+                                                <li><b>login.html:</b> Login page</li>
+                                                <li><b>signup.html:</b> Signup page</li>
+                                                <li><b>reset.html:</b> Reset page</li>
+                                                <li><b>lock.html:</b> Screen lock page</li>
+                                                <li><b>change-password.html:</b> Change Password page</li>
+                                                <li><b>contactus.html:</b> Contactus page</li>
+                                                <li><b>blank.html:</b> Landing blank page</li>
+                                                <li><b>404.html:</b> 404 page not found page for landing page</li>
+                                                <li><b>500.html:</b> 500 server error page for landing page</li>
+                                                <li><b>404-admin.html:</b> 404 error page for dashboard page</li>
+                                                <li><b>500-admin.html:</b> 500 error page for dashboard page</li>
+                                                <li><b>blank.html:</b> Dashboard blank page</li>
+                                                <li><b>grid.html:</b> Grid page</li>
+                                                <li><b>color.html:</b> Color page</li>
+                                                <li><b>helpers.html:</b> Helpers page</li>
+                                                <li><b>docs.html:</b> MaterialMe docs page</li>
+                                            </ul>
+                                        </div>
+                                        <!-- end html files box -->
+
+                                        <!-- css files box -->
+                                        <div class="col m12 l4">
+                                            <h3 class="header">CSS Files</h3>
+                                            <ul>
+                                                <li><b>app.css:</b> Theme styles</li>
+                                                <li><b>theme-1.css:</b> Theme color styles</li>
+                                                <li><b>style.css:</b> Your custom styles</li>
+                                                <li><b>materialize.min.css:</b> materialize css </li>
+                                                <li><b>plugins:</b> Plugins folder
+                                                    <ul class="m-l-20">
+                                                        <li><b>prism:</b> Prism syntax highlighter
+                                                            <ul class="m-l-20">
+                                                                <li><b>prism.css:</b> Main File</li>
+                                                            </ul>
+                                                        </li>
+                                                        <li><b>animate:</b> Animate css plugin
+                                                            <ul class="m-l-20">
+                                                                <li><b>animate.min.css:</b> Main File</li>
+                                                            </ul>
+                                                        </li>
+                                                        <li><b>sweetalert:</b> Alert jquery plugin
+                                                            <ul class="m-l-20">
+                                                                <li><b>sweetalert.css:</b> Main File</li>
+                                                            </ul>
+                                                        </li>
+
+                                                        <li><b>OwlCarousel2:</b> Carousel jquery plugin
+                                                            <ul class="m-l-20">
+                                                                <li><b>owl.carousel.min.css:</b> Main File</li>
+                                                                <li><b>owl.theme.default.min.css:</b> Owl theme File</li>
+                                                            </ul>
+                                                        </li>
+
+                                                        <li><b>quill:</b> Web text editor jquery plugin
+                                                            <ul class="m-l-20">
+                                                                <li><b>quill.snow.css:</b> Main File</li>
+                                                            </ul>
+                                                        </li>
+
+                                                        <li><b>DataTables:</b> Table jquery plugin
+                                                            <ul class="m-l-20">
+                                                                <li><b>jquery.dataTables.min.css:</b> Main File</li>
+                                                            </ul>
+                                                        </li>
+
+                                                        <li><b>material-icons:</b> Google material icons
+                                                            <ul class="m-l-20">
+                                                                <li><b>material-icons.css:</b> Main File</li>
+                                                            </ul>
+                                                        </li>
+
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <!-- end css files box -->
+
+                                        <!-- JS files box -->
+                                        <div class="col m12 l4">
+                                            <h3 class="header">Javascript Files</h3>
+                                            <ul>
+                                                <li><b>app.js:</b> Theme js</li>
+                                                <li><b>script.js:</b> Your custom js</li>
+                                                <li><b>jquery.min.js:</b> jquery javascript plugin</li>
+                                                <li><b>materialize.min.js:</b>materialize js file</li>
+                                                <li><b>plugins:</b> Plugins folder
+                                                    <ul class="m-l-20">
+                                                        <li><b>prism:</b> Prism syntax highlighter
+                                                            <ul class="m-l-20">
+                                                                <li><b>prism.js:</b> Main file</li>
+                                                            </ul>
+                                                        </li>
+
+                                                        <li><b>sweetalert:</b> Alert jquery plugin
+                                                            <ul class="m-l-20">
+                                                                <li><b>sweetalert.min.js:</b> Main file</li>
+                                                            </ul>
+                                                        </li>
+
+                                                        <li><b>echarts:</b> echarts charts
+                                                            <ul class="m-l-20">
+                                                                <li><b>echarts.min.js:</b> Main File</li>
+                                                                <li><b>map-world.js:</b> echarts map plugin</li>
+                                                            </ul>
+                                                        </li>
+
+                                                        <li><b>Chartjs:</b> Chart jquery plugin
+                                                            <ul class="m-l-20">
+                                                                <li><b>Chart.min.js:</b> Main file</li>
+                                                            </ul>
+                                                        </li>
+
+                                                        <li><b>OwlCarousel2:</b> Carousel jquery plugin
+                                                            <ul class="m-l-20">
+                                                                <li><b>owl.carousel.min.js:</b> Main file</li>
+                                                            </ul>
+                                                        </li>
+
+                                                        <li><b>jquery-validation:</b> Form validater jquery plugin
+                                                            <ul class="m-l-20">
+                                                                <li><b>jquery.validate.min.js:</b> Main file</li>
+                                                            </ul>
+                                                        </li>
+
+                                                        <li><b>formatter:</b> Form formatter jquery plugin
+                                                            <ul class="m-l-20">
+                                                                <li><b>jquery.formatter.min.js:</b> Main file</li>
+                                                            </ul>
+                                                        </li>
+
+                                                        <li><b>quill:</b> Web text editor jquery plugin
+                                                            <ul class="m-l-20">
+                                                                <li><b>quill.min.js:</b> Main file</li>
+                                                            </ul>
+                                                        </li>
+
+                                                        <li><b>DataTables :</b> Table jquery plugin
+                                                            <ul class="m-l-20">
+                                                                <li><b>jquery.dataTables.min.js:</b> Main file</li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li><b>loader.js:</b>google charts file</li>
+                                            </ul>
+                                        </div>
+                                        <!-- end Js files box -->
+                                    </div>
+                                    <!-- end content -->
+
+                                    <!-- End Theme Files box -->
+                                    <!-- //////////////////////////////////////// -->
+
+                                    <!-- //////////////////////////////////////// -->
+                                    <!-- Source and Plugins box -->
+
+                                    <!--title-->
+                                    <h2 class="card-title header">Source and Plugins</h2>
+
+                                    <!-- table -->
+                                    <table class="table bordered responsive-table">
+                                        <tbody>
+                                            <tr>
+                                                <td><b>Plugin</b></td>
+                                                <td><b>Website</b></td>
+                                                <td><b>Licence</b></td>
+                                            </tr>
+                                        </tbody>
+                                        <tbody>
+                                            <tr>
+                                                <td>materializecss Framework</td>
+                                                <td><a href="http://materializecss.com/" target="_blank">http://materializecss.com</a></td>
+                                                <td>MIT</td>
+                                            </tr>
+                                            <tr>
+                                                <td>jQuery JavaScript Library</td>
+                                                <td><a href="http://jquery.com/" target="_blank">http://jquery.com</a></td>
+                                                <td>MIT</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Google Material icons</td>
+                                                <td><a href="https://material.io/icons/" target="_blank">https://material.io/icons/</a></td>
+                                                <td>Apache 2.0</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>quill Text editor</td>
+                                                <td><a href="https://quilljs.com/" target="_blank">https://quilljs.com/</a></td>
+                                                <td>BSD</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>chartjs</td>
+                                                <td><a href="http://www.chartjs.org/" target="_blank">http://www.chartjs.org/</a></td>
+                                                <td>MIT</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Datatables</td>
+                                                <td><a href="https://www.datatables.net/" target="_blank">https://www.datatables.net/</a></td>
+                                                <td>Multi</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Sweet Alerts</td>
+                                                <td><a href="http://t4t5.github.io/sweetalert/" target="_blank">http://t4t5.github.io/sweetalert/</a></td>
+                                                <td>MIT</td>
+                                            </tr>
+                                            <tr>
+                                                <td>animate.css</td>
+                                                <td><a href="https://daneden.github.io/animate.css/" target="_blank">https://daneden.github.io/animate.css/</a></td>
+                                                <td>MIT</td>
+                                            </tr>
+                                            <tr>
+                                                <td>formatter.js</td>
+                                                <td><a href="http://firstopinion.github.io/formatter.js/" target="_blank">http://firstopinion.github.io/formatter.js/</a></td>
+                                                <td>MIT</td>
+                                            </tr>
+                                            <tr>
+                                                <td>jquery-validation</td>
+                                                <td><a href="https://jqueryvalidation.org/" target="_blank">https://jqueryvalidation.org/</a></td>
+                                                <td>MIT</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>echarts</td>
+                                                <td><a href="https://ecomfe.github.io/echarts-doc/public/en/index.html" target="_blank">https://ecomfe.github.io/echarts-doc/public/en/index.html</a></td>
+                                                <td>BSD</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Google charts</td>
+                                                <td><a href="https://developers.google.com/chart/" target="_blank">https://developers.google.com/chart/</a></td>
+                                                <td>Apache 2.0</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>OwlCarousel2</td>
+                                                <td><a href="https://owlcarousel2.github.io/OwlCarousel2/" target="_blank">https://owlcarousel2.github.io/OwlCarousel2/</a></td>
+                                                <td>MIT</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Prism syntax highlighter</td>
+                                                <td><a href="http://prismjs.com/" target="_blank">http://prismjs.com/</a></td>
+                                                <td>MIT</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>rangeSlider</td>
+                                                <td><a href="http://ionden.com/a/plugins/ion.rangeSlider/en.html" target="_blank">http://ionden.com/a/plugins/ion.rangeSlider/en.html</a></td>
+                                                <td>MIT</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <!-- end table -->
+
+                                    <!-- //////////////////////////////////////// -->
+                                    <!-- End Source and Plugins box -->
+
+                                    <!-- //////////////////////////////////////// -->
+                                    <!-- Helper Classes -->
+
+                                    <!-- title-->
+                                    <h2 class="card-title header">Helper Classes</h2>
+
+                                    <!-- content -->
+                                    <p>We make classes to help you in your developement process, and make it fast. checkout the below link for the helper classes</p>
+
+                                    <a href="helpers.html" class="waves-effect waves-light btn btn-rounded theme-bg"> Check the live Preview</a>
+                                    <!-- end content -->
+
+                                    <!-- End Helper Classes -->
+                                    <!-- //////////////////////////////////////// -->
+
+                                    <!-- //////////////////////////////////////// -->
+                                    <!-- Grid options -->
+
+                                    <!-- title-->
+                                    <h2 class="card-title header">Grid options</h2>
+
+                                    <!-- content -->
+                                    <p>Checkout the below link for the Grid classes</p>
+
+                                    <a href="grid.html" class="waves-effect waves-light btn btn-rounded theme-bg"> Check the live Preview</a>
+                                    <!-- end content -->
+
+                                    <!-- End Grid options -->
+                                    <!-- //////////////////////////////////////// -->
+
+                                    <!-- //////////////////////////////////////// -->
+                                    <!-- Color options -->
+
+                                    <!-- title-->
+                                    <h2 class="card-title header">Color options</h2>
+
+                                    <!-- content -->
+                                    <p>Checkout the below link for the Color classes</p>
+
+                                    <a href="color.html" class="waves-effect waves-light btn btn-rounded theme-bg"> Check the live Preview</a>
+                                    <!-- end content -->
+
+                                    <!-- End Color options -->
+                                    <!-- //////////////////////////////////////// -->
+
+
+                                    <!-- //////////////////////////////////////// -->
+                                    <!-- CSS Files -->
+
+                                    <!-- title-->
+                                    <h2 class="card-title header">CSS Files Included In Template</h2>
+
+                                    <!-- content -->
+                                    <pre>
+                                        <code class="language-html">
+&lt;!-- materialize stylesheet --&gt;
+&lt;link href=&quot;asset/vendors/materialize/materialize.min.css&quot; type=&quot;text/css&quot; rel=&quot;stylesheet&quot; /&gt;
+&lt;!-- google material design icons --&gt;
+&lt;link href=&quot;asset/vendors/material-icons/material-icons.css&quot; type=&quot;text/css&quot; rel=&quot;stylesheet&quot; /&gt;
+&lt;!-- prism syntax highlighter --&gt;
+&lt;link href=&quot;asset/vendors/prism/prism.css&quot; type=&quot;text/css&quot; rel=&quot;stylesheet&quot; /&gt;
+&lt;!-- materialcss app stylesheet --&gt;
+&lt;link href=&quot;asset/css/app.css&quot; type=&quot;text/css&quot; rel=&quot;stylesheet&quot; /&gt;
+&lt;!-- materialcss theme stylesheet --&gt;
+&lt;link href=&quot;asset/css/theme-1.css&quot; type=&quot;text/css&quot; rel=&quot;stylesheet&quot; /&gt;
+&lt;!-- Your custom  stylesheet --&gt;
+&lt;link href=&quot;asset/css/style.css&quot; type=&quot;text/css&quot; rel=&quot;stylesheet&quot; /&gt;
+&lt;!-- animate animation plugin --&gt;
+&lt;link href=&quot;asset/vendors/animate/animate.css&quot; type=&quot;text/css&quot; rel=&quot;stylesheet&quot; /&gt;
+&lt;!-- Owl Carousel 2 carousel jquery plugin --&gt;
+&lt;link href=&quot;asset/vendors/OwlCarousel2/dist/assets/owl.carousel.min.css&quot; type=&quot;text/css&quot; rel=&quot;stylesheet&quot; /&gt;
+&lt;!-- Owl Carousel 2 theme --&gt;
+&lt;link href=&quot;asset/vendors/OwlCarousel2/dist/assets/owl.theme.default.min.css&quot; type=&quot;text/css&quot; rel=&quot;stylesheet&quot; /&gt;
+&lt;!-- rang slider jquery plugin --&gt;
+&lt;link href=&quot;asset/vendors/rangeSlider/css/ion.rangeSlider.css&quot; type=&quot;text/css&quot; rel=&quot;stylesheet&quot; /&gt;
+&lt;!-- rang slider theme --&gt;
+&lt;link href=&quot;asset/vendors/rangeSlider/css/ion.rangeSlider.skinFlat.css&quot; type=&quot;text/css&quot; rel=&quot;stylesheet&quot; /&gt;
+&lt;!-- alert jquery plugin --&gt;
+&lt;link href=&quot;asset/vendors/sweetalert/sweetalert.css&quot; type=&quot;text/css&quot; rel=&quot;stylesheet&quot; /&gt;
+&lt;!-- quill test editor --&gt;
+&lt;link href=&quot;asset/vendors/quill/quill.snow.css&quot; type=&quot;text/css&quot; rel=&quot;stylesheet&quot; /&gt;
+&lt;!-- materializecss data table --&gt;
+&lt;link href=&quot;asset/vendors/DataTables/media/css/dataTables.materializecss.min.css&quot; type=&quot;text/css&quot; rel=&quot;stylesheet&quot; /&gt;
+                                        </code>
+                                    </pre>
+                                    <!-- end content -->
+
+                                    <!-- End CSS Files -->
+                                    <!-- //////////////////////////////////////// -->
+
+
+                                    <!-- //////////////////////////////////////// -->
+                                    <!-- js Files -->
+
+                                    <!-- title-->
+                                    <h2 class="card-title header">JS Files Included In Template</h2>
+
+                                    <!-- content -->
+                                    <pre>
+                                        <code class="language-html">
+&lt;!-- Jquery --&gt;
+&lt;script src=&quot;asset/vendors/jquery/jquery.min.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+&lt;!-- Materialize js --&gt;
+&lt;script src=&quot;asset/vendors/materialize/materialize.min.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+&lt;!-- prism syntax highlighter --&gt;
+&lt;script src=&quot;asset/vendors/prism/prism.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+&lt;!-- materialcss theme script --&gt;
+&lt;script src=&quot;asset/js/app.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+&lt;!-- Your custom script --&gt;
+&lt;script src=&quot;asset/js/script.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+&lt;!-- Owl Carousel 2 carousel jquery plugin --&gt;
+&lt;script src=&quot;asset/vendors/OwlCarousel2/dist/owl.carousel.min.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+&lt;!-- rangslider jquery plugin --&gt;
+&lt;script src=&quot;asset/vendors/rangeSlider/js/ion.rangeSlider.min.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+&lt;!-- alert jquery plugin --&gt;
+&lt;script src=&quot;asset/vendors/sweetalert/sweetalert.min.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+&lt;!-- echarts chart --&gt;
+&lt;script src=&quot;asset/vendors/echarts/echarts.min.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+&lt;!-- echarts map extension --&gt;
+&lt;script src=&quot;asset/vendors/echarts/map-world.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+&lt;!-- Google chart --&gt;
+&lt;script src=&quot;https://www.gstatic.com/charts/loader.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+&lt;!-- Chartjs chart --&gt;
+&lt;script src=&quot;asset/vendors/Chartjs/Chart.min.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+&lt;!-- form validation jquery plugin --&gt;
+&lt;script src=&quot;asset/vendors/jquery-validation/jquery.validate.min.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+&lt;!-- form mask jquery plugin --&gt;
+&lt;script src=&quot;asset/vendors/formatter/jquery.formatter.min.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+&lt;!-- quill test editor --&gt;
+&lt;script src=&quot;asset/vendors/quill/quill.min.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+&lt;!-- Data table --&gt;
+&lt;script src=&quot;asset/vendors/DataTables/media/js/jquery.dataTables.min.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+&lt;!-- materializecss data table plugin --&gt;
+&lt;script src=&quot;asset/vendors/DataTables/media/js/dataTables.materializecss.min.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+&lt;!-- Export table into csv data table plugin --&gt;
+&lt;script src=&quot;asset/vendors/DataTables/media/js/table2csv.min.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+
+                                        </code>
+                                    </pre>
+                                    <!-- end content -->
+
+                                    <!-- End Js Files -->
+                                    <!-- //////////////////////////////////////// -->
+
+                                    <!-- //////////////////////////////////////// -->
+                                    <!--Thanku text -->
+                                    <div class="center m-t-30 m-b-30">
+                                        <a class="waves-effect waves-light btn-large green">Thank you</a>
+                                    </div>
+
+                                    <!-- Thanku text -->
+                                    <!-- //////////////////////////////////////// -->
+
+
+
+                                </div>
+                                <!--end card content-->
+                            </div>
+                            <!--end card-->
+                        </div>
+                        <!--end column-->
+                    </div>
+                    <!--end row-->
+                </section>
+                <!--end section-->
+
+            </main>
+            <!--End page body-->
+            <!-- //////////////////////////////////////////////////////////////////////////// -->
+
+            <!-- //////////////////////////////////////////////////////////////////////////// -->
+            <!--Footer-->
+            <footer class="page-footer">
+
+                <div class="footer-copyright">
+                    <div class="left">&copy; materialcss</div>
+                    <div class="right"><a href="javascript:void(0)" id="scroll-top-dash" class="tooltipped" data-position="top" data-delay="50" data-tooltip="Go top"><i class="material-icons">arrow_upward</i></a></div>
+                </div>
+            </footer>
+            <!--End footer-->
+            <!-- //////////////////////////////////////////////////////////////////////////// -->
+        </div>
+        <!--End page control-->
+        <!-- //////////////////////////////////////////////////////////////////////////// -->
+
+    </div>
+    <!--End page wrapper-->
+    <!-- //////////////////////////////////////////////////////////////////////////// -->
+
+    <!-- //////////////////////////////////////////////////////////////////////////// -->
+    <!--  Scripts-->
+
+    <!-- Jquery -->
+    <script src="http://designlayout.xyz/materialcss/asset/vendors/jquery/jquery.min.js" type="text/javascript"></script>
+    <!-- Materialize js -->
+    <script src="http://designlayout.xyz/materialcss/asset/vendors/materialize/materialize.min.js" type="text/javascript"></script>
+    <!-- prism syntax highlighter -->
+    <script src="http://designlayout.xyz/materialcss/asset/vendors/prism/prism.js" type="text/javascript"></script>
+    <!-- materialcss theme script -->
+    <script src="http://designlayout.xyz/materialcss/asset/js/app.js" type="text/javascript"></script>
+    <!-- Your custom script -->
+    <script src="http://designlayout.xyz/materialcss/asset/js/script.js" type="text/javascript"></script>
+
+    <!--End scripts-->
+    <!-- //////////////////////////////////////////////////////////////////////////// -->
+</body>
+<!--End body-->
+<!-- //////////////////////////////////////////////////////////////////////////// -->
+
+
+<!-- Mirrored from designlayout.xyz/materialcss/html/docs.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 03 Oct 2017 22:52:19 GMT -->
+</html>
+<!--End HTML-->
+<!-- //////////////////////////////////////////////////////////////////////////// -->

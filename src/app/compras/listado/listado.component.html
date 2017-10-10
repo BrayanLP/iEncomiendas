@@ -1,0 +1,65 @@
+<app-header></app-header>
+<main class="page-body">
+<div class="row">
+    <div class="col s12 page-title-div">
+      <h1 class="header">Listado de Compras</h1>
+      <ol class="breadcrumbs left">
+        <li>
+          <a routerLink="/compras/listado">Compras</a>
+        </li>
+        <li class="active">Listado</li>
+      </ol>
+    </div>
+  </div>
+  <section class="section">
+    <div class="row ">
+      <div class="col s12">
+        <div class="card">
+          <div class="card-content">
+            <table class="centered">
+              <thead>
+                <td>
+                  Nombre del usuario
+                </td>
+                <td>
+                  Nombre del Cliente
+                </td>
+                <td>
+                  Fecha de Venta
+                </td>
+                <td>
+                  Cantidad
+                </td>
+                <td>
+                  Precio
+                </td>
+                <td>
+                  Total
+                </td>
+                <td>
+                  Acciones
+                </td>
+              </thead>
+              <tbody>
+                <tr *ngFor="let lis of listado">
+                  <td>{{lis.usuario.nombre}}</td>
+                  <td>{{lis.cliente.nombre}}</td>
+                  <td>{{lis.fecha_venta | date}}</td>
+                  <td>{{lis.cantidad}}</td>
+                  <td>{{lis.precio_compra | currency: "PEN"}}</td>
+                  <td>{{lis.precio_compra * lis.cantidad | currency: "PEN":false}}</td>
+                  <td>
+                    <!-- <button>Editar</button> -->
+                    <button (click)="eliminar(i)">Eliminar</button>
+                  </td>
+                </tr>
+                <tr *ngIf="listado.length < 1">No hay Compras Realizadas</tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <app-footer></app-footer>
+</main>

@@ -1,0 +1,29 @@
+<mz-modal [fixedFooter]="false">
+  <mz-modal-header>
+    Modal Title
+  </mz-modal-header>
+  <mz-modal-content>
+    <form [formGroup]="EditForm" (ngSubmit)="actualizar()">
+      <div class="form-group">
+        <label for="name">Nombre de Producto</label>
+        <br>
+        <input type="text" select [(ngModel)]="edit.nombre" formControlName="nombre">
+      </div>
+      <div class="form-group">
+        <label for="name">Cantidad</label>
+        <br>
+        <input type="text" [(ngModel)]="edit.cantidad" formControlName="cantidad">
+      </div>
+      <div class="form-group">
+        <label for="name">Precio de venta</label>
+        <br>
+        <input type="text" [(ngModel)]="edit.precio" formControlName="precio">
+      </div>
+      <button mz-button mz-modal-close>Actualizar</button>
+    </form>
+  </mz-modal-content>
+  <!-- <mz-modal-footer>
+    <button mz-button [flat]="true" mz-modal-close>Disagree</button>
+    <button mz-button [flat]="true" mz-modal-close>Agree</button>
+  </mz-modal-footer> -->
+</mz-modal>

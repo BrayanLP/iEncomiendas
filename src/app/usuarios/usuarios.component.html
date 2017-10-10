@@ -1,0 +1,57 @@
+<div class="row">
+    <div class="col s12 page-title-div">
+      <!--Page Title-->
+      <h1 class="header">Listado de Inventario</h1>
+      <!--Page breadcrumbs-->
+      <ol class="breadcrumbs left">
+        <li>
+          <a href="dashboard">Dashboard</a>
+        </li>
+        <li>Inventario</li>
+        <li class="active">Listado</li>
+      </ol>
+      <!--End page breadcrumbs-->
+
+    </div>
+  </div>
+  <!--end page title box-->
+  <!--start section-->
+  <section class="section">
+    <!--start row-->
+    <div class="row ">
+      <!--start column-->
+      <div class="col s12">
+        <!--start card-->
+        <div class="card">
+          <!--card content-->
+          <div class="card-content">
+            <p>
+              usuarios works!
+            </p>
+
+            <form [formGroup]="AgregarUsuarioForm" (ngSubmit)="registrarColaborador()">
+              <input formControlName="correo" type="text"> {{correo}}
+              <!-- <input formControlName="contra" type="password"> -->
+              <button>Agregar</button>
+
+            </form>
+            <h2>Colaboradores</h2>
+            <div *ngFor="let cola of colaboradores ">
+              {{cola.nombre}}
+              <br> {{cola.email}}
+              <br>
+              <button (click)="eliminar(cola.uid)">Cancelar</button>
+              <br> ================
+            </div>
+            <!-- {{usuarios}} -->
+
+          </div>
+          <!--end card content-->
+        </div>
+        <!--end card-->
+      </div>
+      <!--end column-->
+    </div>
+    <!--end row-->
+  </section>
+  <!--end section-->

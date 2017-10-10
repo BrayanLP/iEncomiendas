@@ -1,0 +1,1613 @@
+<!--Design by designlayout.xyz-->
+
+<!-- //////////////////////////////////////////////////////////////////////////// -->
+<!--Start HTML document-->
+<!DOCTYPE html>
+
+<!-- //////////////////////////////////////////////////////////////////////////// -->
+<!--HTML-->
+<html lang="en">
+
+<!-- //////////////////////////////////////////////////////////////////////////// -->
+<!--Head-->
+
+
+<!-- Mirrored from designlayout.xyz/materialcss/html/google-charts.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 03 Oct 2017 22:52:18 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!--viewport meta tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Favicon icon-->
+    <link href="http://designlayout.xyz/materialcss/asset/images/favicon.png" type="image/png" rel="icon">
+
+    <!--Browser navbar color for mobile-->
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#5165d6">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#5165d6">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#5165d6">
+    <!--Page title-->
+    <title>Google Charts - materialcss</title>
+    <!-- ================================================
+    CSS
+    ================================================ -->
+    
+    <!-- materialize stylesheet -->
+    <link href="http://designlayout.xyz/materialcss/asset/vendors/materialize/materialize.min.css" type="text/css" rel="stylesheet" />
+    <!-- google material design icons -->
+    <link href="http://designlayout.xyz/materialcss/asset/vendors/material-icons/material-icons.css" type="text/css" rel="stylesheet" />
+    <!-- prism syntax highlighter -->
+    <link href="http://designlayout.xyz/materialcss/asset/vendors/prism/prism.css" type="text/css" rel="stylesheet" />
+    <!-- materialcss app stylesheet -->
+    <link href="http://designlayout.xyz/materialcss/asset/css/app.css" type="text/css" rel="stylesheet" />
+    <!-- materialcss theme stylesheet -->
+    <link href="http://designlayout.xyz/materialcss/asset/css/theme-1.css" type="text/css" rel="stylesheet" />
+    <!-- Your custom  stylesheet -->
+    <link href="http://designlayout.xyz/materialcss/asset/css/style.css" type="text/css" rel="stylesheet" />
+
+
+</head>
+<!-- End head-->
+<!-- //////////////////////////////////////////////////////////////////////////// -->
+
+<!-- //////////////////////////////////////////////////////////////////////////// -->
+<!--body-->
+
+<body>
+    <!-- //////////////////////////////////////////////////////////////////////////// -->
+    <!--Page wrapper-->
+    <div class="page-wrapper">
+        <!-- //////////////////////////////////////////////////////////////////////////// -->
+        <!--Control page-->
+         <div id="control-body" class="fixed-sidebar medium-sidebar fixed-nav">
+            <!-- //////////////////////////////////////////////////////////////////////////// -->
+            <!--prepage loader-->
+            <div id="prepage-loader">
+                <div class="preloader-center">
+                    <div class="preloader-wrapper big active">
+                        <div class="spinner-layer spinner-indigo-only">
+                            <div class="circle-clipper left">
+                                <div class="circle"></div>
+                            </div>
+                            <div class="gap-patch">
+                                <div class="circle"></div>
+                            </div>
+                            <div class="circle-clipper right">
+                                <div class="circle"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End prepage loader-->
+            <!-- //////////////////////////////////////////////////////////////////////////// -->
+
+
+            <!-- //////////////////////////////////////////////////////////////////////////// -->
+            <!--Header-->
+            <nav class="page-header z-depth-3">
+                <div class="nav-wrapper">
+                    <a id="logo-container" href="#" class="brand-logo hide-on-med-and-down">materialcss</a>
+                    <ul class="left">
+                        <li class="hide-on-large-only"><a href="javascript:void(0)" id="toggle-left-sidebar" class="hrz-menu waves-effect waves-default"><i class="material-icons">menu</i></a></li>
+
+                        <!--notifications list-->
+                        <li><a href="javascript:void(0)" class="hrz-menu dropdown-button dropdown-belowOrigin waves-effect waves-default" data-activates='notification-list-dropdown'><i class="material-icons">notifications</i><span id="notification-cout">25</span></a></li>
+
+                        <!--app list-->
+                        <li><a href="javascript:void(0)" class="hrz-menu dropdown-button dropdown-belowOrigin waves-effect waves-default" data-activates='app-list-dropdown'><i class="material-icons">apps</i></a></li>
+
+                        <!--full width menu list-->
+                        <li class="hide-on-small-only"><a href="javascript:void(0)" class="hrz-menu dropdown-button dropdown-belowOrigin waves-effect waves-default" data-activates='full-menu-dropdown'>Full menu<i class="material-icons inline">arrow_drop_down</i></a></li>
+                    </ul>
+
+                    <!--notifications list dropdown-->
+                    <ul id='notification-list-dropdown' class='width-400 dropdown-content'>
+                        <li>
+                            <a href="#!">
+                                <i class="material-icons">email</i>
+                                <p class="noti-message">New mail from jhon<span>15 minutes ago</span></p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#!">
+                                <i class="material-icons">chat</i>
+                                <p class="noti-message">New member John joined<span>25 minutes ago</span></p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#!">
+                                <i class="material-icons">perm_identity</i>
+                                <p class="noti-message">New mail from jhon<span>30 minutes ago</span></p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#!">
+                                <i class="material-icons">chat</i>
+                                <p class="noti-message">New member John joined<span>1 hour ago</span></p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#!" class="view-all-noti">
+                        See All
+                    </a>
+                        </li>
+
+
+                    </ul>
+                    <!--notifications app list dropdown-->
+
+                    <!--app list dropdown-->
+                    <ul id='app-list-dropdown' class='dropdown-content'>
+                        <li class="app-list-wrapper m-t-15">
+                            <a href="#!"><i class="material-icons">polymer</i><span>Polymer</span></a>
+                            <a href="#!" class="right"><i class="material-icons">import_contacts</i><span>Contact</span></a>
+                        </li>
+
+                        <li class="app-list-wrapper">
+                            <a href="#!"><i class="material-icons">email</i><span>Email</span></a>
+                            <a href="#!" class="right"><i class="material-icons">ondemand_video</i><span>Video</span></a>
+                        </li>
+
+                        <li class="app-list-wrapper">
+                            <a href="#!"><i class="material-icons">bug_report</i><span>Bug Report</span></a>
+                            <a href="#!" class="right"><i class="material-icons">voicemail</i><span>Voicemail</span></a>
+                        </li>
+                        <li class="app-list-more">
+                            <a href="#!">More</a>
+                        </li>
+                    </ul>
+                    <!--end app list dropdown-->
+
+                    <!--full width menu list dropdown-->
+                    <div id="full-menu-dropdown" class='full-menu dropdown-content'>
+                        <div class="row p-a-15">
+                            <div class="col s6 m3 l2">
+                                <h5 class="full-menu-title">Material UI</h5>
+                                <a>Buttons</a>
+                                <a>Badges</a>
+                                <a>Breadcrumbs</a>
+                                <a>Collections</a>
+                                <a>Collapsibles</a>
+                            </div>
+
+                            <div class="col s6 m3 l2">
+                                <h5 class="full-menu-title">CSS</h5>
+                                <a>Typography</a>
+                                <a>Icons</a>
+                                <a>Animations</a>
+                                <a>Shadow</a>
+                                <a>Media</a>
+                            </div>
+
+                            <div class="col s6 m3 l2">
+                                <h5 class="full-menu-title">Advanced UI</h5>
+                                <a>Carousel</a>
+                                <a>Range Slider</a>
+                                <a>SweetAlert</a>
+                                <a>Highlight</a>
+                                <a>Cards</a>
+                            </div>
+
+                            <div class="col s6 m3 l2">
+                                <h5 class="full-menu-title">Forms</h5>
+                                <a>Form Layouts</a>
+                                <a>Form Validations</a>
+                                <a>Form Masks</a>
+                                <a>Text Editor</a>
+                                <a>Form Elements</a>
+                            </div>
+
+                            <div class="col s6 m3 l2">
+                                <h5 class="full-menu-title">Home</h5>
+                                <a>Landing Page</a>
+                                <a>Change Password</a>
+                                <a>Contactus</a>
+                                <a>Blank Page</a>
+                                <a>Signup</a>
+                            </div>
+
+                            <div class="col s6 m3 l2">
+                                <h5 class="full-menu-title">Elements</h5>
+                                <a>Grid</a>
+                                <a>Color</a>
+                                <a>widgets</a>
+                                <a>Helpers</a>
+                                <a>Search Page</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--full width menu list dropdown-->
+
+                    <ul class="right">
+                        <li><a href="javascript:void(0)" class="hrz-menu waves-effect waves-default hide-show-nav-search"><i class="material-icons">search</i></a></li>
+                        <!--user account-->
+                        <li id="user-account-box"><a href="javascript:void(0)" class="hrz-menu dropdown-button dropdown-belowOrigin dropdown-widthChange waves-effect waves-default" data-activates='user-account-dropdown'><i class="material-icons">account_circle</i></a></li>
+
+                        <li class="hide-on-small-only"><a href="javascript:void(0)" class="hrz-menu waves-effect waves-default" id="page-refresh"><i class="material-icons">refresh</i></a></li>
+                        <li class="hide-on-med-and-down"><a href="javascript:void(0)" class="hrz-menu waves-effect waves-default" id="page-fullscreen"><i class="material-icons">fullscreen</i></a></li>
+
+                        <li class="toggle-right-sidebar"><a href="javascript:void(0)" class="hrz-menu waves-effect waves-default"><i class="material-icons">format_indent_decrease</i></a></li>
+
+                    </ul>
+
+                    <!--user account dropdown-->
+                    <ul id='user-account-dropdown' class='dropdown-content'>
+                        <li><a href="#!"><i class="material-icons">perm_identity</i>My Profile</a></li>
+                        <li><a href="javascript:void(0)" class="toggle-right-sidebar"><i class="material-icons">settings</i>Page Customizer</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#!"><i class="material-icons">lock</i>Lock</a></li>
+                        <li><a href="#!"><i class="material-icons">power_settings_new</i>Logout</a></li>
+                    </ul>
+                    <!--end user account dropdown-->
+                </div>
+            </nav>
+            <!--End Header-->
+            <!-- //////////////////////////////////////////////////////////////////////////// -->
+
+
+            <!-- //////////////////////////////////////////////////////////////////////////// -->
+            <!--Left sidebar-->
+
+            <aside>
+                <!-- overlay -->
+                <div class="left-sidebar-overlay"></div>
+                <div class="left-sidebar z-depth-3">
+                    <!-- brand -->
+                    <div class="md-logo-container hide-on-large-only theme-bg">
+                        <a class="md-brand-logo white-text" href="#">materialcss</a>
+                    </div>
+                    <!--end brand -->
+                    <!--Left sidebar body-->
+                    <div class="left-sidebar-body">
+                        <!--current subscription user plan -->
+                        <div class="current-subscription">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td class="center">
+                                            <span class="current-plan">Business</span>
+                                            <span class="price">&#36;49/month</span>
+                                        </td>
+                                        <td class="center">
+                                            <a href="#" class="waves-effect waves-light btn-flat theme-text">UPGRADE</a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="divider"></div>
+                        <!--End current subscription user plan -->
+
+                        <!--sidebar menu-->
+                        <ul class="leftside-navigation">
+                            <li class="navigation">Menu</li>
+                            <li><a href="dashboard.html" class="menu waves-effect waves-default tooltipped" data-position="right" data-delay="50" data-tooltip="Dashboard"><i class="material-icons left-icon">dashboard</i>Dashboard</a></li>
+
+                            <li><a href="javascript:void(0)" class="collapsible-label1 waves-effect waves-default tooltipped" data-position="right" data-delay="50" data-tooltip="Material UI"><i class="material-icons left-icon">build</i><i class="material-icons right-icon">arrow_drop_down</i>Material UI</a>
+                                <ul class="collapsible-body">
+                                    <li><a href="buttons.html" class="waves-effect waves-default">Buttons</a></li>
+                                    <li><a href="breadcrumbs.html" class="waves-effect waves-default">Breadcrumbs</a></li>
+                                    <li><a href="collections.html" class="waves-effect waves-default">Collections</a></li>
+                                    <li><a href="collapsibles.html" class="waves-effect waves-default">Collapsibles</a></li>
+                                    <li><a href="dropdown.html" class="waves-effect waves-default">Dropdown</a></li>
+                                    <li><a href="tabs.html" class="waves-effect waves-default">Tabs</a></li>
+                                    <li><a href="pagination.html" class="waves-effect waves-default">Pagination</a></li>
+                                    <li><a href="preloader.html" class="waves-effect waves-default">Preloader</a></li>
+                                    <li><a href="toasts.html" class="waves-effect waves-default">Toasts</a></li>
+                                    <li><a href="tooltip.html" class="waves-effect waves-default">Tooltip</a></li>
+                                    <li><a href="waves.html" class="waves-effect waves-default">Waves</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="javascript:void(0)" class="collapsible-label1 waves-effect waves-default tooltipped" data-position="right" data-delay="50" data-tooltip="CSS"><i class="material-icons left-icon">library_books</i><i class="material-icons right-icon">arrow_drop_down</i>CSS</a>
+                                <ul class="collapsible-body">
+                                    <li><a href="typography.html" class="waves-effect waves-default">Typography</a></li>
+                                    <li><a href="icons.html" class="waves-effect waves-default">Icons</a></li>
+                                    <li><a href="animations.html" class="waves-effect waves-default">Animations</a></li>
+                                    <li><a href="shadow.html" class="waves-effect waves-default">Shadow</a></li>
+                                    <li><a href="media.html" class="waves-effect waves-default">Media</a></li>
+                                    <li><a href="pulse.html" class="waves-effect waves-default">Pulse</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="javascript:void(0)" class="collapsible-label1 waves-effect waves-default tooltipped" data-position="right" data-delay="50" data-tooltip="Advanced UI"><i class="material-icons left-icon">add_to_photos</i><i class="material-icons right-icon">arrow_drop_down</i>Advanced UI</a>
+                                <ul class="collapsible-body">
+                                    <li><a href="chips.html" class="waves-effect waves-default">Chips</a></li>
+                                    <li><a href="cards.html" class="waves-effect waves-default">Cards</a></li>
+                                    <li><a href="carousel.html" class="waves-effect waves-default">Carousel</a></li>
+                                    <li><a href="modals.html" class="waves-effect waves-default">Modals</a></li>
+                                    <li><a href="range-slider.html" class="waves-effect waves-default">Range Slider</a></li>
+                                    <li><a href="sweetAlert.html" class="waves-effect waves-default">SweetAlert</a></li>
+                                    <li><a href="highlight.html" class="waves-effect waves-default">Highlight</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="javascript:void(0)" class="collapsible-label1 waves-effect waves-default tooltipped" data-position="right" data-delay="50" data-tooltip="Charts"><i class="material-icons left-icon">insert_chart</i><i class="material-icons right-icon">arrow_drop_down</i>Charts</a>
+                                <ul class="collapsible-body">
+                                    <li><a href="echarts-charts.html" class="waves-effect waves-default">ECharts</a></li>
+                                    <li><a href="google-charts.html" class="waves-effect waves-default">Google Charts</a></li>
+                                    <li><a href="chartjs-charts.html" class="waves-effect waves-default">ChartJS</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="javascript:void(0)" class="collapsible-label1 waves-effect waves-default tooltipped" data-position="right" data-delay="50" data-tooltip="Forms"><i class="material-icons left-icon">message</i><i class="material-icons right-icon">arrow_drop_down</i>Forms</a>
+                                <ul class="collapsible-body">
+                                    <li><a href="form-elements.html" class="waves-effect waves-default">Form Elements</a></li>
+                                    <li><a href="form-layouts.html" class="waves-effect waves-default">Form Layouts</a></li>
+                                    <li><a href="form-validations.html" class="waves-effect waves-default">Form Validations</a></li>
+                                    <li><a href="form-masks.html" class="waves-effect waves-default">Form Masks</a></li>
+                                    <li><a href="text-editor.html" class="waves-effect waves-default">Text Editor</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="javascript:void(0)" class="collapsible-label1 waves-effect waves-default tooltipped" data-position="right" data-delay="50" data-tooltip="Tables"><i class="material-icons left-icon">border_all</i><i class="material-icons right-icon">arrow_drop_down</i>Tables</a>
+                                <ul class="collapsible-body">
+                                    <li><a href="basic-table.html" class="waves-effect waves-default">Basic Tables</a></li>
+                                    <li><a href="data-table.html" class="waves-effect waves-default">Data Tables</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="javascript:void(0)" class="collapsible-label1 waves-effect waves-default tooltipped" data-position="right" data-delay="50" data-tooltip="Pages"><i class="material-icons left-icon">terrain</i><i class="material-icons right-icon">arrow_drop_down</i>Pages</a>
+                                <ul class="collapsible-body">
+                                    <li><a href="login.html" class="waves-effect waves-default">Login</a></li>
+                                    <li><a href="signup.html" class="waves-effect waves-default">Signup</a></li>
+                                    <li><a href="reset.html" class="waves-effect waves-default">Reset</a></li>
+                                    <li><a href="lock.html" class="waves-effect waves-default">Lock</a></li>
+                                    <li><a href="change-password.html" class="waves-effect waves-default">Change Password</a></li>
+                                    <li><a href="contactus.html" class="waves-effect waves-default">Contactus</a></li>
+                                    <li><a href="blank.html" class="waves-effect waves-default">Blank Page</a></li>
+                                    <li><a href="404.html" class="waves-effect waves-default">404</a></li>
+                                    <li><a href="500.html" class="waves-effect waves-default">500</a></li>
+                                    <li><a href="404-admin.html" class="waves-effect waves-default">Dashboard 404</a></li>
+                                    <li><a href="500-admin.html" class="waves-effect waves-default">Dashboard 500</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="grid.html" class="waves-effect waves-default tooltipped" data-position="right" data-delay="50" data-tooltip="Grid"><i class="material-icons left-icon">grid_on</i>Grid</a></li>
+
+                            <li><a href="color.html" class="waves-effect waves-default tooltipped" data-position="right" data-delay="50" data-tooltip="Color"><i class="material-icons left-icon">format_color_fill</i>Color</a></li>
+
+                            <li><a href="helpers.html" class="waves-effect waves-default tooltipped" data-position="right" data-delay="50" data-tooltip="Helpers"><i class="material-icons left-icon">live_help</i>Helpers</a></li>
+
+                            <li><a href="docs.html" class="waves-effect waves-default tooltipped" data-position="right" data-delay="50" data-tooltip="Docs"><i class="material-icons left-icon">book</i>Docs</a></li>
+
+                            
+
+                            <li><a href="javascript:void(0)" class="collapsible-label1 waves-effect waves-default tooltipped" data-position="right" data-delay="50" data-tooltip="Label"><i class="material-icons left-icon">menu</i><i class="material-icons right-icon">arrow_drop_down</i>Label 1</a>
+                                <ul class="collapsible-body">
+                                    <li><a class="collapsible-label2 waves-effect waves-default"><i class="material-icons left-icon">arrow_drop_down</i>Label 2</a>
+                                        <ul class="collapsible-body">
+                                            <li><a href="#" class="waves-effect waves-default"> Lebel 2 title</a></li>
+                                            <li><a href="#" class="waves-effect waves-default"> Lebel 2 title</a></li>
+                                            <li><a href="#" class="waves-effect waves-default"> Lebel 2 title</a></li>
+                                            <li><a href="#" class="waves-effect waves-default"> Lebel 2 title</a></li>
+
+                                        </ul>
+                                    </li>
+                                    <li><a href="#" class="waves-effect waves-default">Label 2</a></li>
+                                    <li><a class="collapsible-label2 waves-effect waves-default"><i class="material-icons left-icon">arrow_drop_down</i>Label 2</a>
+                                        <ul class="collapsible-body">
+                                            <li><a href="#" class="waves-effect waves-default"> Lebel 2 title</a></li>
+                                            <li><a href="#" class="waves-effect waves-default"> Lebel 2 title</a></li>
+                                            <li><a href="#" class="waves-effect waves-default"> Lebel 2 title</a></li>
+                                            <li><a href="#" class="waves-effect waves-default"> Lebel 2 title</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#" class="waves-effect waves-default">Lebel 2</a></li>
+                                </ul>
+
+                            </li>
+
+
+                        </ul>
+                        <!--End sidebar menu-->
+                    </div>
+
+                    <!--End Left sidebar body-->
+
+                    <!--Left sidebar footer-->
+                    <div class="sidebar-footer">
+                        <a href="javascript:void(0)" id="collapsed-left-sidebar" class="toggle-icon-left-sidebar waves-effect waves-default"><i class="right material-icons">keyboard_arrow_left</i></a>
+                    </div>
+                    <!--End Left sidebar footer-->
+                </div>
+            </aside>
+            <!--End left sidebar-->
+            <!-- //////////////////////////////////////////////////////////////////////////// -->
+
+
+            <!--Search box-->
+            <!-- //////////////////////////////////////////////////////////////////////////// -->
+            <div class="search-overlay hide"></div>
+            <div id="search-body" class="z-depth-1">
+                <!--Search form-->
+                <form class="search-box">
+                    <div class="input-field z-depth-1">
+                        <!--Search input-->
+                        <input id="search" type="search" autocomplete="off" required>
+                        <!--End Search input-->
+                        <!--Search icon-->
+                        <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                        <!--End Search icon-->
+                        <!--close search box-->
+                        <i class="material-icons hide-show-nav-search">close</i>
+                        <!--End close search box-->
+                    </div>
+                </form>
+                <!--End Search form-->
+                <!--Search result-->
+                <div class="search-result">
+                    <div class="row">
+                        <div class="col s6 m8">
+                            <div class="search-result-title">Recent search</div>
+                            <ul class="search-result-body m-a-0">
+                                <li><a href="#" class="waves-effect waves-default">Form Validations</a></li>
+                                <li><a href="#">Range Slider</a></li>
+                                <li><a href="#">Animations</a></li>
+                                <li><a href="#">Change Password</a></li>
+                                <li><a href="#">Breadcrumbs</a></li>
+                                <li><a href="#">Collections</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col s6 m4">
+                            <div class="search-result-title">Most Visited Pages</div>
+                            <ul class="search-result-body m-a-0">
+                                <li><a href="#" class="waves-effect waves-default">Form Validations</a></li>
+                                <li><a href="#">Carousel</a></li>
+                                <li><a href="#">Animations</a></li>
+                                <li><a href="#">Change Password</a></li>
+                                <li><a href="#">Modals</a></li>
+                                <li><a href="#">Data Table</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+                <!--End search result-->
+            </div>
+            <!--Search box-->
+            <!-- //////////////////////////////////////////////////////////////////////////// -->
+
+
+            
+
+            <!--Right sidebar-->
+            <!-- //////////////////////////////////////////////////////////////////////////// -->
+            <aside>
+
+                <!-- rightsidebar overlay -->
+                <div class="right-sidebar-overlay hide"></div>
+                <!-- end rightsidebar overlay -->
+
+                <div class="right-sidebar z-depth-3">
+
+                    <!--right sidebar tab-->
+                    <ul class="tabs tabs-fixed-width tabs-right-sidebar">
+                        <li class="tab col s3"><a class="active" href="#settings">Settings</a></li>
+                        <li class="tab col s3"><a href="#notifications">Notifications</a></li>
+                    </ul>
+                    <!--End right sidebar tab-->
+
+                    <!--Right Sidebar body-->
+                    <div class="right-sidebar-body">
+                        <!--Notification body-->
+                        <div id="notifications">
+                            <ul class="content-list">
+                                <li>
+                                    <a href="#">
+                                        <span class="list-title white-text red">ORDER</span>
+                                        <span class="list-date">9 hours ago</span>
+                                        <h4 class="list-content-title">facilisis</h4>
+                                        <p class="list-content">
+                                            Etiam auctor porta augue sit amet facilisis. Sed libero nisi, scelerisque.
+                                        </p>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        <span class="list-title white-text blue">COMMENT</span>
+                                        <span class="list-date">10 hours ago</span>
+                                        <h4 class="list-content-title">porta augue</h4>
+                                        <p class="list-content">
+                                            Etiam auctor porta augue sit amet facilisis. Sed libero nisi, scelerisque.
+                                        </p>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        <span class="list-title white-text green">MEETING</span>
+                                        <span class="list-date">11 hours ago</span>
+                                        <h4 class="list-content-title">Sed libero</h4>
+                                        <p class="list-content">
+                                            Etiam auctor porta augue sit amet facilisis. Sed libero nisi, scelerisque.
+                                        </p>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        <span class="list-title white-text teal">EVENT</span>
+                                        <span class="list-date">12 hours ago</span>
+                                        <h4 class="list-content-title">sit amet</h4>
+                                        <p class="list-content">
+                                            Etiam auctor porta augue sit amet facilisis. Sed libero nisi, scelerisque.
+                                        </p>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        <span class="list-title white-text red">ORDER</span>
+                                        <span class="list-date">13 hours ago</span>
+                                        <h4 class="list-content-title">augue</h4>
+                                        <p class="list-content">
+                                            Etiam auctor porta augue sit amet facilisis. Sed libero nisi, scelerisque.
+                                        </p>
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <!--End Notification body-->
+
+                        <!--Settings body-->
+                        <div id="settings" class="settings-content">
+                            <h4 class="settings-content-title">Full Layout Options</h4>
+                            <p>
+                                <input class="with-gap" name="layout" type="radio" id="default-layout" checked/>
+                                <label for="default-layout">Fixed Header and Sidebar(Default)</label>
+                            </p>
+
+                            <p>
+                                <input class="with-gap" name="layout" type="radio" id="fixed-header-unfixed-sidebar" />
+                                <label for="fixed-header-unfixed-sidebar">Fixed Header Unfixed Sidebar</label>
+                            </p>
+
+                            <p>
+                                <input class="with-gap" name="layout" type="radio" id="unfixed-header-sidebar" />
+                                <label for="unfixed-header-sidebar">Unfixed Header and Sidebar</label>
+                            </p>
+
+                            <h4 class="settings-content-title">Boxed Layout Options</h4>
+                            <p>
+                                <input class="with-gap" name="layout" type="radio" id="default-boxed-layout" />
+                                <label for="default-boxed-layout">Fixed Header and Sidebar</label>
+                            </p>
+
+                            <p>
+                                <input class="with-gap" name="layout" type="radio" id="boxed-fixed-header-unfixed-sidebar" />
+                                <label for="boxed-fixed-header-unfixed-sidebar">Fixed Header Unfixed Sidebar</label>
+                            </p>
+
+                            <p>
+                                <input class="with-gap" name="layout" type="radio" id="boxed-unfixed-sidebar-header" />
+                                <label for="boxed-unfixed-sidebar-header">Unfixed Header and Sidebar</label>
+                            </p>
+                        </div>
+                        <!--End Settings body-->
+                    </div>
+                </div>
+                <!--End Right Sidebar body-->
+            </aside>
+            <!--End right sidebar-->
+            <!-- //////////////////////////////////////////////////////////////////////////// -->
+
+            <!-- //////////////////////////////////////////////////////////////////////////// -->
+            <!--Page Body-->
+            <main class="page-body">
+                <!--page title box-->
+                <div class="row">
+                    <div class="col s12 page-title-div">
+                        <!--Page Title-->
+                        <h1 class="header">Google Charts</h1>
+                        <p class="header-desc"><a href="https://developers.google.com/chart/" target="_blank">Google chart</a> tools are powerful, simple to use, and free. Try out our rich gallery of interactive charts and data tools.</p>
+                        <!--Page breadcrumbs-->
+                        <ol class="breadcrumbs left">
+                            <li><a href="dashboard.html">Dashboard</a></li>
+                            <li>Charts</li>
+                            <li class="active">Google Charts</li>
+                        </ol>
+                        <!--End page breadcrumbs-->
+
+                        <!--Page help-->
+                        <a class='dropdown-button dropdown-hover waves-effect waves-light page-help right' href='javascript:void(0)' data-activates='dropdown-help'>
+                            <i class="material-icons">help</i>
+                        </a>
+                        <ul id='dropdown-help' class='dropdown-content'>
+                            <li><a href="https://developers.google.com/chart/" target="_blank">API</a></li>
+                            <li><a href="https://developers.google.com/chart/" target="_blank">Blog</a></li>
+                            <li><a href="https://developers.google.com/chart/" target="_blank">Docs</a></li>
+                        </ul>
+                        <!--end page help-->
+
+                    </div>
+                </div>
+                <!--end page title box-->
+                <!--start section-->
+                <section class="section">
+                    <!--start row-->
+                    <div class="row ">
+                        <!--start column-->
+                        <div class="col s12">
+                            <!-- Start Area Chart Card-->
+                            <div class="card">
+                                <!--card content-->
+                                <div class="card-content">
+
+                                    <!-- //////////////////////////////////////// -->
+                                    <!-- Area Chart -->
+
+                                    <!--card title-->
+                                    <h2 class="card-title header">Area Chart</h2>
+                                    <!--area chart content-->
+                                    <div id="g-area-chart" style="width: 100%; height: 400px;"></div>
+
+                                    <!--Area Chart sample code-->
+                                    <div class="row">
+                                        <div class="col s12">
+                                            <ul class="tabs ">
+                                                <li class="tab"><a class="active" href="#ga-sample-code-html">HTML</a></li>
+                                                <li class="tab"><a href="#ga-sample-code-js">JS</a></li>
+                                            </ul>
+
+                                            <div id="ga-sample-code-html">
+                                                <pre>
+                                                    <code class="language-html">
+&lt;div id=&quot;g-area-chart&quot; style=&quot;width: 100%; height: 400px;&quot;&gt;&lt;/div&gt;
+                                                    </code>
+                                                </pre>
+
+                                            </div>
+
+                                            <div id="ga-sample-code-js">
+                                                <pre>
+                                                    <code class=" language-javascript">
+google.charts.load('current', { 'packages': ['corechart'] });
+google.charts.setOnLoadCallback(drawAreaChart);
+
+function drawAreaChart() {
+    var data = google.visualization.arrayToDataTable([
+        ['Year', 'Sales', 'Expenses'],
+        ['2013', 1000, 400],
+        ['2014', 1170, 460],
+        ['2015', 660, 1120],
+        ['2016', 1030, 540]
+    ]);
+
+    var options = {
+        title: 'Company Performance',
+        hAxis: { title: 'Year', titleTextStyle: { color: '#333' } },
+        vAxis: { minValue: 0 }
+    };
+
+    var chart = new google.visualization.AreaChart(document.getElementById('g-area-chart'));
+    chart.draw(data, options);
+}
+                                                    </code>
+                                                </pre>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--end Area Chart sample code-->
+
+                                    <!-- End Area Chart -->
+                                    <!-- //////////////////////////////////////// -->
+
+                                </div>
+                                <!--end card content-->
+                            </div>
+                            <!--end  Area Chart card-->
+
+
+                            <!-- Start Bar Chart Card-->
+                            <div class="card">
+                                <!--card content-->
+                                <div class="card-content">
+
+                                    <!-- //////////////////////////////////////// -->
+                                    <!-- Bar Chart -->
+
+                                    <!--card title-->
+                                    <h2 class="card-title header">Bar Chart</h2>
+                                    <!--Bar chart content-->
+                                    <div id="barchart_material" style="width: 100%; height: 400px;"></div>
+
+                                    <!--Bar Chart sample code-->
+                                    <div class="row">
+                                        <div class="col s12">
+                                            <ul class="tabs ">
+                                                <li class="tab"><a class="active" href="#gb-sample-code-html">HTML</a></li>
+                                                <li class="tab"><a href="#gb-sample-code-js">JS</a></li>
+                                            </ul>
+
+                                            <div id="gb-sample-code-html">
+                                                <pre>
+                                                    <code class="language-html">
+&lt;div id=&quot;barchart_material&quot; style=&quot;width: 100%; height: 400px;&quot;&gt;&lt;/div&gt;
+                                                    </code>
+                                                </pre>
+
+                                            </div>
+
+                                            <div id="gb-sample-code-js">
+                                                <pre>
+                                                    <code class=" language-javascript">
+google.charts.load('current', { 'packages': ['bar'] });
+google.charts.setOnLoadCallback(drawBarChart);
+
+function drawBarChart() {
+    var data = google.visualization.arrayToDataTable([
+        ['Year', 'Sales', 'Expenses', 'Profit'],
+        ['2014', 1000, 400, 200],
+        ['2015', 1170, 460, 250],
+        ['2016', 660, 1120, 300],
+        ['2017', 1030, 540, 350]
+    ]);
+
+    var options = {
+        chart: {
+            title: 'Company Performance',
+            subtitle: 'Sales, Expenses, and Profit: 2014-2017',
+        },
+        bars: 'vertical' // Required for Material Bar Charts.
+    };
+
+    var chart = new google.charts.Bar(document.getElementById('barchart_material'));
+
+    chart.draw(data, google.charts.Bar.convertOptions(options));
+}
+                                                    </code>
+                                                </pre>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--end Bar Chart sample code-->
+
+                                    <!-- End Bar Chart -->
+                                    <!-- //////////////////////////////////////// -->
+
+                                </div>
+                                <!--end card content-->
+                            </div>
+                            <!--end  Bar Chart card-->
+
+                            <!-- Start line Chart Card-->
+                            <div class="card">
+                                <!--card content-->
+                                <div class="card-content">
+
+                                    <!-- //////////////////////////////////////// -->
+                                    <!-- line Chart -->
+
+                                    <!--card title-->
+                                    <h2 class="card-title header">Line Chart</h2>
+                                    <!--line chart content-->
+                                    <div id="line-chart" style="width: 100%; height: 400px"></div>
+
+                                    <!--line Chart sample code-->
+                                    <div class="row">
+                                        <div class="col s12">
+                                            <ul class="tabs ">
+                                                <li class="tab"><a class="active" href="#gl-sample-code-html">HTML</a></li>
+                                                <li class="tab"><a href="#gl-sample-code-js">JS</a></li>
+                                            </ul>
+
+                                            <div id="gl-sample-code-html">
+                                                <pre>
+                                                    <code class="language-html">
+&lt;div id=&quot;line-chart&quot; style=&quot;width: 100%; height: 400px&quot;&gt;&lt;/div&gt;
+                                                    </code>
+                                                </pre>
+
+                                            </div>
+
+                                            <div id="gl-sample-code-js">
+                                                <pre>
+                                                    <code class=" language-javascript">
+google.charts.load('current', { 'packages': ['corechart'] });
+google.charts.setOnLoadCallback(drawLineChart);
+
+function drawLineChart() {
+    var data = google.visualization.arrayToDataTable([
+        ['Year', 'Sales', 'Expenses'],
+        ['2004', 1000, 400],
+        ['2005', 1170, 460],
+        ['2006', 660, 1120],
+        ['2007', 1030, 540]
+    ]);
+
+    var options = {
+        title: 'Company Performance',
+        curveType: 'function',
+        legend: { position: 'bottom' }
+    };
+
+    var chart = new google.visualization.LineChart(document.getElementById('line-chart'));
+
+    chart.draw(data, options);
+}
+                                                    </code>
+                                                </pre>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--end line Chart sample code-->
+
+                                    <!-- End line Chart -->
+                                    <!-- //////////////////////////////////////// -->
+
+                                </div>
+                                <!--end card content-->
+                            </div>
+                            <!--end  line Chart card-->
+
+                            <!-- Start Pie Chart Card-->
+                            <div class="card">
+                                <!--card content-->
+                                <div class="card-content">
+
+                                    <!-- //////////////////////////////////////// -->
+                                    <!-- Pie Chart -->
+
+                                    <!--card title-->
+                                    <h2 class="card-title header">Pie Chart</h2>
+                                    <!--Pie chart content-->
+                                    <div id="pie-chart" style="width: 100%; height: 400px"></div>
+
+                                    <!--Pie Chart sample code-->
+                                    <div class="row">
+                                        <div class="col s12">
+                                            <ul class="tabs ">
+                                                <li class="tab"><a class="active" href="#gp-sample-code-html">HTML</a></li>
+                                                <li class="tab"><a href="#gp-sample-code-js">JS</a></li>
+                                            </ul>
+
+                                            <div id="gp-sample-code-html">
+                                                <pre>
+                                                    <code class="language-html">
+&lt;div id=&quot;pie-chart&quot; style=&quot;width: 100%; height: 400px&quot;&gt;&lt;/div&gt;
+                                                    </code>
+                                                </pre>
+
+                                            </div>
+
+                                            <div id="gp-sample-code-js">
+                                                <pre>
+                                                    <code class=" language-javascript">
+google.charts.load('current', { 'packages': ['corechart'] });
+google.charts.setOnLoadCallback(drawPieChart);
+
+function drawPieChart() {
+
+var data = google.visualization.arrayToDataTable([
+    ['Task', 'Hours per Day'],
+    ['Work',     11],
+    ['Eat',      2],
+    ['Commute',  2],
+    ['Watch TV', 2],
+    ['Sleep',    7]
+]);
+
+var options = {
+    title: 'My Daily Activities'
+};
+
+var chart = new google.visualization.PieChart(document.getElementById('pie-chart'));
+
+chart.draw(data, options);
+}
+                                                    </code>
+                                                </pre>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--end Pie Chart sample code-->
+
+                                    <!-- End Pie Chart -->
+                                    <!-- //////////////////////////////////////// -->
+
+                                </div>
+                                <!--end card content-->
+                            </div>
+                            <!--end  Pie Chart card-->
+
+                            <!-- Start Donut Chart Card-->
+                            <div class="card">
+                                <!--card content-->
+                                <div class="card-content">
+
+                                    <!-- //////////////////////////////////////// -->
+                                    <!-- Donut Chart -->
+
+                                    <!--card title-->
+                                    <h2 class="card-title header">Donut Chart</h2>
+                                    <!--Donut chart content-->
+                                    <div id="donut-chart" style="width: 100%; height: 400px"></div>
+
+                                    <!--Donut Chart sample code-->
+                                    <div class="row">
+                                        <div class="col s12">
+                                            <ul class="tabs ">
+                                                <li class="tab"><a class="active" href="#gd-sample-code-html">HTML</a></li>
+                                                <li class="tab"><a href="#gd-sample-code-js">JS</a></li>
+                                            </ul>
+
+                                            <div id="gd-sample-code-html">
+                                                <pre>
+                                                    <code class="language-html">
+&lt;div id=&quot;donut-chart&quot; style=&quot;width: 100%; height: 400px&quot;&gt;&lt;/div&gt;
+                                                    </code>
+                                                </pre>
+
+                                            </div>
+
+                                            <div id="gd-sample-code-js">
+                                                <pre>
+                                                    <code class=" language-javascript">
+google.charts.load('current', { 'packages': ['corechart'] });
+google.charts.setOnLoadCallback(drawDonutChart);
+
+function drawDonutChart() {
+var data = google.visualization.arrayToDataTable([
+    ['Task', 'Hours per Day'],
+    ['Work',     11],
+    ['Eat',      2],
+    ['Commute',  2],
+    ['Watch TV', 2],
+    ['Sleep',    7]
+]);
+
+var options = {
+    title: 'My Daily Activities',
+    pieHole: 0.4,
+};
+
+var chart = new google.visualization.PieChart(document.getElementById('donut-chart'));
+chart.draw(data, options);
+}
+                                                    </code>
+                                                </pre>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--end Donut Chart sample code-->
+
+                                    <!-- End Donut Chart -->
+                                    <!-- //////////////////////////////////////// -->
+
+                                </div>
+                                <!--end card content-->
+                            </div>
+                            <!--end  Combo Chart card-->
+
+                            <!-- Start Combo Chart Card-->
+                            <div class="card">
+                                <!--card content-->
+                                <div class="card-content">
+
+                                    <!-- //////////////////////////////////////// -->
+                                    <!-- Combo Chart -->
+
+                                    <!--card title-->
+                                    <h2 class="card-title header">Combo Chart</h2>
+                                    <!--Combo chart content-->
+                                    <div id="combo-chart" style="width: 100%; height: 400px"></div>
+
+                                    <!--Combo Chart sample code-->
+                                    <div class="row">
+                                        <div class="col s12">
+                                            <ul class="tabs ">
+                                                <li class="tab"><a class="active" href="#gco-sample-code-html">HTML</a></li>
+                                                <li class="tab"><a href="#gco-sample-code-js">JS</a></li>
+                                            </ul>
+
+                                            <div id="gco-sample-code-html">
+                                                <pre>
+                                                    <code class="language-html">
+&lt;div id=&quot;combo-chart&quot; style=&quot;width: 100%; height: 400px&quot;&gt;&lt;/div&gt;
+                                                    </code>
+                                                </pre>
+
+                                            </div>
+
+                                            <div id="gco-sample-code-js">
+                                                <pre>
+                                                    <code class=" language-javascript">
+google.charts.load('current', { 'packages': ['corechart'] });
+google.charts.setOnLoadCallback(drawComboVisualization);
+
+function drawComboVisualization() {
+    // Some raw data (not necessarily accurate)
+    var data = google.visualization.arrayToDataTable([
+        ['Month', 'Bolivia', 'Ecuador', 'Madagascar', 'Papua New Guinea', 'Rwanda', 'Average'],
+        ['2004/05',  165,      938,         522,             998,           450,      614.6],
+        ['2005/06',  135,      1120,        599,             1268,          288,      682],
+        ['2006/07',  157,      1167,        587,             807,           397,      623],
+        ['2007/08',  139,      1110,        615,             968,           215,      609.4],
+        ['2008/09',  136,      691,         629,             1026,          366,      569.6]
+    ]);
+
+var options = {
+    title : 'Monthly Coffee Production by Country',
+    vAxis: {title: 'Cups'},
+    hAxis: {title: 'Month'},
+    seriesType: 'bars',
+    series: {5: {type: 'line'}}
+};
+
+var chart = new google.visualization.ComboChart(document.getElementById('combo-chart'));
+chart.draw(data, options);
+}
+                                                    </code>
+                                                </pre>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--end Combo Chart sample code-->
+
+                                    <!-- End Combo Chart -->
+                                    <!-- //////////////////////////////////////// -->
+
+                                </div>
+                                <!--end card content-->
+                            </div>
+                            <!--end  Combo Chart card-->
+
+                            <!-- Start Table Chart Card-->
+                            <div class="card">
+                                <!--card content-->
+                                <div class="card-content">
+
+                                    <!-- //////////////////////////////////////// -->
+                                    <!-- Table Chart -->
+
+                                    <!--card title-->
+                                    <h2 class="card-title header">Table Chart</h2>
+                                    <!--Table chart content-->
+                                    <div id="table-chart"></div>
+
+                                    <!--Table Chart sample code-->
+                                    <div class="row">
+                                        <div class="col s12">
+                                            <ul class="tabs ">
+                                                <li class="tab"><a class="active" href="#gt-sample-code-html">HTML</a></li>
+                                                <li class="tab"><a href="#gt-sample-code-js">JS</a></li>
+                                            </ul>
+
+                                            <div id="gt-sample-code-html">
+                                                <pre>
+                                                    <code class="language-html">
+&lt;div id=&quot;table-chart&quot;&gt;&lt;/div&gt;
+                                                    </code>
+                                                </pre>
+
+                                            </div>
+
+                                            <div id="gt-sample-code-js">
+                                                <pre>
+                                                    <code class=" language-javascript">
+google.charts.load('current', { 'packages': ['table'] });
+google.charts.setOnLoadCallback(drawTable);
+
+function drawTable() {
+var data = new google.visualization.DataTable();
+data.addColumn('string', 'Name');
+data.addColumn('number', 'Salary');
+data.addColumn('boolean', 'Full Time Employee');
+data.addRows([
+    ['Mike',  {v: 10000, f: '$10,000'}, true],
+    ['Jim',   {v:8000,   f: '$8,000'},  false],
+    ['Alice', {v: 12500, f: '$12,500'}, true],
+    ['Bob',   {v: 7000,  f: '$7,000'},  true]
+]);
+
+var table = new google.visualization.Table(document.getElementById('table-chart'));
+
+table.draw(data, {showRowNumber: true, width: '100%', height: '100%'});
+}
+                                                    </code>
+                                                </pre>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--end Table Chart sample code-->
+
+                                    <!-- End Table Chart -->
+                                    <!-- //////////////////////////////////////// -->
+
+                                </div>
+                                <!--end card content-->
+                            </div>
+                            <!--end  Table Chart card-->
+
+                            <!-- Start Bubble Chart Card-->
+                            <div class="card">
+                                <!--card content-->
+                                <div class="card-content">
+
+                                    <!-- //////////////////////////////////////// -->
+                                    <!-- Bubble Chart -->
+
+                                    <!--card title-->
+                                    <h2 class="card-title header">Bubble Chart</h2>
+                                    <!--Bubble chart content-->
+                                    <div id="bubble-chart" style="width: 100%; height: 400px;"></div>
+
+                                    <!--Bubble Chart sample code-->
+                                    <div class="row">
+                                        <div class="col s12">
+                                            <ul class="tabs ">
+                                                <li class="tab"><a class="active" href="#gbu-sample-code-html">HTML</a></li>
+                                                <li class="tab"><a href="#gbu-sample-code-js">JS</a></li>
+                                            </ul>
+
+                                            <div id="gbu-sample-code-html">
+                                                <pre>
+                                                    <code class="language-html">
+&lt;div id=&quot;bubble-chart&quot; style=&quot;width: 100%; height: 400px;&quot;&gt;&lt;/div&gt;
+                                                    </code>
+                                                </pre>
+
+                                            </div>
+
+                                            <div id="gbu-sample-code-js">
+                                                <pre>
+                                                    <code class=" language-javascript">
+google.charts.load('current', { 'packages': ['corechart'] });
+google.charts.setOnLoadCallback(drawSeriesChart);
+
+function drawSeriesChart() {
+
+    var data = google.visualization.arrayToDataTable([
+    ['ID', 'Life Expectancy', 'Fertility Rate', 'Region',     'Population'],
+    ['CAN',    80.66,              1.67,      'North America',  33739900],
+    ['DEU',    79.84,              1.36,      'Europe',         81902307],
+    ['DNK',    78.6,               1.84,      'Europe',         5523095],
+    ['EGY',    72.73,              2.78,      'Middle East',    79716203],
+    ['GBR',    80.05,              2,         'Europe',         61801570],
+    ['IRN',    72.49,              1.7,       'Middle East',    73137148],
+    ['IRQ',    68.09,              4.77,      'Middle East',    31090763],
+    ['ISR',    81.55,              2.96,      'Middle East',    7485600],
+    ['RUS',    68.6,               1.54,      'Europe',         141850000],
+    ['USA',    78.09,              2.05,      'North America',  307007000]
+    ]);
+
+    var options = {
+    title: 'Correlation between life expectancy, fertility rate ' +
+            'and population of some world countries (2010)',
+    hAxis: {title: 'Life Expectancy'},
+    vAxis: {title: 'Fertility Rate'},
+    bubble: {textStyle: {fontSize: 11}}
+    };
+
+    var chart = new google.visualization.BubbleChart(document.getElementById('bubble-chart'));
+    chart.draw(data, options);
+}
+                                                    </code>
+                                                </pre>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--end Bubble Chart sample code-->
+
+                                    <!-- End Bubble Chart -->
+                                    <!-- //////////////////////////////////////// -->
+
+                                </div>
+                                <!--end card content-->
+                            </div>
+                            <!--end  Bubble Chart card-->
+
+                            <!-- Start Geo Chart Card-->
+                            <div class="card">
+                                <!--card content-->
+                                <div class="card-content">
+
+                                    <!-- //////////////////////////////////////// -->
+                                    <!-- Geo Chart -->
+
+                                    <!--card title-->
+                                    <h2 class="card-title header">Geo Chart</h2>
+                                    <!--Geo chart content-->
+                                    <div id="geo-chart" style="width: 100%; height: 400px;"></div>
+
+                                    <!--Geo Chart sample code-->
+                                    <div class="row">
+                                        <div class="col s12">
+                                            <ul class="tabs ">
+                                                <li class="tab"><a class="active" href="#gge-sample-code-html">HTML</a></li>
+                                                <li class="tab"><a href="#gge-sample-code-js">JS</a></li>
+                                            </ul>
+
+                                            <div id="gge-sample-code-html">
+                                                <pre>
+                                                    <code class="language-html">
+&lt;div id=&quot;geo-chart&quot; style=&quot;width: 100%; height: 400px;&quot;&gt;&lt;/div&gt;
+                                                    </code>
+                                                </pre>
+
+                                            </div>
+
+                                            <div id="gge-sample-code-js">
+                                                <pre>
+                                                    <code class=" language-javascript">
+google.charts.load('current', { 'packages': ['geochart'] });
+google.charts.setOnLoadCallback(drawRegionsMap);
+
+function drawRegionsMap() {
+    var data = google.visualization.arrayToDataTable([
+        ['Country', 'Popularity'],
+        ['Germany', 200],
+        ['United States', 300],
+        ['Brazil', 400],
+        ['Canada', 500],
+        ['France', 600],
+        ['RU', 700]
+    ]);
+
+    var options = {};
+
+    var chart = new google.visualization.GeoChart(document.getElementById('geo-chart'));
+
+    chart.draw(data, options);
+}
+                                                    </code>
+                                                </pre>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--end Geo Chart sample code-->
+
+                                    <!-- End Geo Chart -->
+                                    <!-- //////////////////////////////////////// -->
+
+                                </div>
+                                <!--end card content-->
+                            </div>
+                            <!--end  Geo Chart card-->
+
+                        </div>
+                        <!--end column-->
+                    </div>
+                    <!--end row-->
+                </section>
+                <!--end section-->
+
+            </main>
+            <!--End page body-->
+            <!-- //////////////////////////////////////////////////////////////////////////// -->
+
+            <!-- //////////////////////////////////////////////////////////////////////////// -->
+            <!--Footer-->
+            <footer class="page-footer">
+
+                <div class="footer-copyright">
+                    <div class="left">&copy; materialcss</div>
+                    <div class="right"><a href="javascript:void(0)" id="scroll-top-dash" class="tooltipped" data-position="top" data-delay="50" data-tooltip="Go top"><i class="material-icons">arrow_upward</i></a></div>
+                </div>
+            </footer>
+            <!--End footer-->
+            <!-- //////////////////////////////////////////////////////////////////////////// -->
+        </div>
+        <!--End page control-->
+        <!-- //////////////////////////////////////////////////////////////////////////// -->
+
+    </div>
+    <!--End page wrapper-->
+    <!-- //////////////////////////////////////////////////////////////////////////// -->
+
+    <!-- //////////////////////////////////////////////////////////////////////////// -->
+    <!--  Scripts-->
+
+    <!-- Jquery -->
+    <script src="http://designlayout.xyz/materialcss/asset/vendors/jquery/jquery.min.js" type="text/javascript"></script>
+    <!-- Materialize js -->
+    <script src="http://designlayout.xyz/materialcss/asset/vendors/materialize/materialize.min.js" type="text/javascript"></script>
+    <!-- prism syntax highlighter -->
+    <script src="http://designlayout.xyz/materialcss/asset/vendors/prism/prism.js" type="text/javascript"></script>
+    <!-- Google chart -->
+    <script src="https://www.gstatic.com/charts/loader.js" type="text/javascript"></script>
+    <!-- materialcss theme script -->
+    <script src="http://designlayout.xyz/materialcss/asset/js/app.js" type="text/javascript"></script>
+    <!-- Your custom script -->
+    <script src="http://designlayout.xyz/materialcss/asset/js/script.js" type="text/javascript"></script>
+    <!-- Google Charts Demo -->
+    <script>
+        // Load chart module
+        google.charts.load('current', {
+            'packages': ['corechart', 'bar', 'table', 'geochart']
+        });
+
+        // Area chart demo
+        google.charts.setOnLoadCallback(drawAreaChart);
+
+        function drawAreaChart() {
+            var data = google.visualization.arrayToDataTable([
+                ['Year', 'Sales', 'Expenses'],
+                ['2013', 1000, 400],
+                ['2014', 1170, 460],
+                ['2015', 660, 1120],
+                ['2016', 1030, 540]
+            ]);
+
+            var options = {
+                title: 'Company Performance',
+                hAxis: {
+                    title: 'Year',
+                    titleTextStyle: {
+                        color: '#333'
+                    }
+                },
+                vAxis: {
+                    minValue: 0
+                }
+            };
+
+            var chart = new google.visualization.AreaChart(document.getElementById('g-area-chart'));
+            chart.draw(data, options);
+        }
+
+        // Bar chart demo
+
+        google.charts.setOnLoadCallback(drawBarChart);
+
+        function drawBarChart() {
+            var data = google.visualization.arrayToDataTable([
+                ['Year', 'Sales', 'Expenses', 'Profit'],
+                ['2014', 1000, 400, 200],
+                ['2015', 1170, 460, 250],
+                ['2016', 660, 1120, 300],
+                ['2017', 1030, 540, 350]
+            ]);
+
+            var options = {
+                chart: {
+                    title: 'Company Performance',
+                    subtitle: 'Sales, Expenses, and Profit: 2014-2017',
+                },
+                bars: 'vertical' // Required for Material Bar Charts.
+            };
+
+            var chart = new google.charts.Bar(document.getElementById('barchart_material'));
+
+            chart.draw(data, google.charts.Bar.convertOptions(options));
+        }
+
+        // line chart demo
+
+        google.charts.setOnLoadCallback(drawLineChart);
+
+        function drawLineChart() {
+            var data = google.visualization.arrayToDataTable([
+                ['Year', 'Sales', 'Expenses'],
+                ['2004', 1000, 400],
+                ['2005', 1170, 460],
+                ['2006', 660, 1120],
+                ['2007', 1030, 540]
+            ]);
+
+            var options = {
+                title: 'Company Performance',
+                curveType: 'function',
+                legend: {
+                    position: 'bottom'
+                }
+            };
+
+            var chart = new google.visualization.LineChart(document.getElementById('line-chart'));
+
+            chart.draw(data, options);
+        }
+
+        // Pie chart demo
+
+        google.charts.setOnLoadCallback(drawPieChart);
+
+        function drawPieChart() {
+
+            var data = google.visualization.arrayToDataTable([
+                ['Task', 'Hours per Day'],
+                ['Work', 11],
+                ['Eat', 2],
+                ['Commute', 2],
+                ['Watch TV', 2],
+                ['Sleep', 7]
+            ]);
+
+            var options = {
+                title: 'My Daily Activities'
+            };
+
+            var chart = new google.visualization.PieChart(document.getElementById('pie-chart'));
+
+            chart.draw(data, options);
+        }
+
+        // Donut chart demo
+
+        google.charts.setOnLoadCallback(drawDonutChart);
+
+        function drawDonutChart() {
+            var data = google.visualization.arrayToDataTable([
+                ['Task', 'Hours per Day'],
+                ['Work', 11],
+                ['Eat', 2],
+                ['Commute', 2],
+                ['Watch TV', 2],
+                ['Sleep', 7]
+            ]);
+
+            var options = {
+                title: 'My Daily Activities',
+                pieHole: 0.4,
+            };
+
+            var chart = new google.visualization.PieChart(document.getElementById('donut-chart'));
+            chart.draw(data, options);
+        }
+
+        // Combo chart demo
+
+        google.charts.setOnLoadCallback(drawComboVisualization);
+
+        function drawComboVisualization() {
+            // Some raw data (not necessarily accurate)
+            var data = google.visualization.arrayToDataTable([
+                ['Month', 'Bolivia', 'Ecuador', 'Madagascar', 'Papua New Guinea', 'Rwanda', 'Average'],
+                ['2004/05', 165, 938, 522, 998, 450, 614.6],
+                ['2005/06', 135, 1120, 599, 1268, 288, 682],
+                ['2006/07', 157, 1167, 587, 807, 397, 623],
+                ['2007/08', 139, 1110, 615, 968, 215, 609.4],
+                ['2008/09', 136, 691, 629, 1026, 366, 569.6]
+            ]);
+
+            var options = {
+                title: 'Monthly Coffee Production by Country',
+                vAxis: {
+                    title: 'Cups'
+                },
+                hAxis: {
+                    title: 'Month'
+                },
+                seriesType: 'bars',
+                series: {
+                    5: {
+                        type: 'line'
+                    }
+                }
+            };
+
+            var chart = new google.visualization.ComboChart(document.getElementById('combo-chart'));
+            chart.draw(data, options);
+        }
+
+        // Table chart demo
+
+        google.charts.setOnLoadCallback(drawTable);
+
+        function drawTable() {
+            var data = new google.visualization.DataTable();
+            data.addColumn('string', 'Name');
+            data.addColumn('number', 'Salary');
+            data.addColumn('boolean', 'Full Time Employee');
+            data.addRows([
+                ['Mike', {
+                    v: 10000,
+                    f: '$10,000'
+                }, true],
+                ['Jim', {
+                    v: 8000,
+                    f: '$8,000'
+                }, false],
+                ['Alice', {
+                    v: 12500,
+                    f: '$12,500'
+                }, true],
+                ['Bob', {
+                    v: 7000,
+                    f: '$7,000'
+                }, true]
+            ]);
+
+            var table = new google.visualization.Table(document.getElementById('table-chart'));
+
+            table.draw(data, {
+                showRowNumber: true,
+                width: '100%',
+                height: '100%'
+            });
+        }
+
+        // Bubble chart demo
+
+        google.charts.setOnLoadCallback(drawSeriesChart);
+
+        function drawSeriesChart() {
+
+            var data = google.visualization.arrayToDataTable([
+                ['ID', 'Life Expectancy', 'Fertility Rate', 'Region', 'Population'],
+                ['CAN', 80.66, 1.67, 'North America', 33739900],
+                ['DEU', 79.84, 1.36, 'Europe', 81902307],
+                ['DNK', 78.6, 1.84, 'Europe', 5523095],
+                ['EGY', 72.73, 2.78, 'Middle East', 79716203],
+                ['GBR', 80.05, 2, 'Europe', 61801570],
+                ['IRN', 72.49, 1.7, 'Middle East', 73137148],
+                ['IRQ', 68.09, 4.77, 'Middle East', 31090763],
+                ['ISR', 81.55, 2.96, 'Middle East', 7485600],
+                ['RUS', 68.6, 1.54, 'Europe', 141850000],
+                ['USA', 78.09, 2.05, 'North America', 307007000]
+            ]);
+
+            var options = {
+                title: 'Correlation between life expectancy, fertility rate ' +
+                    'and population of some world countries (2010)',
+                hAxis: {
+                    title: 'Life Expectancy'
+                },
+                vAxis: {
+                    title: 'Fertility Rate'
+                },
+                bubble: {
+                    textStyle: {
+                        fontSize: 11
+                    }
+                }
+            };
+
+            var chart = new google.visualization.BubbleChart(document.getElementById('bubble-chart'));
+            chart.draw(data, options);
+        }
+
+        // Geo chart demo
+
+        google.charts.setOnLoadCallback(drawRegionsMap);
+
+        function drawRegionsMap() {
+            var data = google.visualization.arrayToDataTable([
+                ['Country', 'Popularity'],
+                ['Germany', 200],
+                ['United States', 300],
+                ['Brazil', 400],
+                ['Canada', 500],
+                ['France', 600],
+                ['RU', 700]
+            ]);
+
+            var options = {};
+
+            var chart = new google.visualization.GeoChart(document.getElementById('geo-chart'));
+
+            chart.draw(data, options);
+        }
+    </script>
+
+    <!--End scripts-->
+    <!-- //////////////////////////////////////////////////////////////////////////// -->
+</body>
+<!--End body-->
+<!-- //////////////////////////////////////////////////////////////////////////// -->
+
+
+<!-- Mirrored from designlayout.xyz/materialcss/html/google-charts.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 03 Oct 2017 22:52:18 GMT -->
+</html>
+<!--End HTML-->
+<!-- //////////////////////////////////////////////////////////////////////////// -->

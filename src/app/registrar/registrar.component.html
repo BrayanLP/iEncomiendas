@@ -1,0 +1,11 @@
+<p>
+  ESTAMOS EN REGISTRO
+</p>
+
+<form [formGroup]="registrarForm" (ngSubmit)="registrar()">
+  <input formControlName="correo" type="text">
+  <input formControlName="contra" type="password">
+  <button>Registrar</button>
+
+
+</form>

@@ -1,0 +1,21 @@
+<div class="row">
+  <div class="col s12 page-title-div">
+    <h1 class="header">Iniciar Sessión</h1>
+  </div>
+</div>
+<section class="section">
+  <div class="row ">
+    <div class="col s12">
+      <div class="card">
+        <div class="card-content">
+          <form [formGroup]="loginForm" (ngSubmit)="login()">
+            <input formControlName="correo" type="text">
+            <input formControlName="contra" type="password">
+            <button class="btn waves-effect">Iniciar Sesión</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+

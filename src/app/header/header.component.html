@@ -1,0 +1,93 @@
+<aside>
+  <!-- overlay -->
+  <div class="left-sidebar-overlay"></div>
+  <div class="left-sidebar z-depth-3">
+    <!--Left sidebar body-->
+    <div class="left-sidebar-body">
+
+      <!--sidebar menu-->
+      <ul class="leftside-navigation">
+        <li class="navigation">Menu</li>
+        <li>
+          <a routerLink="./dashboard" class="collapsible-label1 waves-effect waves-default tooltipped">
+            <i class="material-icons left-icon">dashboard</i>
+            Dashboard {{uidParams}}
+          </a>
+        </li>
+        <li>
+          <mz-collapsible [mode]="'expandable'" [onClose]="closeFunctionCallback" [onOpen]="openFunctionCallback" [popout]="false">
+            <mz-collapsible-item>
+              <mz-collapsible-item-header class="collapsible-label1 waves-effect waves-default">
+                <i class="material-icons left-icon">shopping_basket</i>
+                <i class="material-icons right-icon">arrow_drop_down</i>Módulo Inventario
+              </mz-collapsible-item-header>
+              <mz-collapsible-item-body>
+                <ul>
+                  <li>
+                    <a routerLink="./inventario/registrar" class="waves-effect waves-default">Registro</a>
+                  </li>
+                  <li>
+                    <a routerLink="./inventario/listado" class="waves-effect waves-default">Listado</a>
+                  </li>
+                </ul>
+              </mz-collapsible-item-body>
+            </mz-collapsible-item>
+          </mz-collapsible>
+        </li>
+        <li>
+          <mz-collapsible [mode]="'expandable'" [onClose]="closeFunctionCallback" [onOpen]="openFunctionCallback" [popout]="false">
+            <mz-collapsible-item>
+              <mz-collapsible-item-header class="collapsible-label1 waves-effect waves-default">
+                <i class="material-icons left-icon">credit_card</i>
+                <i class="material-icons right-icon">arrow_drop_down</i>Módulo Compras
+              </mz-collapsible-item-header>
+              <mz-collapsible-item-body>
+                <li>
+                  <a routerLink="./compras/registrar" class="waves-effect waves-default">Registro</a>
+                </li>
+                <li>
+                  <a routerLink="./compras/listado" class="waves-effect waves-default">Listado</a>
+                </li>
+              </mz-collapsible-item-body>
+            </mz-collapsible-item>
+          </mz-collapsible>
+        </li>
+        <li>
+          <mz-collapsible [mode]="'expandable'" [onClose]="closeFunctionCallback" [onOpen]="openFunctionCallback" [popout]="false">
+            <mz-collapsible-item>
+              <mz-collapsible-item-header class="collapsible-label1 waves-effect waves-default">
+                <i class="material-icons left-icon">shopping_cart</i>
+                <i class="material-icons right-icon">arrow_drop_down</i>Módulo Ventas
+              </mz-collapsible-item-header>
+              <mz-collapsible-item-body>
+                <li>
+                  <a routerLink="./ventas/registrar" class="waves-effect waves-default">Registro</a>
+                </li>
+                <li>
+                  <a routerLink="./ventas/listado" class="waves-effect waves-default">Listado</a>
+                </li>
+              </mz-collapsible-item-body>
+            </mz-collapsible-item>
+          </mz-collapsible>
+        </li>
+        <li>
+          <a routerLink="./usuarios" class="waves-effect waves-default tooltipped">
+            <i class="material-icons left-icon">person</i>
+            Módulo Usuarios
+          </a>
+        </li>
+      </ul>
+      <!--End sidebar menu-->
+    </div>
+
+    <!--End Left sidebar body-->
+
+    <!--Left sidebar footer-->
+    <div class="sidebar-footer">
+      <a href="javascript:void(0)" id="collapsed-left-sidebar" class="toggle-icon-left-sidebar waves-effect waves-default">
+        <i class="right material-icons">keyboard_arrow_left</i>
+      </a>
+    </div>
+    <!--End Left sidebar footer-->
+  </div>
+</aside>

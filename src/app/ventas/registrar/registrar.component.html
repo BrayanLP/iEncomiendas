@@ -1,0 +1,121 @@
+<div class="row">
+    <div class="col s12 page-title-div">
+      <!--Page Title-->
+      <h1 class="header">Listado de Inventario</h1>
+      <!--Page breadcrumbs-->
+      <ol class="breadcrumbs left">
+        <li>
+          <a href="dashboard">Dashboard</a>
+        </li>
+        <li>Inventario</li>
+        <li class="active">Listado</li>
+      </ol>
+      <!--End page breadcrumbs-->
+
+    </div>
+  </div>
+  <!--end page title box-->
+  <!--start section-->
+  <section class="section">
+    <!--start row-->
+    <div class="row ">
+      <!--start column-->
+      <div class="col s12">
+        <!--start card-->
+        <div class="card">
+          <!--card content-->
+          <div class="card-content">
+            <p>
+              registrar works!
+            </p>
+
+            <form [formGroup]="ventasForm" (ngSubmit)="preRegistro()">
+              <!-- <div class="form-group">
+                  <label for="name">nombre producto</label><br>
+                  <input type="text" formControlName="nombre">
+                </div> -->
+              <div class="form-group">
+                <label for="name">Tipo de Producto</label>
+                <br>
+                <select formControlName="tipo_producto">
+                  <option value="1">cafe</option>
+                  <option value="2">cacao</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="name">cliente</label>
+                <br>
+                <select formControlName="cliente">
+                  <option value="1">brenda tineo</option>
+                  <option value="2">brayan lp</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="name">Cantidad</label>
+                <br>
+                <input type="text" formControlName="cantidad">
+              </div>
+              <div class="form-group">
+                <label for="name">Precio de venta</label>
+                <br>
+                <input type="text" formControlName="precio_venta">
+              </div>
+              <br>
+              <hr>
+              <button>Agregar</button>
+            </form>
+
+            <table border="1" align="center">
+              <thead>
+                <!-- <td>
+                  Tipo Producto
+                </td> -->
+                <td>
+                  Nombre del usuario
+                </td>
+                <td>
+                  Nombre del Cliente
+                </td>
+                <td>
+                  Fecha de Venta
+                </td>
+                <td>
+                  Total
+                </td>
+                <td>
+                  Acciones
+                </td>
+              </thead>
+              <tbody>
+                <tr *ngFor="let lis of temp_data; let i = index">
+                  <td>{{lis.usuario.nombre}}</td>
+                  <td>{{lis.cliente.nombre}}</td>
+                  <td>{{lis.fecha_venta}}</td>
+                  <td>{{lis.precio_compra * lis.cantidad | currency: "PEN":false}}</td>
+                  <td>
+                    <!-- <button>Editar</button> -->
+                    <button (click)="eliminar(i)">Eliminar</button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+            Total a pagar: {{ total }}
+            <form [formGroup]="pagarForm" (ngSubmit)="pagar()">
+              <div class="form-group">
+                <label for="name">Cantidad</label>
+                <br>
+                <input type="text" formControlName="cantidad">
+              </div>
+              <button>Pagar</button>
+            </form>
+          </div>
+          <!--end card content-->
+        </div>
+        <!--end card-->
+      </div>
+      <!--end column-->
+    </div>
+    <!--end row-->
+  </section>
+  <!--end section-->

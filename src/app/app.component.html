@@ -1,0 +1,137 @@
+
+<div class="page-wrapper">
+    <div id="control-body" class="fixed-sidebar medium-sidebar fixed-nav">
+      <!--prepage loader-->
+      <!-- <div id="prepage-loader">
+        <div class="preloader-center">
+          <div class="preloader-wrapper big active">
+            <div class="spinner-layer spinner-indigo-only">
+              <div class="circle-clipper left">
+                <div class="circle"></div>
+              </div>
+              <div class="gap-patch">
+                <div class="circle"></div>
+              </div>
+              <div class="circle-clipper right">
+                <div class="circle"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+      <!-- End prepage loader-->
+
+      <nav class="page-header z-depth-3">
+        <div class="nav-wrapper">
+          <a id="logo-container" href="#" class="brand-logo hide-on-med-and-down">iVentas</a>
+          <ul class="left">
+            <li class="hide-on-large-only">
+              <a href="javascript:void(0)" id="toggle-left-sidebar" class="hrz-menu waves-effect waves-default">
+                <i class="material-icons">menu</i>
+              </a>
+            </li>
+
+            <li>
+              <a href="javascript:void(0)" class="hrz-menu dropdown-button dropdown-belowOrigin waves-effect waves-default" data-activates='notification-list-dropdown'>
+                <i class="material-icons">notifications</i>
+                <span id="notification-cout">1</span>
+              </a>
+            </li>
+
+
+          </ul>
+
+          <ul id='notification-list-dropdown' class='width-400 dropdown-content'>
+            <li>
+              <a href="#!">
+                <i class="material-icons">email</i>
+                <p class="noti-message">New mail from jhon
+                  <span>15 minutes ago</span>
+                </p>
+              </a>
+            </li>
+
+            <li>
+              <a href="#!">
+                <i class="material-icons">chat</i>
+                <p class="noti-message">New member John joined
+                  <span>25 minutes ago</span>
+                </p>
+              </a>
+            </li>
+
+            <li>
+              <a href="#!">
+                <i class="material-icons">perm_identity</i>
+                <p class="noti-message">New mail from jhon
+                  <span>30 minutes ago</span>
+                </p>
+              </a>
+            </li>
+
+            <li>
+              <a href="#!">
+                <i class="material-icons">chat</i>
+                <p class="noti-message">New member John joined
+                  <span>1 hour ago</span>
+                </p>
+              </a>
+            </li>
+
+            <li>
+              <a href="#!" class="view-all-noti">
+                See All
+              </a>
+            </li>
+
+
+          </ul>
+
+
+          <ul class="right">
+            <li id="user-account-box">
+              <a href="javascript:void(0)" class="hrz-menu dropdown-button dropdown-belowOrigin dropdown-widthChange waves-effect waves-default"
+                data-activates='user-account-dropdown'>
+                <i class="material-icons">account_circle</i>
+              </a>
+            </li>
+
+            <li class="hide-on-small-only">
+              <a href="javascript:void(0)" class="hrz-menu waves-effect waves-default" id="page-refresh">
+                <i class="material-icons">refresh</i>
+              </a>
+            </li>
+            <li class="hide-on-med-and-down">
+              <a href="javascript:void(0)" class="hrz-menu waves-effect waves-default" id="page-fullscreen">
+                <i class="material-icons">fullscreen</i>
+              </a>
+            </li>
+          </ul>
+
+          <ul id='user-account-dropdown' class='dropdown-content'>
+            <li *ngIf="!uid">
+              <a routerLink="/login">
+                <i class="material-icons">perm_identity</i>Login</a>
+            </li>
+            <li>
+              <a routerLink="/perfil">
+                <i class="material-icons">perm_identity</i>Mi Perfil</a>
+            </li>
+            <li *ngIf="uid">
+              <a (click)="logout()">
+                <i class="material-icons">power_settings_new</i>Salir</a>
+            </li>
+            <li class="divider"></li>
+            <li *ngIf="!uid">
+              <a routerLink="/registrar">
+                <i class="material-icons">power_settings_new</i>Registrar</a>
+            </li>
+
+          </ul>
+        </div>
+      </nav>
+      <router-outlet></router-outlet>
+
+    </div>
+
+  </div>

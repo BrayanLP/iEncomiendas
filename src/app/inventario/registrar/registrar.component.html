@@ -1,0 +1,84 @@
+<app-header></app-header>
+<main class="page-body">
+  <div class="row">
+    <div class="col s12 page-title-div">
+      <h1 class="header">Registro de Inventario {{uidParams}}</h1>
+      <ol class="breadcrumbs left">
+        <li>Inventario</li>
+        <li class="active">Registrar</li>
+      </ol>
+
+    </div>
+  </div>
+  <section class="section">
+    <div class="row ">
+      <div class="col s12">
+        <div class="card">
+          <div class="card-content">
+            <form [formGroup]="inventarioForm" (ngSubmit)="preRegistro()">
+              <div class="form-group">
+                <label for="name">Nombre de Producto</label>
+                <br>
+                <input type="text" select formControlName="nombre">
+              </div>
+              <div class="form-group">
+                <label for="name">Cantidad</label>
+                <br>
+                <input type="text" formControlName="cantidad">
+              </div>
+              <div class="form-group">
+                <label for="name">Precio de venta</label>
+                <br>
+                <input type="text" formControlName="precio">
+              </div>
+              <br>
+              <hr>
+              <button>Agregar</button>
+            </form>
+
+            <table border="1" align="center">
+              <thead>
+                <td>
+                  Nombre del producto
+                </td>
+                <td>
+                  cantidad
+                </td>
+                <td>
+                  precio
+                </td>
+                <td>
+                  Acciones
+                </td>
+              </thead>
+              <tbody>
+                <tr *ngFor="let lis of temp_data; let i = index">
+                  <td>{{lis.nombre}}</td>
+                  <td>{{lis.cantidad}}</td>
+                  <td>{{lis.precio}}</td>
+                  <td>
+                    <!-- <button>Editar</button> -->
+                    <button (click)="eliminar(i)">Eliminar</button>
+                  </td>
+                </tr>
+                <tr *ngIf="temp_data.length > 0">
+                  No hay productos
+                </tr>
+              </tbody>
+            </table>
+
+            <!-- Total a pagar: {{ total }} -->
+            <button (click)="registrar()">Registrar Todo</button>
+            <!-- <form [formGroup]="pagarForm" (ngSubmit)="pagar()">
+              <div class="form-group">
+                <label for="name" >Cantidad</label>
+                <br>
+                <input type="text" formControlName="cantidad">
+              </div>
+              </form> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>

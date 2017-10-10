@@ -1,0 +1,782 @@
+<!--Design by designlayout.xyz-->
+
+<!-- //////////////////////////////////////////////////////////////////////////// -->
+<!--Start HTML document-->
+<!DOCTYPE html>
+
+<!-- //////////////////////////////////////////////////////////////////////////// -->
+<!--HTML-->
+<html lang="en">
+
+<!-- //////////////////////////////////////////////////////////////////////////// -->
+<!--Head-->
+
+
+<!-- Mirrored from designlayout.xyz/materialcss/html/waves.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 03 Oct 2017 22:52:18 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!--viewport meta tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Favicon icon-->
+    <link href="http://designlayout.xyz/materialcss/asset/images/favicon.png" type="image/png" rel="icon">
+
+    <!--Browser navbar color for mobile-->
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#5165d6">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#5165d6">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#5165d6">
+    <!--Page title-->
+    <title>Waves - materialcss</title>
+    <!-- ================================================
+    CSS
+    ================================================ -->
+    
+    <!-- materialize stylesheet -->
+    <link href="http://designlayout.xyz/materialcss/asset/vendors/materialize/materialize.min.css" type="text/css" rel="stylesheet" />
+    <!-- google material design icons -->
+    <link href="http://designlayout.xyz/materialcss/asset/vendors/material-icons/material-icons.css" type="text/css" rel="stylesheet" />
+    <!-- prism syntax highlighter -->
+    <link href="http://designlayout.xyz/materialcss/asset/vendors/prism/prism.css" type="text/css" rel="stylesheet" />
+    <!-- materialcss app stylesheet -->
+    <link href="http://designlayout.xyz/materialcss/asset/css/app.css" type="text/css" rel="stylesheet" />
+    <!-- materialcss theme stylesheet -->
+    <link href="http://designlayout.xyz/materialcss/asset/css/theme-1.css" type="text/css" rel="stylesheet" />
+    <!-- Your custom  stylesheet -->
+    <link href="http://designlayout.xyz/materialcss/asset/css/style.css" type="text/css" rel="stylesheet" />
+
+
+</head>
+<!-- End head-->
+<!-- //////////////////////////////////////////////////////////////////////////// -->
+
+<!-- //////////////////////////////////////////////////////////////////////////// -->
+<!--body-->
+
+<body>
+    <!-- //////////////////////////////////////////////////////////////////////////// -->
+    <!--Page wrapper-->
+    <div class="page-wrapper">
+        <!-- //////////////////////////////////////////////////////////////////////////// -->
+        <!--Control page-->
+         <div id="control-body" class="fixed-sidebar medium-sidebar fixed-nav">
+            <!-- //////////////////////////////////////////////////////////////////////////// -->
+            <!--prepage loader-->
+            <div id="prepage-loader">
+                <div class="preloader-center">
+                    <div class="preloader-wrapper big active">
+                        <div class="spinner-layer spinner-indigo-only">
+                            <div class="circle-clipper left">
+                                <div class="circle"></div>
+                            </div>
+                            <div class="gap-patch">
+                                <div class="circle"></div>
+                            </div>
+                            <div class="circle-clipper right">
+                                <div class="circle"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End prepage loader-->
+            <!-- //////////////////////////////////////////////////////////////////////////// -->
+
+
+            <!-- //////////////////////////////////////////////////////////////////////////// -->
+            <!--Header-->
+            <nav class="page-header z-depth-3">
+                <div class="nav-wrapper">
+                    <a id="logo-container" href="#" class="brand-logo hide-on-med-and-down">materialcss</a>
+                    <ul class="left">
+                        <li class="hide-on-large-only"><a href="javascript:void(0)" id="toggle-left-sidebar" class="hrz-menu waves-effect waves-default"><i class="material-icons">menu</i></a></li>
+
+                        <!--notifications list-->
+                        <li><a href="javascript:void(0)" class="hrz-menu dropdown-button dropdown-belowOrigin waves-effect waves-default" data-activates='notification-list-dropdown'><i class="material-icons">notifications</i><span id="notification-cout">25</span></a></li>
+
+                        <!--app list-->
+                        <li><a href="javascript:void(0)" class="hrz-menu dropdown-button dropdown-belowOrigin waves-effect waves-default" data-activates='app-list-dropdown'><i class="material-icons">apps</i></a></li>
+
+                        <!--full width menu list-->
+                        <li class="hide-on-small-only"><a href="javascript:void(0)" class="hrz-menu dropdown-button dropdown-belowOrigin waves-effect waves-default" data-activates='full-menu-dropdown'>Full menu<i class="material-icons inline">arrow_drop_down</i></a></li>
+                    </ul>
+
+                    <!--notifications list dropdown-->
+                    <ul id='notification-list-dropdown' class='width-400 dropdown-content'>
+                        <li>
+                            <a href="#!">
+                                <i class="material-icons">email</i>
+                                <p class="noti-message">New mail from jhon<span>15 minutes ago</span></p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#!">
+                                <i class="material-icons">chat</i>
+                                <p class="noti-message">New member John joined<span>25 minutes ago</span></p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#!">
+                                <i class="material-icons">perm_identity</i>
+                                <p class="noti-message">New mail from jhon<span>30 minutes ago</span></p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#!">
+                                <i class="material-icons">chat</i>
+                                <p class="noti-message">New member John joined<span>1 hour ago</span></p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#!" class="view-all-noti">
+                        See All
+                    </a>
+                        </li>
+
+
+                    </ul>
+                    <!--notifications app list dropdown-->
+
+                    <!--app list dropdown-->
+                    <ul id='app-list-dropdown' class='dropdown-content'>
+                        <li class="app-list-wrapper m-t-15">
+                            <a href="#!"><i class="material-icons">polymer</i><span>Polymer</span></a>
+                            <a href="#!" class="right"><i class="material-icons">import_contacts</i><span>Contact</span></a>
+                        </li>
+
+                        <li class="app-list-wrapper">
+                            <a href="#!"><i class="material-icons">email</i><span>Email</span></a>
+                            <a href="#!" class="right"><i class="material-icons">ondemand_video</i><span>Video</span></a>
+                        </li>
+
+                        <li class="app-list-wrapper">
+                            <a href="#!"><i class="material-icons">bug_report</i><span>Bug Report</span></a>
+                            <a href="#!" class="right"><i class="material-icons">voicemail</i><span>Voicemail</span></a>
+                        </li>
+                        <li class="app-list-more">
+                            <a href="#!">More</a>
+                        </li>
+                    </ul>
+                    <!--end app list dropdown-->
+
+                    <!--full width menu list dropdown-->
+                    <div id="full-menu-dropdown" class='full-menu dropdown-content'>
+                        <div class="row p-a-15">
+                            <div class="col s6 m3 l2">
+                                <h5 class="full-menu-title">Material UI</h5>
+                                <a>Buttons</a>
+                                <a>Badges</a>
+                                <a>Breadcrumbs</a>
+                                <a>Collections</a>
+                                <a>Collapsibles</a>
+                            </div>
+
+                            <div class="col s6 m3 l2">
+                                <h5 class="full-menu-title">CSS</h5>
+                                <a>Typography</a>
+                                <a>Icons</a>
+                                <a>Animations</a>
+                                <a>Shadow</a>
+                                <a>Media</a>
+                            </div>
+
+                            <div class="col s6 m3 l2">
+                                <h5 class="full-menu-title">Advanced UI</h5>
+                                <a>Carousel</a>
+                                <a>Range Slider</a>
+                                <a>SweetAlert</a>
+                                <a>Highlight</a>
+                                <a>Cards</a>
+                            </div>
+
+                            <div class="col s6 m3 l2">
+                                <h5 class="full-menu-title">Forms</h5>
+                                <a>Form Layouts</a>
+                                <a>Form Validations</a>
+                                <a>Form Masks</a>
+                                <a>Text Editor</a>
+                                <a>Form Elements</a>
+                            </div>
+
+                            <div class="col s6 m3 l2">
+                                <h5 class="full-menu-title">Home</h5>
+                                <a>Landing Page</a>
+                                <a>Change Password</a>
+                                <a>Contactus</a>
+                                <a>Blank Page</a>
+                                <a>Signup</a>
+                            </div>
+
+                            <div class="col s6 m3 l2">
+                                <h5 class="full-menu-title">Elements</h5>
+                                <a>Grid</a>
+                                <a>Color</a>
+                                <a>widgets</a>
+                                <a>Helpers</a>
+                                <a>Search Page</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--full width menu list dropdown-->
+
+                    <ul class="right">
+                        <li><a href="javascript:void(0)" class="hrz-menu waves-effect waves-default hide-show-nav-search"><i class="material-icons">search</i></a></li>
+                        <!--user account-->
+                        <li id="user-account-box"><a href="javascript:void(0)" class="hrz-menu dropdown-button dropdown-belowOrigin dropdown-widthChange waves-effect waves-default" data-activates='user-account-dropdown'><i class="material-icons">account_circle</i></a></li>
+
+                        <li class="hide-on-small-only"><a href="javascript:void(0)" class="hrz-menu waves-effect waves-default" id="page-refresh"><i class="material-icons">refresh</i></a></li>
+                        <li class="hide-on-med-and-down"><a href="javascript:void(0)" class="hrz-menu waves-effect waves-default" id="page-fullscreen"><i class="material-icons">fullscreen</i></a></li>
+
+                        <li class="toggle-right-sidebar"><a href="javascript:void(0)" class="hrz-menu waves-effect waves-default"><i class="material-icons">format_indent_decrease</i></a></li>
+
+                    </ul>
+
+                    <!--user account dropdown-->
+                    <ul id='user-account-dropdown' class='dropdown-content'>
+                        <li><a href="#!"><i class="material-icons">perm_identity</i>My Profile</a></li>
+                        <li><a href="javascript:void(0)" class="toggle-right-sidebar"><i class="material-icons">settings</i>Page Customizer</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#!"><i class="material-icons">lock</i>Lock</a></li>
+                        <li><a href="#!"><i class="material-icons">power_settings_new</i>Logout</a></li>
+                    </ul>
+                    <!--end user account dropdown-->
+                </div>
+            </nav>
+            <!--End Header-->
+            <!-- //////////////////////////////////////////////////////////////////////////// -->
+
+
+            <!-- //////////////////////////////////////////////////////////////////////////// -->
+            <!--Left sidebar-->
+
+            <aside>
+                <!-- overlay -->
+                <div class="left-sidebar-overlay"></div>
+                <div class="left-sidebar z-depth-3">
+                    <!-- brand -->
+                    <div class="md-logo-container hide-on-large-only theme-bg">
+                        <a class="md-brand-logo white-text" href="#">materialcss</a>
+                    </div>
+                    <!--end brand -->
+                    <!--Left sidebar body-->
+                    <div class="left-sidebar-body">
+                        <!--current subscription user plan -->
+                        <div class="current-subscription">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td class="center">
+                                            <span class="current-plan">Business</span>
+                                            <span class="price">&#36;49/month</span>
+                                        </td>
+                                        <td class="center">
+                                            <a href="#" class="waves-effect waves-light btn-flat theme-text">UPGRADE</a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="divider"></div>
+                        <!--End current subscription user plan -->
+
+                        <!--sidebar menu-->
+                        <ul class="leftside-navigation">
+                            <li class="navigation">Menu</li>
+                            <li><a href="dashboard.html" class="menu waves-effect waves-default tooltipped" data-position="right" data-delay="50" data-tooltip="Dashboard"><i class="material-icons left-icon">dashboard</i>Dashboard</a></li>
+
+                            <li><a href="javascript:void(0)" class="collapsible-label1 waves-effect waves-default tooltipped" data-position="right" data-delay="50" data-tooltip="Material UI"><i class="material-icons left-icon">build</i><i class="material-icons right-icon">arrow_drop_down</i>Material UI</a>
+                                <ul class="collapsible-body">
+                                    <li><a href="buttons.html" class="waves-effect waves-default">Buttons</a></li>
+                                    <li><a href="breadcrumbs.html" class="waves-effect waves-default">Breadcrumbs</a></li>
+                                    <li><a href="collections.html" class="waves-effect waves-default">Collections</a></li>
+                                    <li><a href="collapsibles.html" class="waves-effect waves-default">Collapsibles</a></li>
+                                    <li><a href="dropdown.html" class="waves-effect waves-default">Dropdown</a></li>
+                                    <li><a href="tabs.html" class="waves-effect waves-default">Tabs</a></li>
+                                    <li><a href="pagination.html" class="waves-effect waves-default">Pagination</a></li>
+                                    <li><a href="preloader.html" class="waves-effect waves-default">Preloader</a></li>
+                                    <li><a href="toasts.html" class="waves-effect waves-default">Toasts</a></li>
+                                    <li><a href="tooltip.html" class="waves-effect waves-default">Tooltip</a></li>
+                                    <li><a href="waves.html" class="waves-effect waves-default">Waves</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="javascript:void(0)" class="collapsible-label1 waves-effect waves-default tooltipped" data-position="right" data-delay="50" data-tooltip="CSS"><i class="material-icons left-icon">library_books</i><i class="material-icons right-icon">arrow_drop_down</i>CSS</a>
+                                <ul class="collapsible-body">
+                                    <li><a href="typography.html" class="waves-effect waves-default">Typography</a></li>
+                                    <li><a href="icons.html" class="waves-effect waves-default">Icons</a></li>
+                                    <li><a href="animations.html" class="waves-effect waves-default">Animations</a></li>
+                                    <li><a href="shadow.html" class="waves-effect waves-default">Shadow</a></li>
+                                    <li><a href="media.html" class="waves-effect waves-default">Media</a></li>
+                                    <li><a href="pulse.html" class="waves-effect waves-default">Pulse</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="javascript:void(0)" class="collapsible-label1 waves-effect waves-default tooltipped" data-position="right" data-delay="50" data-tooltip="Advanced UI"><i class="material-icons left-icon">add_to_photos</i><i class="material-icons right-icon">arrow_drop_down</i>Advanced UI</a>
+                                <ul class="collapsible-body">
+                                    <li><a href="chips.html" class="waves-effect waves-default">Chips</a></li>
+                                    <li><a href="cards.html" class="waves-effect waves-default">Cards</a></li>
+                                    <li><a href="carousel.html" class="waves-effect waves-default">Carousel</a></li>
+                                    <li><a href="modals.html" class="waves-effect waves-default">Modals</a></li>
+                                    <li><a href="range-slider.html" class="waves-effect waves-default">Range Slider</a></li>
+                                    <li><a href="sweetAlert.html" class="waves-effect waves-default">SweetAlert</a></li>
+                                    <li><a href="highlight.html" class="waves-effect waves-default">Highlight</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="javascript:void(0)" class="collapsible-label1 waves-effect waves-default tooltipped" data-position="right" data-delay="50" data-tooltip="Charts"><i class="material-icons left-icon">insert_chart</i><i class="material-icons right-icon">arrow_drop_down</i>Charts</a>
+                                <ul class="collapsible-body">
+                                    <li><a href="echarts-charts.html" class="waves-effect waves-default">ECharts</a></li>
+                                    <li><a href="google-charts.html" class="waves-effect waves-default">Google Charts</a></li>
+                                    <li><a href="chartjs-charts.html" class="waves-effect waves-default">ChartJS</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="javascript:void(0)" class="collapsible-label1 waves-effect waves-default tooltipped" data-position="right" data-delay="50" data-tooltip="Forms"><i class="material-icons left-icon">message</i><i class="material-icons right-icon">arrow_drop_down</i>Forms</a>
+                                <ul class="collapsible-body">
+                                    <li><a href="form-elements.html" class="waves-effect waves-default">Form Elements</a></li>
+                                    <li><a href="form-layouts.html" class="waves-effect waves-default">Form Layouts</a></li>
+                                    <li><a href="form-validations.html" class="waves-effect waves-default">Form Validations</a></li>
+                                    <li><a href="form-masks.html" class="waves-effect waves-default">Form Masks</a></li>
+                                    <li><a href="text-editor.html" class="waves-effect waves-default">Text Editor</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="javascript:void(0)" class="collapsible-label1 waves-effect waves-default tooltipped" data-position="right" data-delay="50" data-tooltip="Tables"><i class="material-icons left-icon">border_all</i><i class="material-icons right-icon">arrow_drop_down</i>Tables</a>
+                                <ul class="collapsible-body">
+                                    <li><a href="basic-table.html" class="waves-effect waves-default">Basic Tables</a></li>
+                                    <li><a href="data-table.html" class="waves-effect waves-default">Data Tables</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="javascript:void(0)" class="collapsible-label1 waves-effect waves-default tooltipped" data-position="right" data-delay="50" data-tooltip="Pages"><i class="material-icons left-icon">terrain</i><i class="material-icons right-icon">arrow_drop_down</i>Pages</a>
+                                <ul class="collapsible-body">
+                                    <li><a href="login.html" class="waves-effect waves-default">Login</a></li>
+                                    <li><a href="signup.html" class="waves-effect waves-default">Signup</a></li>
+                                    <li><a href="reset.html" class="waves-effect waves-default">Reset</a></li>
+                                    <li><a href="lock.html" class="waves-effect waves-default">Lock</a></li>
+                                    <li><a href="change-password.html" class="waves-effect waves-default">Change Password</a></li>
+                                    <li><a href="contactus.html" class="waves-effect waves-default">Contactus</a></li>
+                                    <li><a href="blank.html" class="waves-effect waves-default">Blank Page</a></li>
+                                    <li><a href="404.html" class="waves-effect waves-default">404</a></li>
+                                    <li><a href="500.html" class="waves-effect waves-default">500</a></li>
+                                    <li><a href="404-admin.html" class="waves-effect waves-default">Dashboard 404</a></li>
+                                    <li><a href="500-admin.html" class="waves-effect waves-default">Dashboard 500</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="grid.html" class="waves-effect waves-default tooltipped" data-position="right" data-delay="50" data-tooltip="Grid"><i class="material-icons left-icon">grid_on</i>Grid</a></li>
+
+                            <li><a href="color.html" class="waves-effect waves-default tooltipped" data-position="right" data-delay="50" data-tooltip="Color"><i class="material-icons left-icon">format_color_fill</i>Color</a></li>
+
+                            <li><a href="helpers.html" class="waves-effect waves-default tooltipped" data-position="right" data-delay="50" data-tooltip="Helpers"><i class="material-icons left-icon">live_help</i>Helpers</a></li>
+
+                            <li><a href="docs.html" class="waves-effect waves-default tooltipped" data-position="right" data-delay="50" data-tooltip="Docs"><i class="material-icons left-icon">book</i>Docs</a></li>
+
+                            
+
+                            <li><a href="javascript:void(0)" class="collapsible-label1 waves-effect waves-default tooltipped" data-position="right" data-delay="50" data-tooltip="Label"><i class="material-icons left-icon">menu</i><i class="material-icons right-icon">arrow_drop_down</i>Label 1</a>
+                                <ul class="collapsible-body">
+                                    <li><a class="collapsible-label2 waves-effect waves-default"><i class="material-icons left-icon">arrow_drop_down</i>Label 2</a>
+                                        <ul class="collapsible-body">
+                                            <li><a href="#" class="waves-effect waves-default"> Lebel 2 title</a></li>
+                                            <li><a href="#" class="waves-effect waves-default"> Lebel 2 title</a></li>
+                                            <li><a href="#" class="waves-effect waves-default"> Lebel 2 title</a></li>
+                                            <li><a href="#" class="waves-effect waves-default"> Lebel 2 title</a></li>
+
+                                        </ul>
+                                    </li>
+                                    <li><a href="#" class="waves-effect waves-default">Label 2</a></li>
+                                    <li><a class="collapsible-label2 waves-effect waves-default"><i class="material-icons left-icon">arrow_drop_down</i>Label 2</a>
+                                        <ul class="collapsible-body">
+                                            <li><a href="#" class="waves-effect waves-default"> Lebel 2 title</a></li>
+                                            <li><a href="#" class="waves-effect waves-default"> Lebel 2 title</a></li>
+                                            <li><a href="#" class="waves-effect waves-default"> Lebel 2 title</a></li>
+                                            <li><a href="#" class="waves-effect waves-default"> Lebel 2 title</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#" class="waves-effect waves-default">Lebel 2</a></li>
+                                </ul>
+
+                            </li>
+
+
+                        </ul>
+                        <!--End sidebar menu-->
+                    </div>
+
+                    <!--End Left sidebar body-->
+
+                    <!--Left sidebar footer-->
+                    <div class="sidebar-footer">
+                        <a href="javascript:void(0)" id="collapsed-left-sidebar" class="toggle-icon-left-sidebar waves-effect waves-default"><i class="right material-icons">keyboard_arrow_left</i></a>
+                    </div>
+                    <!--End Left sidebar footer-->
+                </div>
+            </aside>
+            <!--End left sidebar-->
+            <!-- //////////////////////////////////////////////////////////////////////////// -->
+
+
+            <!--Search box-->
+            <!-- //////////////////////////////////////////////////////////////////////////// -->
+            <div class="search-overlay hide"></div>
+            <div id="search-body" class="z-depth-1">
+                <!--Search form-->
+                <form class="search-box">
+                    <div class="input-field z-depth-1">
+                        <!--Search input-->
+                        <input id="search" type="search" autocomplete="off" required>
+                        <!--End Search input-->
+                        <!--Search icon-->
+                        <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                        <!--End Search icon-->
+                        <!--close search box-->
+                        <i class="material-icons hide-show-nav-search">close</i>
+                        <!--End close search box-->
+                    </div>
+                </form>
+                <!--End Search form-->
+                <!--Search result-->
+                <div class="search-result">
+                    <div class="row">
+                        <div class="col s6 m8">
+                            <div class="search-result-title">Recent search</div>
+                            <ul class="search-result-body m-a-0">
+                                <li><a href="#" class="waves-effect waves-default">Form Validations</a></li>
+                                <li><a href="#">Range Slider</a></li>
+                                <li><a href="#">Animations</a></li>
+                                <li><a href="#">Change Password</a></li>
+                                <li><a href="#">Breadcrumbs</a></li>
+                                <li><a href="#">Collections</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col s6 m4">
+                            <div class="search-result-title">Most Visited Pages</div>
+                            <ul class="search-result-body m-a-0">
+                                <li><a href="#" class="waves-effect waves-default">Form Validations</a></li>
+                                <li><a href="#">Carousel</a></li>
+                                <li><a href="#">Animations</a></li>
+                                <li><a href="#">Change Password</a></li>
+                                <li><a href="#">Modals</a></li>
+                                <li><a href="#">Data Table</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+                <!--End search result-->
+            </div>
+            <!--Search box-->
+            <!-- //////////////////////////////////////////////////////////////////////////// -->
+
+
+            
+
+            <!--Right sidebar-->
+            <!-- //////////////////////////////////////////////////////////////////////////// -->
+            <aside>
+
+                <!-- rightsidebar overlay -->
+                <div class="right-sidebar-overlay hide"></div>
+                <!-- end rightsidebar overlay -->
+
+                <div class="right-sidebar z-depth-3">
+
+                    <!--right sidebar tab-->
+                    <ul class="tabs tabs-fixed-width tabs-right-sidebar">
+                        <li class="tab col s3"><a class="active" href="#settings">Settings</a></li>
+                        <li class="tab col s3"><a href="#notifications">Notifications</a></li>
+                    </ul>
+                    <!--End right sidebar tab-->
+
+                    <!--Right Sidebar body-->
+                    <div class="right-sidebar-body">
+                        <!--Notification body-->
+                        <div id="notifications">
+                            <ul class="content-list">
+                                <li>
+                                    <a href="#">
+                                        <span class="list-title white-text red">ORDER</span>
+                                        <span class="list-date">9 hours ago</span>
+                                        <h4 class="list-content-title">facilisis</h4>
+                                        <p class="list-content">
+                                            Etiam auctor porta augue sit amet facilisis. Sed libero nisi, scelerisque.
+                                        </p>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        <span class="list-title white-text blue">COMMENT</span>
+                                        <span class="list-date">10 hours ago</span>
+                                        <h4 class="list-content-title">porta augue</h4>
+                                        <p class="list-content">
+                                            Etiam auctor porta augue sit amet facilisis. Sed libero nisi, scelerisque.
+                                        </p>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        <span class="list-title white-text green">MEETING</span>
+                                        <span class="list-date">11 hours ago</span>
+                                        <h4 class="list-content-title">Sed libero</h4>
+                                        <p class="list-content">
+                                            Etiam auctor porta augue sit amet facilisis. Sed libero nisi, scelerisque.
+                                        </p>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        <span class="list-title white-text teal">EVENT</span>
+                                        <span class="list-date">12 hours ago</span>
+                                        <h4 class="list-content-title">sit amet</h4>
+                                        <p class="list-content">
+                                            Etiam auctor porta augue sit amet facilisis. Sed libero nisi, scelerisque.
+                                        </p>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        <span class="list-title white-text red">ORDER</span>
+                                        <span class="list-date">13 hours ago</span>
+                                        <h4 class="list-content-title">augue</h4>
+                                        <p class="list-content">
+                                            Etiam auctor porta augue sit amet facilisis. Sed libero nisi, scelerisque.
+                                        </p>
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <!--End Notification body-->
+
+                        <!--Settings body-->
+                        <div id="settings" class="settings-content">
+                            <h4 class="settings-content-title">Full Layout Options</h4>
+                            <p>
+                                <input class="with-gap" name="layout" type="radio" id="default-layout" checked/>
+                                <label for="default-layout">Fixed Header and Sidebar(Default)</label>
+                            </p>
+
+                            <p>
+                                <input class="with-gap" name="layout" type="radio" id="fixed-header-unfixed-sidebar" />
+                                <label for="fixed-header-unfixed-sidebar">Fixed Header Unfixed Sidebar</label>
+                            </p>
+
+                            <p>
+                                <input class="with-gap" name="layout" type="radio" id="unfixed-header-sidebar" />
+                                <label for="unfixed-header-sidebar">Unfixed Header and Sidebar</label>
+                            </p>
+
+                            <h4 class="settings-content-title">Boxed Layout Options</h4>
+                            <p>
+                                <input class="with-gap" name="layout" type="radio" id="default-boxed-layout" />
+                                <label for="default-boxed-layout">Fixed Header and Sidebar</label>
+                            </p>
+
+                            <p>
+                                <input class="with-gap" name="layout" type="radio" id="boxed-fixed-header-unfixed-sidebar" />
+                                <label for="boxed-fixed-header-unfixed-sidebar">Fixed Header Unfixed Sidebar</label>
+                            </p>
+
+                            <p>
+                                <input class="with-gap" name="layout" type="radio" id="boxed-unfixed-sidebar-header" />
+                                <label for="boxed-unfixed-sidebar-header">Unfixed Header and Sidebar</label>
+                            </p>
+                        </div>
+                        <!--End Settings body-->
+                    </div>
+                </div>
+                <!--End Right Sidebar body-->
+            </aside>
+            <!--End right sidebar-->
+            <!-- //////////////////////////////////////////////////////////////////////////// -->
+
+            <!-- //////////////////////////////////////////////////////////////////////////// -->
+            <!--Page Body-->
+            <main class="page-body">
+                <!--page title box-->
+                <div class="row">
+                    <div class="col s12 page-title-div">
+                        <!--Page Title-->
+                        <h1 class="header">Waves</h1>
+                        <!--Page breadcrumbs-->
+                        <ol class="breadcrumbs left">
+                            <li><a href="dashboard.html">Dashboard</a></li>
+                            <li>Material UI</li>
+                            <li class="active">Waves</li>
+                        </ol>
+                        <!--End page breadcrumbs-->
+
+                        <!--Page help-->
+                        <a class='dropdown-button dropdown-hover waves-effect waves-light page-help right' href='javascript:void(0)' data-activates='dropdown-help'>
+                            <i class="material-icons">help</i>
+                        </a>
+                        <ul id='dropdown-help' class='dropdown-content'>
+                            <li><a href="http://materializecss.com/waves.html" target="_blank">API</a></li>
+                            <li><a href="http://materializecss.com/waves.html" target="_blank">Blog</a></li>
+                            <li><a href="http://materializecss.com/waves.html" target="_blank">Docs</a></li>
+                        </ul>
+                        <!--end page help-->
+
+                    </div>
+                </div>
+                <!--end page title box-->
+                <!--start section-->
+                <section class="section">
+                    <!--start row-->
+                    <div class="row ">
+                        <!--start column-->
+                        <div class="col s12">
+                            <!--start card-->
+                            <div class="card">
+                                <!--card content-->
+                                <div class="card-content btndiv">
+
+                                    <!-- //////////////////////////////////////// -->
+                                    <!-- Basic Applying Waves -->
+
+                                    <!--card title-->
+                                    <h2 class="card-title header">Applying Waves</h2>
+                                    <a class="waves-effect waves-light btn-large theme-bg" href="#">Wave</a>
+
+                                    <!-- End Basic Applying Waves -->
+                                    <!-- //////////////////////////////////////// -->
+
+                                    <!-- //////////////////////////////////////// -->
+                                    <!-- Customization Waves -->
+                                    <!--card title-->
+                                    <h2 class="card-title header">Customization</h2>
+
+                                    <!-- //////////////////////////////////////// -->
+                                    <!-- Available Colors Waves -->
+                                    <!--card sub title-->
+                                    <h3 class="header">Available Colors</h3>
+                                    <a href="#!" class="waves-effect btn white black-text">Send</a>
+                                    <a href="#!" class="waves-effect waves-light btn theme-bg">Send</a>
+                                    <a href="#!" class="waves-effect waves-red btn white black-text">Send</a>
+                                    <a href="#!" class="waves-effect waves-yellow btn white black-text">Send</a>
+                                    <a href="#!" class="waves-effect waves-orange btn white black-text">Send</a>
+                                    <a href="#!" class="waves-effect waves-purple btn white black-text">Send</a>
+                                    <a href="#!" class="waves-effect waves-green btn white black-text">Send</a>
+                                    <a href="#!" class="waves-effect waves-teal btn white black-text">Send</a>
+                                    <!-- End Available Colors Waves -->
+                                    <!-- //////////////////////////////////////// -->
+
+                                    <!-- //////////////////////////////////////// -->
+                                    <!-- Custom Colors Waves -->
+                                    <!--card sub title-->
+                                    <h3 class="header">Custom Colors</h3>
+                                    <a href="#!" class="waves-effect waves-brown btn white black-text">Send</a>
+
+                                    <div class="row">
+                                        <div class="col s12">
+                                            <ul class="tabs ">
+                                                <li class="tab"><a href="#custom-color-waves-html">HTML</a></li>
+                                                <li class="tab"><a class="active" href="#custom-color-waves-css">CSS</a></li>
+                                            </ul>
+
+                                            <div id="custom-color-waves-html">
+                                                <pre>
+                                                    <code class="language-html">
+&lt;a href="#!" class="waves-effect waves-brown btn bg-white black-text">Send&lt;/a>
+                                                    </code>
+                                                </pre>
+
+                                            </div>
+
+                                            <div id="custom-color-waves-css">
+                                                <pre>
+                                                    <code class="language-css">
+ /*
+When creating your CSS selector,
+change "brown" to something of your choosing
+*/
+.waves-effect.waves-brown .waves-ripple {
+    /* The alpha value allows the text and background color
+    of the button to still show through. */
+    background-color: rgba(121, 85, 72, 0.65);
+}
+                                                    </code>
+                                                </pre>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <!-- End Custom Colors Waves -->
+                                    <!-- //////////////////////////////////////// -->
+
+                                    <!-- End Customization Waves -->
+                                    <!-- //////////////////////////////////////// -->
+
+                                </div>
+                                <!--end card content-->
+                            </div>
+                            <!--end card-->
+                        </div>
+                        <!--end column-->
+                    </div>
+                    <!--end row-->
+                </section>
+                <!--end section-->
+
+            </main>
+            <!--End page body-->
+            <!-- //////////////////////////////////////////////////////////////////////////// -->
+
+            <!-- //////////////////////////////////////////////////////////////////////////// -->
+            <!--Footer-->
+            <footer class="page-footer">
+
+                <div class="footer-copyright">
+                    <div class="left">&copy; materialcss</div>
+                    <div class="right"><a href="javascript:void(0)" id="scroll-top-dash" class="tooltipped" data-position="top" data-delay="50" data-tooltip="Go top"><i class="material-icons">arrow_upward</i></a></div>
+                </div>
+            </footer>
+            <!--End footer-->
+            <!-- //////////////////////////////////////////////////////////////////////////// -->
+        </div>
+        <!--End page control-->
+        <!-- //////////////////////////////////////////////////////////////////////////// -->
+
+    </div>
+    <!--End page wrapper-->
+    <!-- //////////////////////////////////////////////////////////////////////////// -->
+
+    <!-- //////////////////////////////////////////////////////////////////////////// -->
+    <!--  Scripts-->
+
+    <!-- Jquery -->
+    <script src="http://designlayout.xyz/materialcss/asset/vendors/jquery/jquery.min.js" type="text/javascript"></script>
+    <!-- Materialize js -->
+    <script src="http://designlayout.xyz/materialcss/asset/vendors/materialize/materialize.min.js" type="text/javascript"></script>
+    <!-- prism syntax highlighter -->
+    <script src="http://designlayout.xyz/materialcss/asset/vendors/prism/prism.js" type="text/javascript"></script>
+    <!-- materialcss theme script -->
+    <script src="http://designlayout.xyz/materialcss/asset/js/app.js" type="text/javascript"></script>
+    <!-- Your custom script -->
+    <script src="http://designlayout.xyz/materialcss/asset/js/script.js" type="text/javascript"></script>
+
+    <!--End scripts-->
+    <!-- //////////////////////////////////////////////////////////////////////////// -->
+</body>
+<!--End body-->
+<!-- //////////////////////////////////////////////////////////////////////////// -->
+
+
+<!-- Mirrored from designlayout.xyz/materialcss/html/waves.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 03 Oct 2017 22:52:18 GMT -->
+</html>
+<!--End HTML-->
+<!-- //////////////////////////////////////////////////////////////////////////// -->

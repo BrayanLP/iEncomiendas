@@ -1,0 +1,76 @@
+<div class="row">
+    <div class="col s12 page-title-div">
+      <!--Page Title-->
+      <h1 class="header">Listado de Inventario</h1>
+      <!--Page breadcrumbs-->
+      <ol class="breadcrumbs left">
+        <li>
+          <a href="dashboard">Dashboard</a>
+        </li>
+        <li>Inventario</li>
+        <li class="active">Listado</li>
+      </ol>
+      <!--End page breadcrumbs-->
+
+    </div>
+  </div>
+  <!--end page title box-->
+  <!--start section-->
+  <section class="section">
+    <!--start row-->
+    <div class="row ">
+      <!--start column-->
+      <div class="col s12">
+        <!--start card-->
+        <div class="card">
+          <!--card content-->
+          <div class="card-content">
+            <p>
+              ESTAMOS EN EL LISTADO</p>
+
+
+            <table border="1" align="center">
+              <thead>
+                <!-- <td>
+                  Tipo Producto
+                </td> -->
+                <td>
+                  Nombre del usuario
+                </td>
+                <td>
+                  Nombre del Cliente
+                </td>
+                <td>
+                  Fecha de Venta
+                </td>
+                <td>
+                  Total
+                </td>
+                <td>
+                  Acciones
+                </td>
+              </thead>
+              <tbody>
+                <tr *ngFor="let lis of listado">
+                  <td>{{lis.usuario.nombre}}</td>
+                  <td>{{lis.cliente.nombre}}</td>
+                  <td>{{lis.fecha_venta}}</td>
+                  <td>{{lis.precio_compra * lis.cantidad | currency: "PEN":false}}</td>
+                  <td>
+                    <!-- <button>Editar</button> -->
+                    <button (click)="eliminar(i)">Eliminar</button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+          </div>
+          <!--end card content-->
+        </div>
+        <!--end card-->
+      </div>
+      <!--end column-->
+    </div>
+    <!--end row-->
+  </section>
+  <!--end section-->
